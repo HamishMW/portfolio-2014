@@ -1,3 +1,9 @@
+@mixin transition($type, $dur, $ease) {
+  	-webkit-transition: $type $dur $ease;
+    -moz-transition: $type $dur $ease;
+    transition: $type $dur $ease;
+}
+
 .post-nav {
 	
 	.button {
@@ -11,6 +17,40 @@
 		padding-top: rem-calc(12);
 	}
 }
+.share-links {
+	padding: rem-calc(8) rem-calc(12);
+	width: rem-calc(40);
+	height: rem-calc(40);
+	font-size: rem-calc(20);
+	border-right: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.wrapper-dropdown {
+	margin-top: rem-calc(30);
+}
+// Custom dropdown
+
+.wrapper-dropdown .share-dropdown {
+
+	margin-top: rem-calc(-60);
+	margin-left: rem-calc(40);
+    /* Styles */
+    @include transition(all, 0.15s, ease-out);
+    list-style: none;
+ 
+    /* Hiding */
+    opacity: 0;
+    pointer-events: none;
+}
+.wrapper-dropdown .share-dropdown li a {
+	@include transition(all, 0.15s, ease-out);
+}
+ 
+.wrapper-dropdown.active .share-dropdown {
+    opacity: 1;
+    pointer-events: auto;
+}
+
 @media only screen {  
 	.right-open {
 		right: 0rem;
@@ -54,12 +94,19 @@
 @media only screen and (min-width: 64.063rem) { 
 	.description-sticky {
 		width: 30%;
-		padding: 20px 40px 50px 40px;
+		padding: rem-calc(35) rem-calc(40) rem-calc(50) rem-calc(40);
 	}
 	.portfolio-images {
 		width: 68%;
 		img {
 			width: 100%;
 		}
+	}
+}
+//Short 
+@media screen and (max-height: 36em){
+	.description-sticky {
+		overflow: scroll;
+		
 	}
 }

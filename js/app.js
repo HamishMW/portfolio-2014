@@ -123,8 +123,34 @@ $(window).on('resize',function(){
     if(Modernizr.mq('(max-height: 35em)')) $(".tab-bar").addClass("tab-bar-active");
 });
 
+//Custom dropdowns
+
+function DropDown(el) {
+    this.dd = el;
+    this.initEvents();
+}
+DropDown.prototype = {
+  initEvents : function() {
+    var obj = this;
+
+    obj.dd.on('click', function(event){
+      $(this).toggleClass('active');
+      event.stopPropagation();
+    }); 
+  }
+}
+
 $(function(){ // document ready
  
+  //Custom dropdowns
+  var dd = new DropDown( $('#dd') );
+
+  $(document).click(function() {
+    // all dropdowns
+    $('.wrapper-dropdown').removeClass('active');
+  });
+
+  // Sticky sidebar   
   if (!!$('.sticky-active').offset()) { // make sure ".sticky-active" element exists
     
     var stickyTop = $('.sticky-active').offset().top; // returns number
@@ -145,6 +171,7 @@ $(function(){ // document ready
   }
  
 });
+
 // Foundation JavaScript
 // Documentation can be found at: http://foundation.zurb.com/docs
 

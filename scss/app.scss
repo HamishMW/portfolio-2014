@@ -3,10 +3,13 @@
 @import "icons";
 @import "portfolio-post";
 
-/*------//MENU NAV//------*/
+/*------//GLOBAL//------*/
 
-$spmenu-width: rem-calc(240);
-$spmenu-logo-gap: $spmenu-width - rem-calc(150);
+html {
+	overflow-y: scroll;
+   	overflow-x: hidden;
+
+}
 
 @mixin transition($type, $dur) {
   	-webkit-transition: $type $dur ease;
@@ -20,14 +23,12 @@ $spmenu-logo-gap: $spmenu-width - rem-calc(150);
 		transform: translateY($size);
 }
 
-// Tab bar
+/*------//MENU NAV//------*/
+
+$spmenu-width: rem-calc(240);
+$spmenu-logo-gap: $spmenu-width - rem-calc(150);
 $tab-bar-width: 5rem;
 
-html {
-	overflow-y: scroll;
-   	overflow-x: hidden;
-
-}
 .tab-bar {
 	width: 100%;
 	top: 0;
@@ -94,7 +95,7 @@ html {
 .nav-list {
 	position: absolute;
  	width: 100%;
-	height: 100px;
+	height: rem-calc(100);
 	left: 0px;
 	// top: 30%; 
 	margin-top: rem-calc(30);
@@ -114,6 +115,9 @@ html {
 	a:active {
 	    background: rgb(70, 70, 70);
 	}
+	ul:first-child {
+		border-top: 1px solid rgb(35, 35, 35);
+	}
 }
 .nav-current {
 	background: rgb(35, 35, 35);
@@ -129,10 +133,10 @@ html {
 }
 
 .copyright {
-	padding: 0px 0px 1rem 2.5rem;
+	padding: 0 0 1rem 2.5rem;
 	position: absolute;
-	left: 0px;
-	bottom: 0px;
+	left: 0;
+	bottom: 0;
 
 	small {
 		color: rgb(80, 80, 80);
@@ -198,6 +202,7 @@ html {
       right: $f-dropdown-triangle-side-offset - 1;
     }
 }
+
 /* Animation classes */
 
 // Push menu
@@ -296,13 +301,13 @@ html {
 	figcaption a {
 		text-align: center;
 		padding: 5px 10px;
-		border-radius: 2px;
+		// border-radius: 2px;
 		display: inline-block;
 		background: #ed4e6e;
 		color: #fff;
 
 		position: absolute;
-		bottom: 20px;
+		bottom: rem-calc(30);
 		right: 20px;
 	}
 }
