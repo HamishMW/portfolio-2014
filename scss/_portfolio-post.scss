@@ -1,4 +1,16 @@
-
+.post-nav {
+	
+	.button {
+		padding: rem-calc(8) rem-calc(12);
+		width: rem-calc(40);
+		height: rem-calc(40);
+		font-size: rem-calc(20);
+	}
+	.icon-th {
+		font-size: 87%;
+		padding-top: rem-calc(12);
+	}
+}
 @media only screen {  
 	.right-open {
 		right: 0rem;

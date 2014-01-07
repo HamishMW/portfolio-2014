@@ -102,7 +102,8 @@ function reveal() {
     classie.toggle( menuLeft, 'spmenu-open' );
 
     //Change the menu icon
-    classie.toggle( menuIcon, 'fi-x')
+    classie.toggle( menuIcon, 'icon-list');
+    classie.toggle( menuIcon, 'icon-x');
 
     // Push the tab bar
     classie.toggle( showLeftPush, 'tab-bar-open' );
