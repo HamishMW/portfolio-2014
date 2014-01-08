@@ -1,9 +1,9 @@
 // 
 // FOUNDATION SETTINGS
 //
-
+// @import "foundation/components/global"
 // Uncomment to use rem-calc() in your settings
-// @import "foundation/functions";
+@import "foundation/functions";
 
 // $experimental: true;
 
@@ -50,9 +50,9 @@
 // $default-float: left;
 
 // We use these as default colors throughout
-// $primary-color: #008CBA;
+$primary-color: /* #EA3A3A */ #1cbb9b /* #0cadb7 */;
 // $secondary-color: #e7e7e7;
-// $alert-color: #f04124;
+$alert-color: #EA3A3A;
 // $success-color: #43AC6A;
 // $warning-color: #f08a24;
 // $info-color: #a0d3e8;
@@ -343,7 +343,7 @@ $block-grid-default-spacing: rem-calc(0);
 // $input-border-width: 1px;
 // $input-disabled-bg: #ddd;
 // $input-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
-// $input-include-glowing-effect: true;
+$input-include-glowing-effect: false;
 
 // We use these to style the fieldset border and spacing.
 // $fieldset-border-style: solid;
@@ -712,7 +712,7 @@ $block-grid-default-spacing: rem-calc(0);
 // $include-html-reveal-classes: $include-html-classes;
 
 // We use these to control the style of the reveal overlay.
-// $reveal-overlay-bg: rgba(#000, .45);
+$reveal-overlay-bg: rgba(#000, .6);
 // $reveal-overlay-bg-old: #000;
 
 // We use these to control the style of the modal itself.
@@ -720,19 +720,19 @@ $block-grid-default-spacing: rem-calc(0);
 // $reveal-position-top: 50px;
 // $reveal-default-width: 80%;
 // $reveal-modal-padding: rem-calc(20);
-// $reveal-box-shadow: 0 0 10px rgba(#000,.4);
+$reveal-box-shadow: none;
 
 // We use these to style the reveal close button
-// $reveal-close-font-size: rem-calc(22);
+$reveal-close-font-size: rem-calc(30);
 // $reveal-close-top: rem-calc(8);
-// $reveal-close-side: rem-calc(11);
+$reveal-close-side: rem-calc(18);
 // $reveal-close-color: #aaa;
 // $reveal-close-weight: bold;
 
 // We use these to control the modal border
-// $reveal-border-style: solid;
-// $reveal-border-width: 1px;
-// $reveal-border-color: #666;
+$reveal-border-style: none;
+$reveal-border-width: 0px;
+// $reveal-border-color: $primary-color;
 
 // $reveal-modal-class: "reveal-modal";
 // $close-reveal-modal-class: "close-reveal-modal";

@@ -2128,8 +2128,8 @@ select {
   position: relative;
   padding: 0.875rem 1.5rem 0.875rem 0.875rem;
   font-size: 0.8125rem;
-  background-color: #008cba;
-  border-color: #0079a1;
+  background-color: #1cbb9b;
+  border-color: #19a589;
   color: white;
 }
 /* line 105, ../bower_components/foundation/scss/foundation/components/_alert-boxes.scss */
@@ -2166,8 +2166,8 @@ select {
 }
 /* line 111, ../bower_components/foundation/scss/foundation/components/_alert-boxes.scss */
 .alert-box.alert {
-  background-color: #f04124;
-  border-color: #ea2f10;
+  background-color: #ea3a3a;
+  border-color: #e82323;
   color: white;
 }
 /* line 112, ../bower_components/foundation/scss/foundation/components/_alert-boxes.scss */
@@ -2193,7 +2193,7 @@ select {
 [class*="block-grid-"] {
   display: block;
   padding: 0;
-  margin: 0 -rem-calc(0)/2;
+  margin: 0 0;
   *zoom: 1;
 }
 /* line 165, ../bower_components/foundation/scss/foundation/components/_global.scss */
@@ -2210,14 +2210,14 @@ select {
   display: inline;
   height: auto;
   float: left;
-  padding: 0 rem-calc(0)/2 rem-calc(0);
+  padding: 0 0 0;
 }
 
 @media only screen {
   /* line 44, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
   .small-block-grid-1 > li {
     width: 100%;
-    padding: 0 rem-calc(0)/2 rem-calc(0);
+    padding: 0 0 0;
   }
   /* line 48, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
   .small-block-grid-1 > li:nth-of-type(n) {
@@ -2231,7 +2231,7 @@ select {
   /* line 44, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
   .small-block-grid-2 > li {
     width: 50%;
-    padding: 0 rem-calc(0)/2 rem-calc(0);
+    padding: 0 0 0;
   }
   /* line 48, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
   .small-block-grid-2 > li:nth-of-type(n) {
@@ -2245,7 +2245,7 @@ select {
   /* line 44, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
   .small-block-grid-3 > li {
     width: 33.33333%;
-    padding: 0 rem-calc(0)/2 rem-calc(0);
+    padding: 0 0 0;
   }
   /* line 48, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
   .small-block-grid-3 > li:nth-of-type(n) {
@@ -2259,7 +2259,7 @@ select {
   /* line 44, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
   .small-block-grid-4 > li {
     width: 25%;
-    padding: 0 rem-calc(0)/2 rem-calc(0);
+    padding: 0 0 0;
   }
   /* line 48, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
   .small-block-grid-4 > li:nth-of-type(n) {
@@ -2273,7 +2273,7 @@ select {
   /* line 44, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
   .small-block-grid-5 > li {
     width: 20%;
-    padding: 0 rem-calc(0)/2 rem-calc(0);
+    padding: 0 0 0;
   }
   /* line 48, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
   .small-block-grid-5 > li:nth-of-type(n) {
@@ -2287,7 +2287,7 @@ select {
   /* line 44, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
   .small-block-grid-6 > li {
     width: 16.66667%;
-    padding: 0 rem-calc(0)/2 rem-calc(0);
+    padding: 0 0 0;
   }
   /* line 48, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
   .small-block-grid-6 > li:nth-of-type(n) {
@@ -2301,7 +2301,7 @@ select {
   /* line 44, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
   .small-block-grid-7 > li {
     width: 14.28571%;
-    padding: 0 rem-calc(0)/2 rem-calc(0);
+    padding: 0 0 0;
   }
   /* line 48, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
   .small-block-grid-7 > li:nth-of-type(n) {
@@ -2315,7 +2315,7 @@ select {
   /* line 44, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
   .small-block-grid-8 > li {
     width: 12.5%;
-    padding: 0 rem-calc(0)/2 rem-calc(0);
+    padding: 0 0 0;
   }
   /* line 48, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
   .small-block-grid-8 > li:nth-of-type(n) {
@@ -2329,7 +2329,7 @@ select {
   /* line 44, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
   .small-block-grid-9 > li {
     width: 11.11111%;
-    padding: 0 rem-calc(0)/2 rem-calc(0);
+    padding: 0 0 0;
   }
   /* line 48, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
   .small-block-grid-9 > li:nth-of-type(n) {
@@ -2343,7 +2343,7 @@ select {
   /* line 44, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
   .small-block-grid-10 > li {
     width: 10%;
-    padding: 0 rem-calc(0)/2 rem-calc(0);
+    padding: 0 0 0;
   }
   /* line 48, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
   .small-block-grid-10 > li:nth-of-type(n) {
@@ -2357,7 +2357,7 @@ select {
   /* line 44, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
   .small-block-grid-11 > li {
     width: 9.09091%;
-    padding: 0 rem-calc(0)/2 rem-calc(0);
+    padding: 0 0 0;
   }
   /* line 48, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
   .small-block-grid-11 > li:nth-of-type(n) {
@@ -2371,7 +2371,7 @@ select {
   /* line 44, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
   .small-block-grid-12 > li {
     width: 8.33333%;
-    padding: 0 rem-calc(0)/2 rem-calc(0);
+    padding: 0 0 0;
   }
   /* line 48, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
   .small-block-grid-12 > li:nth-of-type(n) {
@@ -2386,7 +2386,7 @@ select {
   /* line 44, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
   .medium-block-grid-1 > li {
     width: 100%;
-    padding: 0 rem-calc(0)/2 rem-calc(0);
+    padding: 0 0 0;
   }
   /* line 48, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
   .medium-block-grid-1 > li:nth-of-type(n) {
@@ -2400,7 +2400,7 @@ select {
   /* line 44, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
   .medium-block-grid-2 > li {
     width: 50%;
-    padding: 0 rem-calc(0)/2 rem-calc(0);
+    padding: 0 0 0;
   }
   /* line 48, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
   .medium-block-grid-2 > li:nth-of-type(n) {
@@ -2414,7 +2414,7 @@ select {
   /* line 44, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
   .medium-block-grid-3 > li {
     width: 33.33333%;
-    padding: 0 rem-calc(0)/2 rem-calc(0);
+    padding: 0 0 0;
   }
   /* line 48, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
   .medium-block-grid-3 > li:nth-of-type(n) {
@@ -2428,7 +2428,7 @@ select {
   /* line 44, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
   .medium-block-grid-4 > li {
     width: 25%;
-    padding: 0 rem-calc(0)/2 rem-calc(0);
+    padding: 0 0 0;
   }
   /* line 48, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
   .medium-block-grid-4 > li:nth-of-type(n) {
@@ -2442,7 +2442,7 @@ select {
   /* line 44, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
   .medium-block-grid-5 > li {
     width: 20%;
-    padding: 0 rem-calc(0)/2 rem-calc(0);
+    padding: 0 0 0;
   }
   /* line 48, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
   .medium-block-grid-5 > li:nth-of-type(n) {
@@ -2456,7 +2456,7 @@ select {
   /* line 44, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
   .medium-block-grid-6 > li {
     width: 16.66667%;
-    padding: 0 rem-calc(0)/2 rem-calc(0);
+    padding: 0 0 0;
   }
   /* line 48, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
   .medium-block-grid-6 > li:nth-of-type(n) {
@@ -2470,7 +2470,7 @@ select {
   /* line 44, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
   .medium-block-grid-7 > li {
     width: 14.28571%;
-    padding: 0 rem-calc(0)/2 rem-calc(0);
+    padding: 0 0 0;
   }
   /* line 48, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
   .medium-block-grid-7 > li:nth-of-type(n) {
@@ -2484,7 +2484,7 @@ select {
   /* line 44, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
   .medium-block-grid-8 > li {
     width: 12.5%;
-    padding: 0 rem-calc(0)/2 rem-calc(0);
+    padding: 0 0 0;
   }
   /* line 48, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
   .medium-block-grid-8 > li:nth-of-type(n) {
@@ -2498,7 +2498,7 @@ select {
   /* line 44, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
   .medium-block-grid-9 > li {
     width: 11.11111%;
-    padding: 0 rem-calc(0)/2 rem-calc(0);
+    padding: 0 0 0;
   }
   /* line 48, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
   .medium-block-grid-9 > li:nth-of-type(n) {
@@ -2512,7 +2512,7 @@ select {
   /* line 44, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
   .medium-block-grid-10 > li {
     width: 10%;
-    padding: 0 rem-calc(0)/2 rem-calc(0);
+    padding: 0 0 0;
   }
   /* line 48, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
   .medium-block-grid-10 > li:nth-of-type(n) {
@@ -2526,7 +2526,7 @@ select {
   /* line 44, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
   .medium-block-grid-11 > li {
     width: 9.09091%;
-    padding: 0 rem-calc(0)/2 rem-calc(0);
+    padding: 0 0 0;
   }
   /* line 48, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
   .medium-block-grid-11 > li:nth-of-type(n) {
@@ -2540,7 +2540,7 @@ select {
   /* line 44, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
   .medium-block-grid-12 > li {
     width: 8.33333%;
-    padding: 0 rem-calc(0)/2 rem-calc(0);
+    padding: 0 0 0;
   }
   /* line 48, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
   .medium-block-grid-12 > li:nth-of-type(n) {
@@ -2555,7 +2555,7 @@ select {
   /* line 44, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
   .large-block-grid-1 > li {
     width: 100%;
-    padding: 0 rem-calc(0)/2 rem-calc(0);
+    padding: 0 0 0;
   }
   /* line 48, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
   .large-block-grid-1 > li:nth-of-type(n) {
@@ -2569,7 +2569,7 @@ select {
   /* line 44, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
   .large-block-grid-2 > li {
     width: 50%;
-    padding: 0 rem-calc(0)/2 rem-calc(0);
+    padding: 0 0 0;
   }
   /* line 48, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
   .large-block-grid-2 > li:nth-of-type(n) {
@@ -2583,7 +2583,7 @@ select {
   /* line 44, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
   .large-block-grid-3 > li {
     width: 33.33333%;
-    padding: 0 rem-calc(0)/2 rem-calc(0);
+    padding: 0 0 0;
   }
   /* line 48, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
   .large-block-grid-3 > li:nth-of-type(n) {
@@ -2597,7 +2597,7 @@ select {
   /* line 44, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
   .large-block-grid-4 > li {
     width: 25%;
-    padding: 0 rem-calc(0)/2 rem-calc(0);
+    padding: 0 0 0;
   }
   /* line 48, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
   .large-block-grid-4 > li:nth-of-type(n) {
@@ -2611,7 +2611,7 @@ select {
   /* line 44, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
   .large-block-grid-5 > li {
     width: 20%;
-    padding: 0 rem-calc(0)/2 rem-calc(0);
+    padding: 0 0 0;
   }
   /* line 48, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
   .large-block-grid-5 > li:nth-of-type(n) {
@@ -2625,7 +2625,7 @@ select {
   /* line 44, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
   .large-block-grid-6 > li {
     width: 16.66667%;
-    padding: 0 rem-calc(0)/2 rem-calc(0);
+    padding: 0 0 0;
   }
   /* line 48, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
   .large-block-grid-6 > li:nth-of-type(n) {
@@ -2639,7 +2639,7 @@ select {
   /* line 44, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
   .large-block-grid-7 > li {
     width: 14.28571%;
-    padding: 0 rem-calc(0)/2 rem-calc(0);
+    padding: 0 0 0;
   }
   /* line 48, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
   .large-block-grid-7 > li:nth-of-type(n) {
@@ -2653,7 +2653,7 @@ select {
   /* line 44, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
   .large-block-grid-8 > li {
     width: 12.5%;
-    padding: 0 rem-calc(0)/2 rem-calc(0);
+    padding: 0 0 0;
   }
   /* line 48, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
   .large-block-grid-8 > li:nth-of-type(n) {
@@ -2667,7 +2667,7 @@ select {
   /* line 44, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
   .large-block-grid-9 > li {
     width: 11.11111%;
-    padding: 0 rem-calc(0)/2 rem-calc(0);
+    padding: 0 0 0;
   }
   /* line 48, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
   .large-block-grid-9 > li:nth-of-type(n) {
@@ -2681,7 +2681,7 @@ select {
   /* line 44, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
   .large-block-grid-10 > li {
     width: 10%;
-    padding: 0 rem-calc(0)/2 rem-calc(0);
+    padding: 0 0 0;
   }
   /* line 48, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
   .large-block-grid-10 > li:nth-of-type(n) {
@@ -2695,7 +2695,7 @@ select {
   /* line 44, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
   .large-block-grid-11 > li {
     width: 9.09091%;
-    padding: 0 rem-calc(0)/2 rem-calc(0);
+    padding: 0 0 0;
   }
   /* line 48, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
   .large-block-grid-11 > li:nth-of-type(n) {
@@ -2709,7 +2709,7 @@ select {
   /* line 44, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
   .large-block-grid-12 > li {
     width: 8.33333%;
-    padding: 0 rem-calc(0)/2 rem-calc(0);
+    padding: 0 0 0;
   }
   /* line 48, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
   .large-block-grid-12 > li:nth-of-type(n) {
@@ -2749,7 +2749,7 @@ select {
 .breadcrumbs > * a,
 .breadcrumbs > * span {
   text-transform: uppercase;
-  color: #008cba;
+  color: #1cbb9b;
 }
 /* line 71, ../bower_components/foundation/scss/foundation/components/_breadcrumbs.scss */
 .breadcrumbs > *.current {
@@ -2795,7 +2795,7 @@ select {
 }
 
 /* line 197, ../bower_components/foundation/scss/foundation/components/_buttons.scss */
-button, .button, .stalk-button {
+button, .button {
   cursor: pointer;
   font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-weight: normal;
@@ -2811,8 +2811,8 @@ button, .button, .stalk-button {
   padding-left: 2rem;
   font-size: 1rem;
   /*     @else                            { font-size: $padding - rem-calc(2); } */
-  background-color: #008cba;
-  border-color: #0079a1;
+  background-color: #1cbb9b;
+  border-color: #19a589;
   color: white;
   -webkit-transition: background-color 300ms ease-out;
   -moz-transition: background-color 300ms ease-out;
@@ -2824,57 +2824,57 @@ button, .button, .stalk-button {
   font-weight: normal !important;
 }
 /* line 142, ../bower_components/foundation/scss/foundation/components/_buttons.scss */
-button:hover, button:focus, .button:hover, .stalk-button:hover, .button:focus, .stalk-button:focus {
-  background-color: #0079a1;
+button:hover, button:focus, .button:hover, .button:focus {
+  background-color: #19a589;
 }
 /* line 153, ../bower_components/foundation/scss/foundation/components/_buttons.scss */
-button:hover, button:focus, .button:hover, .stalk-button:hover, .button:focus, .stalk-button:focus {
+button:hover, button:focus, .button:hover, .button:focus {
   color: white;
 }
 /* line 205, ../bower_components/foundation/scss/foundation/components/_buttons.scss */
-button.secondary, .button.secondary, .secondary.stalk-button {
+button.secondary, .button.secondary {
   background-color: #e7e7e7;
   border-color: #dadada;
   color: #333333;
 }
 /* line 142, ../bower_components/foundation/scss/foundation/components/_buttons.scss */
-button.secondary:hover, button.secondary:focus, .button.secondary:hover, .secondary.stalk-button:hover, .button.secondary:focus, .secondary.stalk-button:focus {
+button.secondary:hover, button.secondary:focus, .button.secondary:hover, .button.secondary:focus {
   background-color: #dadada;
 }
 /* line 148, ../bower_components/foundation/scss/foundation/components/_buttons.scss */
-button.secondary:hover, button.secondary:focus, .button.secondary:hover, .secondary.stalk-button:hover, .button.secondary:focus, .secondary.stalk-button:focus {
+button.secondary:hover, button.secondary:focus, .button.secondary:hover, .button.secondary:focus {
   color: #333333;
 }
 /* line 206, ../bower_components/foundation/scss/foundation/components/_buttons.scss */
-button.success, .button.success, .success.stalk-button {
+button.success, .button.success {
   background-color: #43ac6a;
   border-color: #3c9a5f;
   color: white;
 }
 /* line 142, ../bower_components/foundation/scss/foundation/components/_buttons.scss */
-button.success:hover, button.success:focus, .button.success:hover, .success.stalk-button:hover, .button.success:focus, .success.stalk-button:focus {
+button.success:hover, button.success:focus, .button.success:hover, .button.success:focus {
   background-color: #3c9a5f;
 }
 /* line 153, ../bower_components/foundation/scss/foundation/components/_buttons.scss */
-button.success:hover, button.success:focus, .button.success:hover, .success.stalk-button:hover, .button.success:focus, .success.stalk-button:focus {
+button.success:hover, button.success:focus, .button.success:hover, .button.success:focus {
   color: white;
 }
 /* line 207, ../bower_components/foundation/scss/foundation/components/_buttons.scss */
-button.alert, .button.alert, .alert.stalk-button {
-  background-color: #f04124;
-  border-color: #ea2f10;
+button.alert, .button.alert {
+  background-color: #ea3a3a;
+  border-color: #e82323;
   color: white;
 }
 /* line 142, ../bower_components/foundation/scss/foundation/components/_buttons.scss */
-button.alert:hover, button.alert:focus, .button.alert:hover, .alert.stalk-button:hover, .button.alert:focus, .alert.stalk-button:focus {
-  background-color: #ea2f10;
+button.alert:hover, button.alert:focus, .button.alert:hover, .button.alert:focus {
+  background-color: #e82323;
 }
 /* line 153, ../bower_components/foundation/scss/foundation/components/_buttons.scss */
-button.alert:hover, button.alert:focus, .button.alert:hover, .alert.stalk-button:hover, .button.alert:focus, .alert.stalk-button:focus {
+button.alert:hover, button.alert:focus, .button.alert:hover, .button.alert:focus {
   color: white;
 }
 /* line 209, ../bower_components/foundation/scss/foundation/components/_buttons.scss */
-button.large, .button.large, .large.stalk-button {
+button.large, .button.large {
   padding-top: 1.125rem;
   padding-right: 2.25rem;
   padding-bottom: 1.1875rem;
@@ -2883,7 +2883,7 @@ button.large, .button.large, .large.stalk-button {
   /*     @else                            { font-size: $padding - rem-calc(2); } */
 }
 /* line 210, ../bower_components/foundation/scss/foundation/components/_buttons.scss */
-button.small, .button.small, .small.stalk-button {
+button.small, .button.small {
   padding-top: 0.875rem;
   padding-right: 1.75rem;
   padding-bottom: 0.9375rem;
@@ -2892,7 +2892,7 @@ button.small, .button.small, .small.stalk-button {
   /*     @else                            { font-size: $padding - rem-calc(2); } */
 }
 /* line 211, ../bower_components/foundation/scss/foundation/components/_buttons.scss */
-button.tiny, .button.tiny, .tiny.stalk-button {
+button.tiny, .button.tiny {
   padding-top: 0.625rem;
   padding-right: 1.25rem;
   padding-bottom: 0.6875rem;
@@ -2901,35 +2901,35 @@ button.tiny, .button.tiny, .tiny.stalk-button {
   /*     @else                            { font-size: $padding - rem-calc(2); } */
 }
 /* line 212, ../bower_components/foundation/scss/foundation/components/_buttons.scss */
-button.expand, .button.expand, .expand.stalk-button {
+button.expand, .button.expand {
   padding-right: 0;
   padding-left: 0;
   width: 100%;
 }
 /* line 214, ../bower_components/foundation/scss/foundation/components/_buttons.scss */
-button.left-align, .button.left-align, .left-align.stalk-button {
+button.left-align, .button.left-align {
   text-align: left;
   text-indent: 0.75rem;
 }
 /* line 215, ../bower_components/foundation/scss/foundation/components/_buttons.scss */
-button.right-align, .button.right-align, .right-align.stalk-button {
+button.right-align, .button.right-align {
   text-align: right;
   padding-right: 0.75rem;
 }
 /* line 217, ../bower_components/foundation/scss/foundation/components/_buttons.scss */
-button.radius, .button.radius, .radius.stalk-button {
+button.radius, .button.radius {
   -webkit-border-radius: 3px;
   border-radius: 3px;
 }
 /* line 218, ../bower_components/foundation/scss/foundation/components/_buttons.scss */
-button.round, .button.round, .round.stalk-button {
+button.round, .button.round {
   -webkit-border-radius: 1000px;
   border-radius: 1000px;
 }
 /* line 220, ../bower_components/foundation/scss/foundation/components/_buttons.scss */
-button.disabled, button[disabled], .button.disabled, .disabled.stalk-button, .button[disabled], [disabled].stalk-button {
-  background-color: #008cba;
-  border-color: #0079a1;
+button.disabled, button[disabled], .button.disabled, .button[disabled] {
+  background-color: #1cbb9b;
+  border-color: #19a589;
   color: white;
   cursor: default;
   opacity: 0.7;
@@ -2937,19 +2937,19 @@ button.disabled, button[disabled], .button.disabled, .disabled.stalk-button, .bu
   box-shadow: none;
 }
 /* line 142, ../bower_components/foundation/scss/foundation/components/_buttons.scss */
-button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .disabled.stalk-button:hover, .button.disabled:focus, .disabled.stalk-button:focus, .button[disabled]:hover, [disabled].stalk-button:hover, .button[disabled]:focus, [disabled].stalk-button:focus {
-  background-color: #0079a1;
+button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .button.disabled:focus, .button[disabled]:hover, .button[disabled]:focus {
+  background-color: #19a589;
 }
 /* line 153, ../bower_components/foundation/scss/foundation/components/_buttons.scss */
-button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .disabled.stalk-button:hover, .button.disabled:focus, .disabled.stalk-button:focus, .button[disabled]:hover, [disabled].stalk-button:hover, .button[disabled]:focus, [disabled].stalk-button:focus {
+button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .button.disabled:focus, .button[disabled]:hover, .button[disabled]:focus {
   color: white;
 }
 /* line 166, ../bower_components/foundation/scss/foundation/components/_buttons.scss */
-button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .disabled.stalk-button:hover, .button.disabled:focus, .disabled.stalk-button:focus, .button[disabled]:hover, [disabled].stalk-button:hover, .button[disabled]:focus, [disabled].stalk-button:focus {
-  background-color: #008cba;
+button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .button.disabled:focus, .button[disabled]:hover, .button[disabled]:focus {
+  background-color: #1cbb9b;
 }
 /* line 221, ../bower_components/foundation/scss/foundation/components/_buttons.scss */
-button.disabled.secondary, button[disabled].secondary, .button.disabled.secondary, .disabled.secondary.stalk-button, .button[disabled].secondary, [disabled].secondary.stalk-button {
+button.disabled.secondary, button[disabled].secondary, .button.disabled.secondary, .button[disabled].secondary {
   background-color: #e7e7e7;
   border-color: #dadada;
   color: #333333;
@@ -2959,19 +2959,19 @@ button.disabled.secondary, button[disabled].secondary, .button.disabled.secondar
   box-shadow: none;
 }
 /* line 142, ../bower_components/foundation/scss/foundation/components/_buttons.scss */
-button.disabled.secondary:hover, button.disabled.secondary:focus, button[disabled].secondary:hover, button[disabled].secondary:focus, .button.disabled.secondary:hover, .disabled.secondary.stalk-button:hover, .button.disabled.secondary:focus, .disabled.secondary.stalk-button:focus, .button[disabled].secondary:hover, [disabled].secondary.stalk-button:hover, .button[disabled].secondary:focus, [disabled].secondary.stalk-button:focus {
+button.disabled.secondary:hover, button.disabled.secondary:focus, button[disabled].secondary:hover, button[disabled].secondary:focus, .button.disabled.secondary:hover, .button.disabled.secondary:focus, .button[disabled].secondary:hover, .button[disabled].secondary:focus {
   background-color: #dadada;
 }
 /* line 148, ../bower_components/foundation/scss/foundation/components/_buttons.scss */
-button.disabled.secondary:hover, button.disabled.secondary:focus, button[disabled].secondary:hover, button[disabled].secondary:focus, .button.disabled.secondary:hover, .disabled.secondary.stalk-button:hover, .button.disabled.secondary:focus, .disabled.secondary.stalk-button:focus, .button[disabled].secondary:hover, [disabled].secondary.stalk-button:hover, .button[disabled].secondary:focus, [disabled].secondary.stalk-button:focus {
+button.disabled.secondary:hover, button.disabled.secondary:focus, button[disabled].secondary:hover, button[disabled].secondary:focus, .button.disabled.secondary:hover, .button.disabled.secondary:focus, .button[disabled].secondary:hover, .button[disabled].secondary:focus {
   color: #333333;
 }
 /* line 166, ../bower_components/foundation/scss/foundation/components/_buttons.scss */
-button.disabled.secondary:hover, button.disabled.secondary:focus, button[disabled].secondary:hover, button[disabled].secondary:focus, .button.disabled.secondary:hover, .disabled.secondary.stalk-button:hover, .button.disabled.secondary:focus, .disabled.secondary.stalk-button:focus, .button[disabled].secondary:hover, [disabled].secondary.stalk-button:hover, .button[disabled].secondary:focus, [disabled].secondary.stalk-button:focus {
+button.disabled.secondary:hover, button.disabled.secondary:focus, button[disabled].secondary:hover, button[disabled].secondary:focus, .button.disabled.secondary:hover, .button.disabled.secondary:focus, .button[disabled].secondary:hover, .button[disabled].secondary:focus {
   background-color: #e7e7e7;
 }
 /* line 222, ../bower_components/foundation/scss/foundation/components/_buttons.scss */
-button.disabled.success, button[disabled].success, .button.disabled.success, .disabled.success.stalk-button, .button[disabled].success, [disabled].success.stalk-button {
+button.disabled.success, button[disabled].success, .button.disabled.success, .button[disabled].success {
   background-color: #43ac6a;
   border-color: #3c9a5f;
   color: white;
@@ -2981,21 +2981,21 @@ button.disabled.success, button[disabled].success, .button.disabled.success, .di
   box-shadow: none;
 }
 /* line 142, ../bower_components/foundation/scss/foundation/components/_buttons.scss */
-button.disabled.success:hover, button.disabled.success:focus, button[disabled].success:hover, button[disabled].success:focus, .button.disabled.success:hover, .disabled.success.stalk-button:hover, .button.disabled.success:focus, .disabled.success.stalk-button:focus, .button[disabled].success:hover, [disabled].success.stalk-button:hover, .button[disabled].success:focus, [disabled].success.stalk-button:focus {
+button.disabled.success:hover, button.disabled.success:focus, button[disabled].success:hover, button[disabled].success:focus, .button.disabled.success:hover, .button.disabled.success:focus, .button[disabled].success:hover, .button[disabled].success:focus {
   background-color: #3c9a5f;
 }
 /* line 153, ../bower_components/foundation/scss/foundation/components/_buttons.scss */
-button.disabled.success:hover, button.disabled.success:focus, button[disabled].success:hover, button[disabled].success:focus, .button.disabled.success:hover, .disabled.success.stalk-button:hover, .button.disabled.success:focus, .disabled.success.stalk-button:focus, .button[disabled].success:hover, [disabled].success.stalk-button:hover, .button[disabled].success:focus, [disabled].success.stalk-button:focus {
+button.disabled.success:hover, button.disabled.success:focus, button[disabled].success:hover, button[disabled].success:focus, .button.disabled.success:hover, .button.disabled.success:focus, .button[disabled].success:hover, .button[disabled].success:focus {
   color: white;
 }
 /* line 166, ../bower_components/foundation/scss/foundation/components/_buttons.scss */
-button.disabled.success:hover, button.disabled.success:focus, button[disabled].success:hover, button[disabled].success:focus, .button.disabled.success:hover, .disabled.success.stalk-button:hover, .button.disabled.success:focus, .disabled.success.stalk-button:focus, .button[disabled].success:hover, [disabled].success.stalk-button:hover, .button[disabled].success:focus, [disabled].success.stalk-button:focus {
+button.disabled.success:hover, button.disabled.success:focus, button[disabled].success:hover, button[disabled].success:focus, .button.disabled.success:hover, .button.disabled.success:focus, .button[disabled].success:hover, .button[disabled].success:focus {
   background-color: #43ac6a;
 }
 /* line 223, ../bower_components/foundation/scss/foundation/components/_buttons.scss */
-button.disabled.alert, button[disabled].alert, .button.disabled.alert, .disabled.alert.stalk-button, .button[disabled].alert, [disabled].alert.stalk-button {
-  background-color: #f04124;
-  border-color: #ea2f10;
+button.disabled.alert, button[disabled].alert, .button.disabled.alert, .button[disabled].alert {
+  background-color: #ea3a3a;
+  border-color: #e82323;
   color: white;
   cursor: default;
   opacity: 0.7;
@@ -3003,21 +3003,21 @@ button.disabled.alert, button[disabled].alert, .button.disabled.alert, .disabled
   box-shadow: none;
 }
 /* line 142, ../bower_components/foundation/scss/foundation/components/_buttons.scss */
-button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert:hover, button[disabled].alert:focus, .button.disabled.alert:hover, .disabled.alert.stalk-button:hover, .button.disabled.alert:focus, .disabled.alert.stalk-button:focus, .button[disabled].alert:hover, [disabled].alert.stalk-button:hover, .button[disabled].alert:focus, [disabled].alert.stalk-button:focus {
-  background-color: #ea2f10;
+button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert:hover, button[disabled].alert:focus, .button.disabled.alert:hover, .button.disabled.alert:focus, .button[disabled].alert:hover, .button[disabled].alert:focus {
+  background-color: #e82323;
 }
 /* line 153, ../bower_components/foundation/scss/foundation/components/_buttons.scss */
-button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert:hover, button[disabled].alert:focus, .button.disabled.alert:hover, .disabled.alert.stalk-button:hover, .button.disabled.alert:focus, .disabled.alert.stalk-button:focus, .button[disabled].alert:hover, [disabled].alert.stalk-button:hover, .button[disabled].alert:focus, [disabled].alert.stalk-button:focus {
+button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert:hover, button[disabled].alert:focus, .button.disabled.alert:hover, .button.disabled.alert:focus, .button[disabled].alert:hover, .button[disabled].alert:focus {
   color: white;
 }
 /* line 166, ../bower_components/foundation/scss/foundation/components/_buttons.scss */
-button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert:hover, button[disabled].alert:focus, .button.disabled.alert:hover, .disabled.alert.stalk-button:hover, .button.disabled.alert:focus, .disabled.alert.stalk-button:focus, .button[disabled].alert:hover, [disabled].alert.stalk-button:hover, .button[disabled].alert:focus, [disabled].alert.stalk-button:focus {
-  background-color: #f04124;
+button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert:hover, button[disabled].alert:focus, .button.disabled.alert:hover, .button.disabled.alert:focus, .button[disabled].alert:hover, .button[disabled].alert:focus {
+  background-color: #ea3a3a;
 }
 
 @media only screen and (min-width: 40.063em) {
   /* line 228, ../bower_components/foundation/scss/foundation/components/_buttons.scss */
-  button, .button, .stalk-button {
+  button, .button {
     display: inline-block;
   }
 }
@@ -3042,7 +3042,7 @@ button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert
   float: left;
 }
 /* line 35, ../bower_components/foundation/scss/foundation/components/_button-groups.scss */
-.button-group > * > button, .button-group > * .button, .button-group > * .stalk-button {
+.button-group > * > button, .button-group > * .button {
   border-right: 1px solid;
   border-color: rgba(255, 255, 255, 0.5);
 }
@@ -3051,12 +3051,12 @@ button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert
   margin-left: 0;
 }
 /* line 35, ../bower_components/foundation/scss/foundation/components/_button-groups.scss */
-.button-group.radius > * > button, .button-group.radius > * .button, .button-group.radius > * .stalk-button {
+.button-group.radius > * > button, .button-group.radius > * .button {
   border-right: 1px solid;
   border-color: rgba(255, 255, 255, 0.5);
 }
 /* line 63, ../bower_components/foundation/scss/foundation/components/_button-groups.scss */
-.button-group.radius > *:first-child, .button-group.radius > *:first-child > a, .button-group.radius > *:first-child > button, .button-group.radius > *:first-child > .button, .button-group.radius > *:first-child > .stalk-button {
+.button-group.radius > *:first-child, .button-group.radius > *:first-child > a, .button-group.radius > *:first-child > button, .button-group.radius > *:first-child > .button {
   -moz-border-radius-bottomleft: 3px;
   -moz-border-radius-topleft: 3px;
   -webkit-border-bottom-left-radius: 3px;
@@ -3065,7 +3065,7 @@ button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert
   border-top-left-radius: 3px;
 }
 /* line 67, ../bower_components/foundation/scss/foundation/components/_button-groups.scss */
-.button-group.radius > *:last-child, .button-group.radius > *:last-child > a, .button-group.radius > *:last-child > button, .button-group.radius > *:last-child > .button, .button-group.radius > *:last-child > .stalk-button {
+.button-group.radius > *:last-child, .button-group.radius > *:last-child > a, .button-group.radius > *:last-child > button, .button-group.radius > *:last-child > .button {
   -moz-border-radius-topright: 3px;
   -moz-border-radius-bottomright: 3px;
   -webkit-border-top-right-radius: 3px;
@@ -3074,12 +3074,12 @@ button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert
   border-bottom-right-radius: 3px;
 }
 /* line 35, ../bower_components/foundation/scss/foundation/components/_button-groups.scss */
-.button-group.round > * > button, .button-group.round > * .button, .button-group.round > * .stalk-button {
+.button-group.round > * > button, .button-group.round > * .button {
   border-right: 1px solid;
   border-color: rgba(255, 255, 255, 0.5);
 }
 /* line 63, ../bower_components/foundation/scss/foundation/components/_button-groups.scss */
-.button-group.round > *:first-child, .button-group.round > *:first-child > a, .button-group.round > *:first-child > button, .button-group.round > *:first-child > .button, .button-group.round > *:first-child > .stalk-button {
+.button-group.round > *:first-child, .button-group.round > *:first-child > a, .button-group.round > *:first-child > button, .button-group.round > *:first-child > .button {
   -moz-border-radius-bottomleft: 1000px;
   -moz-border-radius-topleft: 1000px;
   -webkit-border-bottom-left-radius: 1000px;
@@ -3088,7 +3088,7 @@ button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert
   border-top-left-radius: 1000px;
 }
 /* line 67, ../bower_components/foundation/scss/foundation/components/_button-groups.scss */
-.button-group.round > *:last-child, .button-group.round > *:last-child > a, .button-group.round > *:last-child > button, .button-group.round > *:last-child > .button, .button-group.round > *:last-child > .stalk-button {
+.button-group.round > *:last-child, .button-group.round > *:last-child > a, .button-group.round > *:last-child > button, .button-group.round > *:last-child > .button {
   -moz-border-radius-topright: 1000px;
   -moz-border-radius-bottomright: 1000px;
   -webkit-border-top-right-radius: 1000px;
@@ -3101,12 +3101,12 @@ button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert
   width: 50%;
 }
 /* line 35, ../bower_components/foundation/scss/foundation/components/_button-groups.scss */
-.button-group.even-2 li > button, .button-group.even-2 li .button, .button-group.even-2 li .stalk-button {
+.button-group.even-2 li > button, .button-group.even-2 li .button {
   border-right: 1px solid;
   border-color: rgba(255, 255, 255, 0.5);
 }
 /* line 73, ../bower_components/foundation/scss/foundation/components/_button-groups.scss */
-.button-group.even-2 li button, .button-group.even-2 li .button, .button-group.even-2 li .stalk-button {
+.button-group.even-2 li button, .button-group.even-2 li .button {
   width: 100%;
 }
 /* line 88, ../bower_components/foundation/scss/foundation/components/_button-groups.scss */
@@ -3114,12 +3114,12 @@ button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert
   width: 33.33333%;
 }
 /* line 35, ../bower_components/foundation/scss/foundation/components/_button-groups.scss */
-.button-group.even-3 li > button, .button-group.even-3 li .button, .button-group.even-3 li .stalk-button {
+.button-group.even-3 li > button, .button-group.even-3 li .button {
   border-right: 1px solid;
   border-color: rgba(255, 255, 255, 0.5);
 }
 /* line 73, ../bower_components/foundation/scss/foundation/components/_button-groups.scss */
-.button-group.even-3 li button, .button-group.even-3 li .button, .button-group.even-3 li .stalk-button {
+.button-group.even-3 li button, .button-group.even-3 li .button {
   width: 100%;
 }
 /* line 88, ../bower_components/foundation/scss/foundation/components/_button-groups.scss */
@@ -3127,12 +3127,12 @@ button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert
   width: 25%;
 }
 /* line 35, ../bower_components/foundation/scss/foundation/components/_button-groups.scss */
-.button-group.even-4 li > button, .button-group.even-4 li .button, .button-group.even-4 li .stalk-button {
+.button-group.even-4 li > button, .button-group.even-4 li .button {
   border-right: 1px solid;
   border-color: rgba(255, 255, 255, 0.5);
 }
 /* line 73, ../bower_components/foundation/scss/foundation/components/_button-groups.scss */
-.button-group.even-4 li button, .button-group.even-4 li .button, .button-group.even-4 li .stalk-button {
+.button-group.even-4 li button, .button-group.even-4 li .button {
   width: 100%;
 }
 /* line 88, ../bower_components/foundation/scss/foundation/components/_button-groups.scss */
@@ -3140,12 +3140,12 @@ button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert
   width: 20%;
 }
 /* line 35, ../bower_components/foundation/scss/foundation/components/_button-groups.scss */
-.button-group.even-5 li > button, .button-group.even-5 li .button, .button-group.even-5 li .stalk-button {
+.button-group.even-5 li > button, .button-group.even-5 li .button {
   border-right: 1px solid;
   border-color: rgba(255, 255, 255, 0.5);
 }
 /* line 73, ../bower_components/foundation/scss/foundation/components/_button-groups.scss */
-.button-group.even-5 li button, .button-group.even-5 li .button, .button-group.even-5 li .stalk-button {
+.button-group.even-5 li button, .button-group.even-5 li .button {
   width: 100%;
 }
 /* line 88, ../bower_components/foundation/scss/foundation/components/_button-groups.scss */
@@ -3153,12 +3153,12 @@ button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert
   width: 16.66667%;
 }
 /* line 35, ../bower_components/foundation/scss/foundation/components/_button-groups.scss */
-.button-group.even-6 li > button, .button-group.even-6 li .button, .button-group.even-6 li .stalk-button {
+.button-group.even-6 li > button, .button-group.even-6 li .button {
   border-right: 1px solid;
   border-color: rgba(255, 255, 255, 0.5);
 }
 /* line 73, ../bower_components/foundation/scss/foundation/components/_button-groups.scss */
-.button-group.even-6 li button, .button-group.even-6 li .button, .button-group.even-6 li .stalk-button {
+.button-group.even-6 li button, .button-group.even-6 li .button {
   width: 100%;
 }
 /* line 88, ../bower_components/foundation/scss/foundation/components/_button-groups.scss */
@@ -3166,12 +3166,12 @@ button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert
   width: 14.28571%;
 }
 /* line 35, ../bower_components/foundation/scss/foundation/components/_button-groups.scss */
-.button-group.even-7 li > button, .button-group.even-7 li .button, .button-group.even-7 li .stalk-button {
+.button-group.even-7 li > button, .button-group.even-7 li .button {
   border-right: 1px solid;
   border-color: rgba(255, 255, 255, 0.5);
 }
 /* line 73, ../bower_components/foundation/scss/foundation/components/_button-groups.scss */
-.button-group.even-7 li button, .button-group.even-7 li .button, .button-group.even-7 li .stalk-button {
+.button-group.even-7 li button, .button-group.even-7 li .button {
   width: 100%;
 }
 /* line 88, ../bower_components/foundation/scss/foundation/components/_button-groups.scss */
@@ -3179,12 +3179,12 @@ button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert
   width: 12.5%;
 }
 /* line 35, ../bower_components/foundation/scss/foundation/components/_button-groups.scss */
-.button-group.even-8 li > button, .button-group.even-8 li .button, .button-group.even-8 li .stalk-button {
+.button-group.even-8 li > button, .button-group.even-8 li .button {
   border-right: 1px solid;
   border-color: rgba(255, 255, 255, 0.5);
 }
 /* line 73, ../bower_components/foundation/scss/foundation/components/_button-groups.scss */
-.button-group.even-8 li button, .button-group.even-8 li .button, .button-group.even-8 li .stalk-button {
+.button-group.even-8 li button, .button-group.even-8 li .button {
   width: 100%;
 }
 
@@ -3571,12 +3571,12 @@ button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert
 }
 
 /* line 118, ../bower_components/foundation/scss/foundation/components/_dropdown-buttons.scss */
-.dropdown.button, .dropdown.stalk-button {
+.dropdown.button {
   position: relative;
   padding-right: 3.5625rem;
 }
 /* line 58, ../bower_components/foundation/scss/foundation/components/_dropdown-buttons.scss */
-.dropdown.button:before, .dropdown.stalk-button:before {
+.dropdown.button:before {
   position: absolute;
   content: "";
   width: 0;
@@ -3587,59 +3587,59 @@ button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert
   top: 50%;
 }
 /* line 93, ../bower_components/foundation/scss/foundation/components/_dropdown-buttons.scss */
-.dropdown.button:before, .dropdown.stalk-button:before {
+.dropdown.button:before {
   border-width: 0.375rem;
   right: 1.40625rem;
   margin-top: -0.15625rem;
 }
 /* line 112, ../bower_components/foundation/scss/foundation/components/_dropdown-buttons.scss */
-.dropdown.button:before, .dropdown.stalk-button:before {
+.dropdown.button:before {
   border-color: white transparent transparent transparent;
 }
 /* line 119, ../bower_components/foundation/scss/foundation/components/_dropdown-buttons.scss */
-.dropdown.button.tiny, .dropdown.tiny.stalk-button {
+.dropdown.button.tiny {
   padding-right: 2.625rem;
 }
 /* line 73, ../bower_components/foundation/scss/foundation/components/_dropdown-buttons.scss */
-.dropdown.button.tiny:before, .dropdown.tiny.stalk-button:before {
+.dropdown.button.tiny:before {
   border-width: 0.375rem;
   right: 1.125rem;
   margin-top: -0.125rem;
 }
 /* line 112, ../bower_components/foundation/scss/foundation/components/_dropdown-buttons.scss */
-.dropdown.button.tiny:before, .dropdown.tiny.stalk-button:before {
+.dropdown.button.tiny:before {
   border-color: white transparent transparent transparent;
 }
 /* line 120, ../bower_components/foundation/scss/foundation/components/_dropdown-buttons.scss */
-.dropdown.button.small, .dropdown.small.stalk-button {
+.dropdown.button.small {
   padding-right: 3.0625rem;
 }
 /* line 83, ../bower_components/foundation/scss/foundation/components/_dropdown-buttons.scss */
-.dropdown.button.small:before, .dropdown.small.stalk-button:before {
+.dropdown.button.small:before {
   border-width: 0.4375rem;
   right: 1.3125rem;
   margin-top: -0.15625rem;
 }
 /* line 112, ../bower_components/foundation/scss/foundation/components/_dropdown-buttons.scss */
-.dropdown.button.small:before, .dropdown.small.stalk-button:before {
+.dropdown.button.small:before {
   border-color: white transparent transparent transparent;
 }
 /* line 121, ../bower_components/foundation/scss/foundation/components/_dropdown-buttons.scss */
-.dropdown.button.large, .dropdown.large.stalk-button {
+.dropdown.button.large {
   padding-right: 3.625rem;
 }
 /* line 103, ../bower_components/foundation/scss/foundation/components/_dropdown-buttons.scss */
-.dropdown.button.large:before, .dropdown.large.stalk-button:before {
+.dropdown.button.large:before {
   border-width: 0.3125rem;
   right: 1.71875rem;
   margin-top: -0.15625rem;
 }
 /* line 112, ../bower_components/foundation/scss/foundation/components/_dropdown-buttons.scss */
-.dropdown.button.large:before, .dropdown.large.stalk-button:before {
+.dropdown.button.large:before {
   border-color: white transparent transparent transparent;
 }
 /* line 122, ../bower_components/foundation/scss/foundation/components/_dropdown-buttons.scss */
-.dropdown.button.secondary:before, .dropdown.secondary.stalk-button:before {
+.dropdown.button.secondary:before {
   border-color: #333333 transparent transparent transparent;
 }
 
@@ -3797,7 +3797,7 @@ select:hover {
 
 /* Adjust padding, alignment and radius if pre/post element is a button */
 /* line 346, ../bower_components/foundation/scss/foundation/components/_forms.scss */
-.postfix.button, .postfix.stalk-button {
+.postfix.button {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
@@ -3808,7 +3808,7 @@ select:hover {
 }
 
 /* line 347, ../bower_components/foundation/scss/foundation/components/_forms.scss */
-.prefix.button, .prefix.stalk-button {
+.prefix.button {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
@@ -3819,7 +3819,7 @@ select:hover {
 }
 
 /* line 349, ../bower_components/foundation/scss/foundation/components/_forms.scss */
-.prefix.button.radius, .prefix.radius.stalk-button {
+.prefix.button.radius {
   -webkit-border-radius: 0;
   border-radius: 0;
   -moz-border-radius-bottomleft: 3px;
@@ -3831,7 +3831,7 @@ select:hover {
 }
 
 /* line 350, ../bower_components/foundation/scss/foundation/components/_forms.scss */
-.postfix.button.radius, .postfix.radius.stalk-button {
+.postfix.button.radius {
   -webkit-border-radius: 0;
   border-radius: 0;
   -moz-border-radius-topright: 3px;
@@ -3843,7 +3843,7 @@ select:hover {
 }
 
 /* line 351, ../bower_components/foundation/scss/foundation/components/_forms.scss */
-.prefix.button.round, .prefix.round.stalk-button {
+.prefix.button.round {
   -webkit-border-radius: 0;
   border-radius: 0;
   -moz-border-radius-bottomleft: 1000px;
@@ -3855,7 +3855,7 @@ select:hover {
 }
 
 /* line 352, ../bower_components/foundation/scss/foundation/components/_forms.scss */
-.postfix.button.round, .postfix.round.stalk-button {
+.postfix.button.round {
   -webkit-border-radius: 0;
   border-radius: 0;
   -moz-border-radius-topright: 1000px;
@@ -3977,29 +3977,9 @@ textarea {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  -webkit-transition: -webkit-box-shadow 0.45s, border-color 0.45s ease-in-out;
-  -moz-transition: -moz-box-shadow 0.45s, border-color 0.45s ease-in-out;
-  transition: box-shadow 0.45s, border-color 0.45s ease-in-out;
-}
-/* line 182, ../bower_components/foundation/scss/foundation/components/_global.scss */
-input[type="text"]:focus,
-input[type="password"]:focus,
-input[type="date"]:focus,
-input[type="datetime"]:focus,
-input[type="datetime-local"]:focus,
-input[type="month"]:focus,
-input[type="week"]:focus,
-input[type="email"]:focus,
-input[type="number"]:focus,
-input[type="search"]:focus,
-input[type="tel"]:focus,
-input[type="time"]:focus,
-input[type="url"]:focus,
-textarea:focus {
-  -webkit-box-shadow: 0 0 5px #999999;
-  -moz-box-shadow: 0 0 5px #999999;
-  box-shadow: 0 0 5px #999999;
-  border-color: #999999;
+  -webkit-transition: all 0.15s linear;
+  -moz-transition: all 0.15s linear;
+  transition: all 0.15s linear;
 }
 /* line 123, ../bower_components/foundation/scss/foundation/components/_forms.scss */
 input[type="text"]:focus,
@@ -4089,7 +4069,7 @@ fieldset legend {
   font-size: 0.75rem;
   font-weight: normal;
   font-style: italic;
-  background: #f04124;
+  background: #ea3a3a;
   color: white;
 }
 /* line 439, ../bower_components/foundation/scss/foundation/components/_forms.scss */
@@ -4106,7 +4086,7 @@ span.error, small.error {
   font-size: 0.75rem;
   font-weight: normal;
   font-style: italic;
-  background: #f04124;
+  background: #ea3a3a;
   color: white;
 }
 
@@ -4119,7 +4099,7 @@ span.error, small.error {
 /* line 452, ../bower_components/foundation/scss/foundation/components/_forms.scss */
 .error label,
 .error label.error {
-  color: #f04124;
+  color: #ea3a3a;
 }
 /* line 457, ../bower_components/foundation/scss/foundation/components/_forms.scss */
 .error > small,
@@ -4131,7 +4111,7 @@ span.error, small.error {
   font-size: 0.75rem;
   font-weight: normal;
   font-style: italic;
-  background: #f04124;
+  background: #ea3a3a;
   color: white;
 }
 /* line 461, ../bower_components/foundation/scss/foundation/components/_forms.scss */
@@ -4147,7 +4127,7 @@ textarea.error {
 
 /* line 470, ../bower_components/foundation/scss/foundation/components/_forms.scss */
 label.error {
-  color: #f04124;
+  color: #ea3a3a;
 }
 
 /* line 48, ../bower_components/foundation/scss/foundation/components/_inline-lists.scss */
@@ -4205,7 +4185,7 @@ label.error {
   padding: 1.125rem 1.25rem 1.5rem;
 }
 /* line 71, ../bower_components/foundation/scss/foundation/components/_joyride.scss */
-.joyride-content-wrapper .button, .joyride-content-wrapper .stalk-button {
+.joyride-content-wrapper .button {
   margin-bottom: 0 !important;
 }
 
@@ -4401,7 +4381,7 @@ kbd {
   margin-bottom: inherit;
   padding: 0.25rem 0.5rem 0.375rem;
   font-size: 0.6875rem;
-  background-color: #008cba;
+  background-color: #1cbb9b;
   color: white;
 }
 /* line 92, ../bower_components/foundation/scss/foundation/components/_labels.scss */
@@ -4416,7 +4396,7 @@ kbd {
 }
 /* line 95, ../bower_components/foundation/scss/foundation/components/_labels.scss */
 .label.alert {
-  background-color: #f04124;
+  background-color: #ea3a3a;
   color: white;
 }
 /* line 96, ../bower_components/foundation/scss/foundation/components/_labels.scss */
@@ -4837,14 +4817,14 @@ ul.pagination li.unavailable:hover a, ul.pagination li.unavailable a:focus {
 }
 /* line 60, ../bower_components/foundation/scss/foundation/components/_pagination.scss */
 ul.pagination li.current a {
-  background: #008cba;
+  background: #1cbb9b;
   color: white;
   font-weight: bold;
   cursor: default;
 }
 /* line 67, ../bower_components/foundation/scss/foundation/components/_pagination.scss */
 ul.pagination li.current a:hover, ul.pagination li.current a:focus {
-  background: #008cba;
+  background: #1cbb9b;
 }
 /* line 119, ../bower_components/foundation/scss/foundation/components/_pagination.scss */
 ul.pagination li {
@@ -4898,10 +4878,10 @@ ul.pagination li {
 .panel.callout {
   border-style: solid;
   border-width: 1px;
-  border-color: #baeeff;
+  border-color: #d3f8f1;
   margin-bottom: 1.25rem;
   padding: 1.25rem;
-  background: #edfbff;
+  background: white;
 }
 /* line 48, ../bower_components/foundation/scss/foundation/components/_panels.scss */
 .panel.callout > :first-child {
@@ -4926,7 +4906,7 @@ ul.pagination li {
 }
 /* line 74, ../bower_components/foundation/scss/foundation/components/_panels.scss */
 .panel.callout a {
-  color: #008cba;
+  color: #1cbb9b;
 }
 /* line 79, ../bower_components/foundation/scss/foundation/components/_panels.scss */
 .panel.radius {
@@ -5005,7 +4985,7 @@ ul.pagination li {
 }
 /* line 57, ../bower_components/foundation/scss/foundation/components/_progress-bars.scss */
 .progress .meter {
-  background: #008cba;
+  background: #1cbb9b;
   height: 100%;
   display: block;
 }
@@ -5023,7 +5003,7 @@ ul.pagination li {
 }
 /* line 62, ../bower_components/foundation/scss/foundation/components/_progress-bars.scss */
 .progress.alert .meter {
-  background: #f04124;
+  background: #ea3a3a;
   height: 100%;
   display: block;
 }
@@ -5054,7 +5034,7 @@ ul.pagination li {
   height: 100%;
   width: 100%;
   background: black;
-  background: rgba(0, 0, 0, 0.45);
+  background: rgba(0, 0, 0, 0.6);
   z-index: 98;
   display: none;
   top: 0;
@@ -5073,9 +5053,9 @@ ul.pagination li {
   width: 80%;
   background-color: white;
   padding: 1.25rem;
-  border: solid 1px #666666;
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  border: none 0px #666666;
+  -webkit-box-shadow: none;
+  box-shadow: none;
   top: 50px;
 }
 /* line 71, ../bower_components/foundation/scss/foundation/components/_reveal.scss */
@@ -5093,11 +5073,11 @@ ul.pagination li {
 }
 /* line 144, ../bower_components/foundation/scss/foundation/components/_reveal.scss */
 .reveal-modal .close-reveal-modal {
-  font-size: 1.375rem;
+  font-size: 1.875rem;
   line-height: 1;
   position: absolute;
   top: 0.5rem;
-  right: 0.6875rem;
+  right: 1.125rem;
   color: #aaaaaa;
   font-weight: bold;
   cursor: pointer;
@@ -5158,7 +5138,7 @@ ul.pagination li {
 /* line 58, ../bower_components/foundation/scss/foundation/components/_side-nav.scss */
 .side-nav li a {
   display: block;
-  color: #008cba;
+  color: #1cbb9b;
 }
 /* line 63, ../bower_components/foundation/scss/foundation/components/_side-nav.scss */
 .side-nav li.active > a:first-child {
@@ -5176,12 +5156,12 @@ ul.pagination li {
 }
 
 /* line 169, ../bower_components/foundation/scss/foundation/components/_split-buttons.scss */
-.split.button, .split.stalk-button {
+.split.button {
   position: relative;
   padding-right: 5.0625rem;
 }
 /* line 72, ../bower_components/foundation/scss/foundation/components/_split-buttons.scss */
-.split.button span, .split.stalk-button span {
+.split.button span {
   display: block;
   height: 100%;
   position: absolute;
@@ -5190,7 +5170,7 @@ ul.pagination li {
   border-left: solid 1px;
 }
 /* line 81, ../bower_components/foundation/scss/foundation/components/_split-buttons.scss */
-.split.button span:before, .split.stalk-button span:before {
+.split.button span:before {
   position: absolute;
   content: "";
   width: 0;
@@ -5201,99 +5181,99 @@ ul.pagination li {
   left: 50%;
 }
 /* line 93, ../bower_components/foundation/scss/foundation/components/_split-buttons.scss */
-.split.button span:active, .split.stalk-button span:active {
+.split.button span:active {
   background-color: rgba(0, 0, 0, 0.1);
 }
 /* line 99, ../bower_components/foundation/scss/foundation/components/_split-buttons.scss */
-.split.button span, .split.stalk-button span {
+.split.button span {
   border-left-color: rgba(255, 255, 255, 0.5);
 }
 /* line 136, ../bower_components/foundation/scss/foundation/components/_split-buttons.scss */
-.split.button span, .split.stalk-button span {
+.split.button span {
   width: 3.09375rem;
 }
 /* line 137, ../bower_components/foundation/scss/foundation/components/_split-buttons.scss */
-.split.button span:before, .split.stalk-button span:before {
+.split.button span:before {
   border-top-style: solid;
   border-width: 0.375rem;
   top: 48%;
   margin-left: -0.375rem;
 }
 /* line 162, ../bower_components/foundation/scss/foundation/components/_split-buttons.scss */
-.split.button span:before, .split.stalk-button span:before {
+.split.button span:before {
   border-color: white transparent transparent transparent;
 }
 /* line 99, ../bower_components/foundation/scss/foundation/components/_split-buttons.scss */
-.split.button.secondary span, .split.secondary.stalk-button span {
+.split.button.secondary span {
   border-left-color: rgba(255, 255, 255, 0.5);
 }
 /* line 162, ../bower_components/foundation/scss/foundation/components/_split-buttons.scss */
-.split.button.secondary span:before, .split.secondary.stalk-button span:before {
+.split.button.secondary span:before {
   border-color: white transparent transparent transparent;
 }
 /* line 99, ../bower_components/foundation/scss/foundation/components/_split-buttons.scss */
-.split.button.alert span, .split.alert.stalk-button span {
+.split.button.alert span {
   border-left-color: rgba(255, 255, 255, 0.5);
 }
 /* line 99, ../bower_components/foundation/scss/foundation/components/_split-buttons.scss */
-.split.button.success span, .split.success.stalk-button span {
+.split.button.success span {
   border-left-color: rgba(255, 255, 255, 0.5);
 }
 /* line 175, ../bower_components/foundation/scss/foundation/components/_split-buttons.scss */
-.split.button.tiny, .split.tiny.stalk-button {
+.split.button.tiny {
   padding-right: 3.75rem;
 }
 /* line 108, ../bower_components/foundation/scss/foundation/components/_split-buttons.scss */
-.split.button.tiny span, .split.tiny.stalk-button span {
+.split.button.tiny span {
   width: 2.25rem;
 }
 /* line 109, ../bower_components/foundation/scss/foundation/components/_split-buttons.scss */
-.split.button.tiny span:before, .split.tiny.stalk-button span:before {
+.split.button.tiny span:before {
   border-top-style: solid;
   border-width: 0.375rem;
   top: 48%;
   margin-left: -0.375rem;
 }
 /* line 176, ../bower_components/foundation/scss/foundation/components/_split-buttons.scss */
-.split.button.small, .split.small.stalk-button {
+.split.button.small {
   padding-right: 4.375rem;
 }
 /* line 122, ../bower_components/foundation/scss/foundation/components/_split-buttons.scss */
-.split.button.small span, .split.small.stalk-button span {
+.split.button.small span {
   width: 2.625rem;
 }
 /* line 123, ../bower_components/foundation/scss/foundation/components/_split-buttons.scss */
-.split.button.small span:before, .split.small.stalk-button span:before {
+.split.button.small span:before {
   border-top-style: solid;
   border-width: 0.4375rem;
   top: 48%;
   margin-left: -0.375rem;
 }
 /* line 177, ../bower_components/foundation/scss/foundation/components/_split-buttons.scss */
-.split.button.large, .split.large.stalk-button {
+.split.button.large {
   padding-right: 5.5rem;
 }
 /* line 150, ../bower_components/foundation/scss/foundation/components/_split-buttons.scss */
-.split.button.large span, .split.large.stalk-button span {
+.split.button.large span {
   width: 3.4375rem;
 }
 /* line 151, ../bower_components/foundation/scss/foundation/components/_split-buttons.scss */
-.split.button.large span:before, .split.large.stalk-button span:before {
+.split.button.large span:before {
   border-top-style: solid;
   border-width: 0.3125rem;
   top: 48%;
   margin-left: -0.375rem;
 }
 /* line 178, ../bower_components/foundation/scss/foundation/components/_split-buttons.scss */
-.split.button.expand, .split.expand.stalk-button {
+.split.button.expand {
   padding-left: 2rem;
 }
 /* line 162, ../bower_components/foundation/scss/foundation/components/_split-buttons.scss */
-.split.button.secondary span:before, .split.secondary.stalk-button span:before {
+.split.button.secondary span:before {
   border-color: #333333 transparent transparent transparent;
 }
 /* line 182, ../bower_components/foundation/scss/foundation/components/_split-buttons.scss */
-.split.button.radius span, .split.radius.stalk-button span {
+.split.button.radius span {
   -moz-border-radius-topright: 3px;
   -moz-border-radius-bottomright: 3px;
   -webkit-border-top-right-radius: 3px;
@@ -5302,7 +5282,7 @@ ul.pagination li {
   border-bottom-right-radius: 3px;
 }
 /* line 183, ../bower_components/foundation/scss/foundation/components/_split-buttons.scss */
-.split.button.round span, .split.round.stalk-button span {
+.split.button.round span {
   -moz-border-radius-topright: 1000px;
   -moz-border-radius-bottomright: 1000px;
   -webkit-border-top-right-radius: 1000px;
@@ -5349,7 +5329,7 @@ ul.pagination li {
 .sub-nav dt a:hover,
 .sub-nav dd a:hover,
 .sub-nav li a:hover {
-  color: #0079a1;
+  color: #19a589;
 }
 /* line 87, ../bower_components/foundation/scss/foundation/components/_sub-nav.scss */
 .sub-nav dt.active a,
@@ -5358,7 +5338,7 @@ ul.pagination li {
   -webkit-border-radius: 3px;
   border-radius: 3px;
   font-weight: normal;
-  background: #008cba;
+  background: #1cbb9b;
   padding: 0.1875rem 1rem;
   cursor: default;
   color: white;
@@ -5367,7 +5347,7 @@ ul.pagination li {
 .sub-nav dt.active a:hover,
 .sub-nav dd.active a:hover,
 .sub-nav li.active a:hover {
-  background: #0079a1;
+  background: #19a589;
 }
 
 /* line 287, ../bower_components/foundation/scss/foundation/components/_switch.scss */
@@ -5781,8 +5761,8 @@ table tfoot tr td {
 }
 /* line 49, ../bower_components/foundation/scss/foundation/components/_thumbs.scss */
 .th:hover, .th:focus {
-  -webkit-box-shadow: 0 0 6px 1px rgba(0, 140, 186, 0.5);
-  box-shadow: 0 0 6px 1px rgba(0, 140, 186, 0.5);
+  -webkit-box-shadow: 0 0 6px 1px rgba(28, 187, 155, 0.5);
+  box-shadow: 0 0 6px 1px rgba(28, 187, 155, 0.5);
 }
 /* line 66, ../bower_components/foundation/scss/foundation/components/_thumbs.scss */
 .th.radius {
@@ -5806,8 +5786,8 @@ a.th {
 }
 /* line 39, ../bower_components/foundation/scss/foundation/components/_tooltips.scss */
 .has-tip:hover, .has-tip:focus {
-  border-bottom: dotted 1px #003f54;
-  color: #008cba;
+  border-bottom: dotted 1px #0f6251;
+  color: #1cbb9b;
 }
 /* line 45, ../bower_components/foundation/scss/foundation/components/_tooltips.scss */
 .has-tip.tip-left, .has-tip.tip-right {
@@ -5844,8 +5824,8 @@ a.th {
 }
 /* line 74, ../bower_components/foundation/scss/foundation/components/_tooltips.scss */
 .tooltip.opened {
-  color: #008cba !important;
-  border-bottom: dotted 1px #003f54 !important;
+  color: #1cbb9b !important;
+  border-bottom: dotted 1px #0f6251 !important;
 }
 
 /* line 80, ../bower_components/foundation/scss/foundation/components/_tooltips.scss */
@@ -5933,13 +5913,13 @@ td {
 /* Default Link Styles */
 /* line 152, ../bower_components/foundation/scss/foundation/components/_type.scss */
 a {
-  color: #008cba;
+  color: #1cbb9b;
   text-decoration: none;
   line-height: inherit;
 }
 /* line 158, ../bower_components/foundation/scss/foundation/components/_type.scss */
 a:hover, a:focus {
-  color: #0079a1;
+  color: #19a589;
 }
 /* line 160, ../bower_components/foundation/scss/foundation/components/_type.scss */
 a img {
@@ -6046,7 +6026,7 @@ small {
 code {
   font-family: Consolas, "Liberation Mono", Courier, monospace;
   font-weight: bold;
-  color: #bb260d;
+  color: #c31515;
 }
 
 /* Lists */
@@ -6418,7 +6398,7 @@ meta.foundation-mq-topbar {
   font-size: 0.75rem;
 }
 /* line 141, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
-.top-bar .button, .top-bar .stalk-button {
+.top-bar .button {
   padding-top: .45rem;
   padding-bottom: .35rem;
   margin-bottom: 0;
@@ -6551,39 +6531,39 @@ meta.foundation-mq-topbar {
   background: #333333;
 }
 /* line 293, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
-.top-bar-section ul li > a.button, .top-bar-section ul li > a.stalk-button {
-  background: #008cba;
+.top-bar-section ul li > a.button {
+  background: #1cbb9b;
   font-size: 0.8125rem;
   padding-right: 15px;
   padding-left: 15px;
 }
 /* line 298, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
-.top-bar-section ul li > a.button:hover, .top-bar-section ul li > a.stalk-button:hover {
-  background: #006687;
+.top-bar-section ul li > a.button:hover {
+  background: #158f76;
 }
 /* line 302, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
-.top-bar-section ul li > a.button.secondary, .top-bar-section ul li > a.secondary.stalk-button {
+.top-bar-section ul li > a.button.secondary {
   background: #e7e7e7;
 }
 /* line 304, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
-.top-bar-section ul li > a.button.secondary:hover, .top-bar-section ul li > a.secondary.stalk-button:hover {
+.top-bar-section ul li > a.button.secondary:hover {
   background: #cecece;
 }
 /* line 308, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
-.top-bar-section ul li > a.button.success, .top-bar-section ul li > a.success.stalk-button {
+.top-bar-section ul li > a.button.success {
   background: #43ac6a;
 }
 /* line 310, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
-.top-bar-section ul li > a.button.success:hover, .top-bar-section ul li > a.success.stalk-button:hover {
+.top-bar-section ul li > a.button.success:hover {
   background: #358753;
 }
 /* line 314, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
-.top-bar-section ul li > a.button.alert, .top-bar-section ul li > a.alert.stalk-button {
-  background: #f04124;
+.top-bar-section ul li > a.button.alert {
+  background: #ea3a3a;
 }
 /* line 316, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
-.top-bar-section ul li > a.button.alert:hover, .top-bar-section ul li > a.alert.stalk-button:hover {
-  background: #d32a0e;
+.top-bar-section ul li > a.button.alert:hover {
+  background: #da1717;
 }
 /* line 324, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar-section ul li:hover > a {
@@ -6592,12 +6572,12 @@ meta.foundation-mq-topbar {
 }
 /* line 331, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar-section ul li.active > a {
-  background: #008cba;
+  background: #1cbb9b;
   color: white;
 }
 /* line 334, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar-section ul li.active > a:hover {
-  background: #0079a1;
+  background: #19a589;
 }
 /* line 341, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar-section .has-form {
@@ -6707,8 +6687,7 @@ meta.foundation-mq-topbar {
   }
   /* line 423, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
   .top-bar input,
-  .top-bar .button,
-  .top-bar .stalk-button {
+  .top-bar .button {
     font-size: 0.875rem;
     position: relative;
     top: 7px;
@@ -6854,7 +6833,7 @@ meta.foundation-mq-topbar {
   }
   /* line 573, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
   .no-js .top-bar-section ul li:active > a {
-    background: #008cba;
+    background: #1cbb9b;
     color: white;
   }
   /* line 581, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
@@ -7676,8 +7655,8 @@ th.hide-for-touch {
 
 @font-face {
   font-family: 'icon_font';
-  src: url("../fonts/icon_font.eot?28561774");
-  src: url("../fonts/icon_font.eot?28561774#iefix") format("embedded-opentype"), url("../fonts/icon_font.woff?28561774") format("woff"), url("../fonts/icon_font.ttf?28561774") format("truetype"), url("../fonts/icon_font.svg?28561774#icon_font") format("svg");
+  src: url("../fonts/icon_font.eot?99161719");
+  src: url("../fonts/icon_font.eot?99161719#iefix") format("embedded-opentype"), url("../fonts/icon_font.woff?99161719") format("woff"), url("../fonts/icon_font.ttf?99161719") format("truetype"), url("../fonts/icon_font.svg?99161719#icon_font") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -7688,7 +7667,7 @@ th.hide-for-touch {
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'icon_font';
-    src: url('../font/icon_font.svg?28561774#icon_font') format('svg');
+    src: url('../font/icon_font.svg?99161719#icon_font') format('svg');
   }
 }
 */
@@ -7713,1109 +7692,1109 @@ th.hide-for-touch {
 
 /* '' */
 /* line 31, ../scss/_icons.scss */
-.icon-x:before {
-  content: '\e973';
-}
-
-/* '' */
-/* line 32, ../scss/_icons.scss */
-.icon-glass:before {
-  content: '\e800';
-}
-
-/* '' */
-/* line 33, ../scss/_icons.scss */
-.icon-music:before {
-  content: '\e801';
-}
-
-/* '' */
-/* line 34, ../scss/_icons.scss */
-.icon-search:before {
-  content: '\e802';
-}
-
-/* '' */
-/* line 35, ../scss/_icons.scss */
 .icon-mail:before {
   content: '\e803';
 }
 
 /* '' */
+/* line 32, ../scss/_icons.scss */
+.icon-x:before {
+  content: '\e973';
+}
+
+/* '' */
+/* line 33, ../scss/_icons.scss */
+.icon-hw:before {
+  content: '\e974';
+}
+
+/* '' */
+/* line 34, ../scss/_icons.scss */
+.icon-glass:before {
+  content: '\e800';
+}
+
+/* '' */
+/* line 35, ../scss/_icons.scss */
+.icon-music:before {
+  content: '\e801';
+}
+
+/* '' */
 /* line 36, ../scss/_icons.scss */
+.icon-search:before {
+  content: '\e802';
+}
+
+/* '' */
+/* line 37, ../scss/_icons.scss */
 .icon-mail-alt:before {
   content: '\e804';
 }
 
 /* '' */
-/* line 37, ../scss/_icons.scss */
+/* line 38, ../scss/_icons.scss */
 .icon-heart:before {
   content: '\e805';
 }
 
 /* '' */
-/* line 38, ../scss/_icons.scss */
+/* line 39, ../scss/_icons.scss */
 .icon-heart-empty:before {
   content: '\e806';
 }
 
 /* '' */
-/* line 39, ../scss/_icons.scss */
+/* line 40, ../scss/_icons.scss */
 .icon-star:before {
   content: '\e807';
 }
 
 /* '' */
-/* line 40, ../scss/_icons.scss */
+/* line 41, ../scss/_icons.scss */
 .icon-star-empty:before {
   content: '\e808';
 }
 
 /* '' */
-/* line 41, ../scss/_icons.scss */
+/* line 42, ../scss/_icons.scss */
 .icon-star-half:before {
   content: '\e809';
 }
 
 /* '' */
-/* line 42, ../scss/_icons.scss */
+/* line 43, ../scss/_icons.scss */
 .icon-star-half-alt:before {
   content: '\e80a';
 }
 
 /* '' */
-/* line 43, ../scss/_icons.scss */
+/* line 44, ../scss/_icons.scss */
 .icon-user:before {
   content: '\e80b';
 }
 
 /* '' */
-/* line 44, ../scss/_icons.scss */
+/* line 45, ../scss/_icons.scss */
 .icon-users:before {
   content: '\e80c';
 }
 
 /* '' */
-/* line 45, ../scss/_icons.scss */
+/* line 46, ../scss/_icons.scss */
 .icon-male:before {
   content: '\e80d';
 }
 
 /* '' */
-/* line 46, ../scss/_icons.scss */
+/* line 47, ../scss/_icons.scss */
 .icon-female:before {
   content: '\e80e';
 }
 
 /* '' */
-/* line 47, ../scss/_icons.scss */
+/* line 48, ../scss/_icons.scss */
 .icon-video:before {
   content: '\e80f';
 }
 
 /* '' */
-/* line 48, ../scss/_icons.scss */
+/* line 49, ../scss/_icons.scss */
 .icon-videocam:before {
   content: '\e810';
 }
 
 /* '' */
-/* line 49, ../scss/_icons.scss */
+/* line 50, ../scss/_icons.scss */
 .icon-picture:before {
   content: '\e811';
 }
 
 /* '' */
-/* line 50, ../scss/_icons.scss */
+/* line 51, ../scss/_icons.scss */
 .icon-camera:before {
   content: '\e814';
 }
 
 /* '' */
-/* line 51, ../scss/_icons.scss */
+/* line 52, ../scss/_icons.scss */
 .icon-camera-alt:before {
   content: '\e812';
 }
 
 /* '' */
-/* line 52, ../scss/_icons.scss */
+/* line 53, ../scss/_icons.scss */
 .icon-th-large:before {
   content: '\e827';
 }
 
 /* '' */
-/* line 53, ../scss/_icons.scss */
+/* line 54, ../scss/_icons.scss */
 .icon-th:before {
   content: '\e826';
 }
 
 /* '' */
-/* line 54, ../scss/_icons.scss */
+/* line 55, ../scss/_icons.scss */
 .icon-th-list:before {
   content: '\e824';
 }
 
 /* '' */
-/* line 55, ../scss/_icons.scss */
+/* line 56, ../scss/_icons.scss */
 .icon-ok:before {
   content: '\e823';
 }
 
 /* '' */
-/* line 56, ../scss/_icons.scss */
+/* line 57, ../scss/_icons.scss */
 .icon-ok-circled:before {
   content: '\e825';
 }
 
 /* '' */
-/* line 57, ../scss/_icons.scss */
+/* line 58, ../scss/_icons.scss */
 .icon-ok-circled2:before {
   content: '\e822';
 }
 
 /* '' */
-/* line 58, ../scss/_icons.scss */
+/* line 59, ../scss/_icons.scss */
 .icon-ok-squared:before {
   content: '\e821';
 }
 
 /* '' */
-/* line 59, ../scss/_icons.scss */
+/* line 60, ../scss/_icons.scss */
 .icon-cancel:before {
   content: '\e820';
 }
 
 /* '' */
-/* line 60, ../scss/_icons.scss */
+/* line 61, ../scss/_icons.scss */
 .icon-cancel-circled:before {
   content: '\e81f';
 }
 
 /* '' */
-/* line 61, ../scss/_icons.scss */
+/* line 62, ../scss/_icons.scss */
 .icon-cancel-circled2:before {
   content: '\e81d';
 }
 
 /* '' */
-/* line 62, ../scss/_icons.scss */
+/* line 63, ../scss/_icons.scss */
 .icon-plus:before {
   content: '\e81c';
 }
 
 /* '' */
-/* line 63, ../scss/_icons.scss */
+/* line 64, ../scss/_icons.scss */
 .icon-plus-circled:before {
   content: '\e81b';
 }
 
 /* '' */
-/* line 64, ../scss/_icons.scss */
+/* line 65, ../scss/_icons.scss */
 .icon-plus-squared:before {
   content: '\e81e';
 }
 
 /* '' */
-/* line 65, ../scss/_icons.scss */
+/* line 66, ../scss/_icons.scss */
 .icon-plus-squared-small:before {
   content: '\e81a';
 }
 
 /* '' */
-/* line 66, ../scss/_icons.scss */
+/* line 67, ../scss/_icons.scss */
 .icon-minus:before {
   content: '\e819';
 }
 
 /* '' */
-/* line 67, ../scss/_icons.scss */
+/* line 68, ../scss/_icons.scss */
 .icon-minus-circled:before {
   content: '\e818';
 }
 
 /* '' */
-/* line 68, ../scss/_icons.scss */
+/* line 69, ../scss/_icons.scss */
 .icon-minus-squared:before {
   content: '\e817';
 }
 
 /* '' */
-/* line 69, ../scss/_icons.scss */
+/* line 70, ../scss/_icons.scss */
 .icon-minus-squared-alt:before {
   content: '\e816';
 }
 
 /* '' */
-/* line 70, ../scss/_icons.scss */
+/* line 71, ../scss/_icons.scss */
 .icon-minus-squared-small:before {
   content: '\e815';
 }
 
 /* '' */
-/* line 71, ../scss/_icons.scss */
+/* line 72, ../scss/_icons.scss */
 .icon-help:before {
   content: '\e813';
 }
 
 /* '' */
-/* line 72, ../scss/_icons.scss */
+/* line 73, ../scss/_icons.scss */
 .icon-help-circled:before {
   content: '\e828';
 }
 
 /* '' */
-/* line 73, ../scss/_icons.scss */
+/* line 74, ../scss/_icons.scss */
 .icon-info-circled:before {
   content: '\e829';
 }
 
 /* '' */
-/* line 74, ../scss/_icons.scss */
+/* line 75, ../scss/_icons.scss */
 .icon-info:before {
   content: '\e82a';
 }
 
 /* '' */
-/* line 75, ../scss/_icons.scss */
+/* line 76, ../scss/_icons.scss */
 .icon-home:before {
   content: '\e82b';
 }
 
 /* '' */
-/* line 76, ../scss/_icons.scss */
+/* line 77, ../scss/_icons.scss */
 .icon-link:before {
   content: '\e82c';
 }
 
 /* '' */
-/* line 77, ../scss/_icons.scss */
+/* line 78, ../scss/_icons.scss */
 .icon-unlink:before {
   content: '\e82d';
 }
 
 /* '' */
-/* line 78, ../scss/_icons.scss */
+/* line 79, ../scss/_icons.scss */
 .icon-link-ext:before {
   content: '\e82e';
 }
 
 /* '' */
-/* line 79, ../scss/_icons.scss */
+/* line 80, ../scss/_icons.scss */
 .icon-link-ext-alt:before {
   content: '\e82f';
 }
 
 /* '' */
-/* line 80, ../scss/_icons.scss */
+/* line 81, ../scss/_icons.scss */
 .icon-attach:before {
   content: '\e830';
 }
 
 /* '' */
-/* line 81, ../scss/_icons.scss */
+/* line 82, ../scss/_icons.scss */
 .icon-lock:before {
   content: '\e831';
 }
 
 /* '' */
-/* line 82, ../scss/_icons.scss */
+/* line 83, ../scss/_icons.scss */
 .icon-lock-open:before {
   content: '\e832';
 }
 
 /* '' */
-/* line 83, ../scss/_icons.scss */
+/* line 84, ../scss/_icons.scss */
 .icon-lock-open-alt:before {
   content: '\e833';
 }
 
 /* '' */
-/* line 84, ../scss/_icons.scss */
+/* line 85, ../scss/_icons.scss */
 .icon-pin:before {
   content: '\e834';
 }
 
 /* '' */
-/* line 85, ../scss/_icons.scss */
+/* line 86, ../scss/_icons.scss */
 .icon-eye:before {
   content: '\e835';
 }
 
 /* '' */
-/* line 86, ../scss/_icons.scss */
+/* line 87, ../scss/_icons.scss */
 .icon-eye-off:before {
   content: '\e836';
 }
 
 /* '' */
-/* line 87, ../scss/_icons.scss */
+/* line 88, ../scss/_icons.scss */
 .icon-tag:before {
   content: '\e837';
 }
 
 /* '' */
-/* line 88, ../scss/_icons.scss */
+/* line 89, ../scss/_icons.scss */
 .icon-tags:before {
   content: '\e838';
 }
 
 /* '' */
-/* line 89, ../scss/_icons.scss */
+/* line 90, ../scss/_icons.scss */
 .icon-bookmark:before {
   content: '\e839';
 }
 
 /* '' */
-/* line 90, ../scss/_icons.scss */
+/* line 91, ../scss/_icons.scss */
 .icon-bookmark-empty:before {
   content: '\e83a';
 }
 
 /* '' */
-/* line 91, ../scss/_icons.scss */
+/* line 92, ../scss/_icons.scss */
 .icon-flag:before {
   content: '\e83b';
 }
 
 /* '' */
-/* line 92, ../scss/_icons.scss */
+/* line 93, ../scss/_icons.scss */
 .icon-flag-empty:before {
   content: '\e84f';
 }
 
 /* '' */
-/* line 93, ../scss/_icons.scss */
+/* line 94, ../scss/_icons.scss */
 .icon-flag-checkered:before {
   content: '\e84e';
 }
 
 /* '' */
-/* line 94, ../scss/_icons.scss */
+/* line 95, ../scss/_icons.scss */
 .icon-thumbs-up:before {
   content: '\e84d';
 }
 
 /* '' */
-/* line 95, ../scss/_icons.scss */
+/* line 96, ../scss/_icons.scss */
 .icon-thumbs-down:before {
   content: '\e84c';
 }
 
 /* '' */
-/* line 96, ../scss/_icons.scss */
+/* line 97, ../scss/_icons.scss */
 .icon-thumbs-up-alt:before {
   content: '\e84b';
 }
 
 /* '' */
-/* line 97, ../scss/_icons.scss */
+/* line 98, ../scss/_icons.scss */
 .icon-thumbs-down-alt:before {
   content: '\e84a';
 }
 
 /* '' */
-/* line 98, ../scss/_icons.scss */
+/* line 99, ../scss/_icons.scss */
 .icon-download:before {
   content: '\e849';
 }
 
 /* '' */
-/* line 99, ../scss/_icons.scss */
+/* line 100, ../scss/_icons.scss */
 .icon-upload:before {
   content: '\e847';
 }
 
 /* '' */
-/* line 100, ../scss/_icons.scss */
+/* line 101, ../scss/_icons.scss */
 .icon-download-cloud:before {
   content: '\e848';
 }
 
 /* '' */
-/* line 101, ../scss/_icons.scss */
+/* line 102, ../scss/_icons.scss */
 .icon-upload-cloud:before {
   content: '\e846';
 }
 
 /* '' */
-/* line 102, ../scss/_icons.scss */
+/* line 103, ../scss/_icons.scss */
 .icon-reply:before {
   content: '\e845';
 }
 
 /* '' */
-/* line 103, ../scss/_icons.scss */
+/* line 104, ../scss/_icons.scss */
 .icon-reply-all:before {
   content: '\e843';
 }
 
 /* '' */
-/* line 104, ../scss/_icons.scss */
+/* line 105, ../scss/_icons.scss */
 .icon-forward:before {
   content: '\e844';
 }
 
 /* '' */
-/* line 105, ../scss/_icons.scss */
+/* line 106, ../scss/_icons.scss */
 .icon-quote-left:before {
   content: '\e842';
 }
 
 /* '' */
-/* line 106, ../scss/_icons.scss */
+/* line 107, ../scss/_icons.scss */
 .icon-quote-right:before {
   content: '\e841';
 }
 
 /* '' */
-/* line 107, ../scss/_icons.scss */
+/* line 108, ../scss/_icons.scss */
 .icon-code:before {
   content: '\e840';
 }
 
 /* '' */
-/* line 108, ../scss/_icons.scss */
+/* line 109, ../scss/_icons.scss */
 .icon-export:before {
   content: '\e83f';
 }
 
 /* '' */
-/* line 109, ../scss/_icons.scss */
+/* line 110, ../scss/_icons.scss */
 .icon-export-alt:before {
   content: '\e83e';
 }
 
 /* '' */
-/* line 110, ../scss/_icons.scss */
+/* line 111, ../scss/_icons.scss */
 .icon-pencil:before {
   content: '\e83d';
 }
 
 /* '' */
-/* line 111, ../scss/_icons.scss */
+/* line 112, ../scss/_icons.scss */
 .icon-pencil-squared:before {
   content: '\e83c';
 }
 
 /* '' */
-/* line 112, ../scss/_icons.scss */
+/* line 113, ../scss/_icons.scss */
 .icon-edit:before {
   content: '\e850';
 }
 
 /* '' */
-/* line 113, ../scss/_icons.scss */
+/* line 114, ../scss/_icons.scss */
 .icon-print:before {
   content: '\e851';
 }
 
 /* '' */
-/* line 114, ../scss/_icons.scss */
+/* line 115, ../scss/_icons.scss */
 .icon-retweet:before {
   content: '\e852';
 }
 
 /* '' */
-/* line 115, ../scss/_icons.scss */
+/* line 116, ../scss/_icons.scss */
 .icon-keyboard:before {
   content: '\e853';
 }
 
 /* '' */
-/* line 116, ../scss/_icons.scss */
+/* line 117, ../scss/_icons.scss */
 .icon-gamepad:before {
   content: '\e854';
 }
 
 /* '' */
-/* line 117, ../scss/_icons.scss */
+/* line 118, ../scss/_icons.scss */
 .icon-comment:before {
   content: '\e855';
 }
 
 /* '' */
-/* line 118, ../scss/_icons.scss */
+/* line 119, ../scss/_icons.scss */
 .icon-chat:before {
   content: '\e856';
 }
 
 /* '' */
-/* line 119, ../scss/_icons.scss */
+/* line 120, ../scss/_icons.scss */
 .icon-comment-empty:before {
   content: '\e857';
 }
 
 /* '' */
-/* line 120, ../scss/_icons.scss */
+/* line 121, ../scss/_icons.scss */
 .icon-chat-empty:before {
   content: '\e858';
 }
 
 /* '' */
-/* line 121, ../scss/_icons.scss */
+/* line 122, ../scss/_icons.scss */
 .icon-bell:before {
   content: '\e859';
 }
 
 /* '' */
-/* line 122, ../scss/_icons.scss */
+/* line 123, ../scss/_icons.scss */
 .icon-bell-alt:before {
   content: '\e85a';
 }
 
 /* '' */
-/* line 123, ../scss/_icons.scss */
+/* line 124, ../scss/_icons.scss */
 .icon-attention-alt:before {
   content: '\e85b';
 }
 
 /* '' */
-/* line 124, ../scss/_icons.scss */
+/* line 125, ../scss/_icons.scss */
 .icon-attention:before {
   content: '\e85c';
 }
 
 /* '' */
-/* line 125, ../scss/_icons.scss */
+/* line 126, ../scss/_icons.scss */
 .icon-attention-circled:before {
   content: '\e85d';
 }
 
 /* '' */
-/* line 126, ../scss/_icons.scss */
+/* line 127, ../scss/_icons.scss */
 .icon-location:before {
   content: '\e85e';
 }
 
 /* '' */
-/* line 127, ../scss/_icons.scss */
+/* line 128, ../scss/_icons.scss */
 .icon-direction:before {
   content: '\e85f';
 }
 
 /* '' */
-/* line 128, ../scss/_icons.scss */
+/* line 129, ../scss/_icons.scss */
 .icon-compass:before {
   content: '\e860';
 }
 
 /* '' */
-/* line 129, ../scss/_icons.scss */
+/* line 130, ../scss/_icons.scss */
 .icon-trash:before {
   content: '\e861';
 }
 
 /* '' */
-/* line 130, ../scss/_icons.scss */
+/* line 131, ../scss/_icons.scss */
 .icon-doc:before {
   content: '\e862';
 }
 
 /* '' */
-/* line 131, ../scss/_icons.scss */
+/* line 132, ../scss/_icons.scss */
 .icon-docs:before {
   content: '\e863';
 }
 
 /* '' */
-/* line 132, ../scss/_icons.scss */
+/* line 133, ../scss/_icons.scss */
 .icon-doc-text:before {
   content: '\e877';
 }
 
 /* '' */
-/* line 133, ../scss/_icons.scss */
+/* line 134, ../scss/_icons.scss */
 .icon-doc-inv:before {
   content: '\e876';
 }
 
 /* '' */
-/* line 134, ../scss/_icons.scss */
+/* line 135, ../scss/_icons.scss */
 .icon-doc-text-inv:before {
   content: '\e875';
 }
 
 /* '' */
-/* line 135, ../scss/_icons.scss */
+/* line 136, ../scss/_icons.scss */
 .icon-folder:before {
   content: '\e874';
 }
 
 /* '' */
-/* line 136, ../scss/_icons.scss */
+/* line 137, ../scss/_icons.scss */
 .icon-folder-open:before {
   content: '\e873';
 }
 
 /* '' */
-/* line 137, ../scss/_icons.scss */
+/* line 138, ../scss/_icons.scss */
 .icon-folder-empty:before {
   content: '\e872';
 }
 
 /* '' */
-/* line 138, ../scss/_icons.scss */
+/* line 139, ../scss/_icons.scss */
 .icon-folder-open-empty:before {
   content: '\e871';
 }
 
 /* '' */
-/* line 139, ../scss/_icons.scss */
+/* line 140, ../scss/_icons.scss */
 .icon-box:before {
   content: '\e870';
 }
 
 /* '' */
-/* line 140, ../scss/_icons.scss */
+/* line 141, ../scss/_icons.scss */
 .icon-rss:before {
   content: '\e86f';
 }
 
 /* '' */
-/* line 141, ../scss/_icons.scss */
+/* line 142, ../scss/_icons.scss */
 .icon-rss-squared:before {
   content: '\e86e';
 }
 
 /* '' */
-/* line 142, ../scss/_icons.scss */
+/* line 143, ../scss/_icons.scss */
 .icon-phone:before {
   content: '\e86d';
 }
 
 /* '' */
-/* line 143, ../scss/_icons.scss */
+/* line 144, ../scss/_icons.scss */
 .icon-phone-squared:before {
   content: '\e86c';
 }
 
 /* '' */
-/* line 144, ../scss/_icons.scss */
+/* line 145, ../scss/_icons.scss */
 .icon-menu:before {
   content: '\e86b';
 }
 
 /* '' */
-/* line 145, ../scss/_icons.scss */
+/* line 146, ../scss/_icons.scss */
 .icon-cog:before {
   content: '\e86a';
 }
 
 /* '' */
-/* line 146, ../scss/_icons.scss */
+/* line 147, ../scss/_icons.scss */
 .icon-cog-alt:before {
   content: '\e869';
 }
 
 /* '' */
-/* line 147, ../scss/_icons.scss */
+/* line 148, ../scss/_icons.scss */
 .icon-wrench:before {
   content: '\e868';
 }
 
 /* '' */
-/* line 148, ../scss/_icons.scss */
+/* line 149, ../scss/_icons.scss */
 .icon-basket:before {
   content: '\e867';
 }
 
 /* '' */
-/* line 149, ../scss/_icons.scss */
+/* line 150, ../scss/_icons.scss */
 .icon-calendar:before {
   content: '\e866';
 }
 
 /* '' */
-/* line 150, ../scss/_icons.scss */
+/* line 151, ../scss/_icons.scss */
 .icon-calendar-empty:before {
   content: '\e865';
 }
 
 /* '' */
-/* line 151, ../scss/_icons.scss */
+/* line 152, ../scss/_icons.scss */
 .icon-login:before {
   content: '\e864';
 }
 
 /* '' */
-/* line 152, ../scss/_icons.scss */
+/* line 153, ../scss/_icons.scss */
 .icon-logout:before {
   content: '\e878';
 }
 
 /* '' */
-/* line 153, ../scss/_icons.scss */
+/* line 154, ../scss/_icons.scss */
 .icon-mic:before {
   content: '\e879';
 }
 
 /* '' */
-/* line 154, ../scss/_icons.scss */
+/* line 155, ../scss/_icons.scss */
 .icon-mute:before {
   content: '\e87a';
 }
 
 /* '' */
-/* line 155, ../scss/_icons.scss */
+/* line 156, ../scss/_icons.scss */
 .icon-volume-off:before {
   content: '\e87b';
 }
 
 /* '' */
-/* line 156, ../scss/_icons.scss */
+/* line 157, ../scss/_icons.scss */
 .icon-volume-down:before {
   content: '\e87c';
 }
 
 /* '' */
-/* line 157, ../scss/_icons.scss */
+/* line 158, ../scss/_icons.scss */
 .icon-volume-up:before {
   content: '\e87d';
 }
 
 /* '' */
-/* line 158, ../scss/_icons.scss */
+/* line 159, ../scss/_icons.scss */
 .icon-headphones:before {
   content: '\e87e';
 }
 
 /* '' */
-/* line 159, ../scss/_icons.scss */
+/* line 160, ../scss/_icons.scss */
 .icon-clock:before {
   content: '\e87f';
 }
 
 /* '' */
-/* line 160, ../scss/_icons.scss */
+/* line 161, ../scss/_icons.scss */
 .icon-lightbulb:before {
   content: '\e880';
 }
 
 /* '' */
-/* line 161, ../scss/_icons.scss */
+/* line 162, ../scss/_icons.scss */
 .icon-block:before {
   content: '\e881';
 }
 
 /* '' */
-/* line 162, ../scss/_icons.scss */
+/* line 163, ../scss/_icons.scss */
 .icon-resize-full:before {
   content: '\e882';
 }
 
 /* '' */
-/* line 163, ../scss/_icons.scss */
+/* line 164, ../scss/_icons.scss */
 .icon-resize-full-alt:before {
   content: '\e883';
 }
 
 /* '' */
-/* line 164, ../scss/_icons.scss */
+/* line 165, ../scss/_icons.scss */
 .icon-resize-small:before {
   content: '\e884';
 }
 
 /* '' */
-/* line 165, ../scss/_icons.scss */
+/* line 166, ../scss/_icons.scss */
 .icon-resize-vertical:before {
   content: '\e885';
 }
 
 /* '' */
-/* line 166, ../scss/_icons.scss */
+/* line 167, ../scss/_icons.scss */
 .icon-resize-horizontal:before {
   content: '\e886';
 }
 
 /* '' */
-/* line 167, ../scss/_icons.scss */
+/* line 168, ../scss/_icons.scss */
 .icon-move:before {
   content: '\e887';
 }
 
 /* '' */
-/* line 168, ../scss/_icons.scss */
+/* line 169, ../scss/_icons.scss */
 .icon-zoom-in:before {
   content: '\e888';
 }
 
 /* '' */
-/* line 169, ../scss/_icons.scss */
+/* line 170, ../scss/_icons.scss */
 .icon-zoom-out:before {
   content: '\e889';
 }
 
 /* '' */
-/* line 170, ../scss/_icons.scss */
+/* line 171, ../scss/_icons.scss */
 .icon-down-circled2:before {
   content: '\e88a';
 }
 
 /* '' */
-/* line 171, ../scss/_icons.scss */
+/* line 172, ../scss/_icons.scss */
 .icon-up-circled2:before {
   content: '\e88b';
 }
 
 /* '' */
-/* line 172, ../scss/_icons.scss */
+/* line 173, ../scss/_icons.scss */
 .icon-left-circled2:before {
   content: '\e89e';
 }
 
 /* '' */
-/* line 173, ../scss/_icons.scss */
+/* line 174, ../scss/_icons.scss */
 .icon-right-circled2:before {
   content: '\e89d';
 }
 
 /* '' */
-/* line 174, ../scss/_icons.scss */
+/* line 175, ../scss/_icons.scss */
 .icon-down-dir:before {
   content: '\e89f';
 }
 
 /* '' */
-/* line 175, ../scss/_icons.scss */
+/* line 176, ../scss/_icons.scss */
 .icon-up-dir:before {
   content: '\e89c';
 }
 
 /* '' */
-/* line 176, ../scss/_icons.scss */
+/* line 177, ../scss/_icons.scss */
 .icon-left-dir:before {
   content: '\e89b';
 }
 
 /* '' */
-/* line 177, ../scss/_icons.scss */
+/* line 178, ../scss/_icons.scss */
 .icon-right-dir:before {
   content: '\e89a';
 }
 
 /* '' */
-/* line 178, ../scss/_icons.scss */
+/* line 179, ../scss/_icons.scss */
 .icon-down-open:before {
   content: '\e899';
 }
 
 /* '' */
-/* line 179, ../scss/_icons.scss */
+/* line 180, ../scss/_icons.scss */
 .icon-left-open:before {
   content: '\e898';
 }
 
 /* '' */
-/* line 180, ../scss/_icons.scss */
+/* line 181, ../scss/_icons.scss */
 .icon-right-open:before {
   content: '\e897';
 }
 
 /* '' */
-/* line 181, ../scss/_icons.scss */
+/* line 182, ../scss/_icons.scss */
 .icon-up-open:before {
   content: '\e896';
 }
 
 /* '' */
-/* line 182, ../scss/_icons.scss */
+/* line 183, ../scss/_icons.scss */
 .icon-angle-left:before {
   content: '\e895';
 }
 
 /* '' */
-/* line 183, ../scss/_icons.scss */
+/* line 184, ../scss/_icons.scss */
 .icon-angle-right:before {
   content: '\e894';
 }
 
 /* '' */
-/* line 184, ../scss/_icons.scss */
+/* line 185, ../scss/_icons.scss */
 .icon-angle-up:before {
   content: '\e893';
 }
 
 /* '' */
-/* line 185, ../scss/_icons.scss */
+/* line 186, ../scss/_icons.scss */
 .icon-angle-down:before {
   content: '\e892';
 }
 
 /* '' */
-/* line 186, ../scss/_icons.scss */
+/* line 187, ../scss/_icons.scss */
 .icon-angle-circled-left:before {
   content: '\e891';
 }
 
 /* '' */
-/* line 187, ../scss/_icons.scss */
+/* line 188, ../scss/_icons.scss */
 .icon-angle-circled-right:before {
   content: '\e890';
 }
 
 /* '' */
-/* line 188, ../scss/_icons.scss */
+/* line 189, ../scss/_icons.scss */
 .icon-angle-circled-up:before {
   content: '\e88f';
 }
 
 /* '' */
-/* line 189, ../scss/_icons.scss */
+/* line 190, ../scss/_icons.scss */
 .icon-angle-circled-down:before {
   content: '\e88e';
 }
 
 /* '' */
-/* line 190, ../scss/_icons.scss */
+/* line 191, ../scss/_icons.scss */
 .icon-angle-double-left:before {
   content: '\e88d';
 }
 
 /* '' */
-/* line 191, ../scss/_icons.scss */
+/* line 192, ../scss/_icons.scss */
 .icon-angle-double-right:before {
   content: '\e88c';
 }
 
 /* '' */
-/* line 192, ../scss/_icons.scss */
+/* line 193, ../scss/_icons.scss */
 .icon-angle-double-up:before {
   content: '\e8a2';
 }
 
 /* '' */
-/* line 193, ../scss/_icons.scss */
+/* line 194, ../scss/_icons.scss */
 .icon-angle-double-down:before {
   content: '\e8a1';
 }
 
 /* '' */
-/* line 194, ../scss/_icons.scss */
+/* line 195, ../scss/_icons.scss */
 .icon-down:before {
   content: '\e8a0';
 }
 
 /* '' */
-/* line 195, ../scss/_icons.scss */
+/* line 196, ../scss/_icons.scss */
 .icon-left:before {
   content: '\e8a3';
 }
 
 /* '' */
-/* line 196, ../scss/_icons.scss */
+/* line 197, ../scss/_icons.scss */
 .icon-right:before {
   content: '\e8a4';
 }
 
 /* '' */
-/* line 197, ../scss/_icons.scss */
+/* line 198, ../scss/_icons.scss */
 .icon-up:before {
   content: '\e8a5';
 }
 
 /* '' */
-/* line 198, ../scss/_icons.scss */
+/* line 199, ../scss/_icons.scss */
 .icon-down-big:before {
   content: '\e8a6';
 }
 
 /* '' */
-/* line 199, ../scss/_icons.scss */
+/* line 200, ../scss/_icons.scss */
 .icon-left-big:before {
   content: '\e8a7';
 }
 
 /* '' */
-/* line 200, ../scss/_icons.scss */
+/* line 201, ../scss/_icons.scss */
 .icon-right-big:before {
   content: '\e8a8';
 }
 
 /* '' */
-/* line 201, ../scss/_icons.scss */
+/* line 202, ../scss/_icons.scss */
 .icon-up-big:before {
   content: '\e8a9';
 }
 
 /* '' */
-/* line 202, ../scss/_icons.scss */
+/* line 203, ../scss/_icons.scss */
 .icon-right-hand:before {
   content: '\e8b4';
 }
 
 /* '' */
-/* line 203, ../scss/_icons.scss */
+/* line 204, ../scss/_icons.scss */
 .icon-left-hand:before {
   content: '\e8b5';
 }
 
 /* '' */
-/* line 204, ../scss/_icons.scss */
+/* line 205, ../scss/_icons.scss */
 .icon-up-hand:before {
   content: '\e8b6';
 }
 
 /* '' */
-/* line 205, ../scss/_icons.scss */
+/* line 206, ../scss/_icons.scss */
 .icon-down-hand:before {
   content: '\e8b7';
 }
 
 /* '' */
-/* line 206, ../scss/_icons.scss */
+/* line 207, ../scss/_icons.scss */
 .icon-left-circled:before {
   content: '\e8ae';
 }
 
 /* '' */
-/* line 207, ../scss/_icons.scss */
+/* line 208, ../scss/_icons.scss */
 .icon-right-circled:before {
   content: '\e8aa';
 }
 
 /* '' */
-/* line 208, ../scss/_icons.scss */
+/* line 209, ../scss/_icons.scss */
 .icon-up-circled:before {
   content: '\e8ab';
 }
 
 /* '' */
-/* line 209, ../scss/_icons.scss */
+/* line 210, ../scss/_icons.scss */
 .icon-down-circled:before {
   content: '\e8ac';
 }
 
 /* '' */
-/* line 210, ../scss/_icons.scss */
+/* line 211, ../scss/_icons.scss */
 .icon-cw:before {
   content: '\e8ad';
 }
 
 /* '' */
-/* line 211, ../scss/_icons.scss */
+/* line 212, ../scss/_icons.scss */
 .icon-ccw:before {
   content: '\e8af';
 }
 
 /* '' */
-/* line 212, ../scss/_icons.scss */
+/* line 213, ../scss/_icons.scss */
 .icon-arrows-cw:before {
   content: '\e8b0';
 }
 
 /* '' */
-/* line 213, ../scss/_icons.scss */
+/* line 214, ../scss/_icons.scss */
 .icon-level-up:before {
   content: '\e8b1';
 }
 
 /* '' */
-/* line 214, ../scss/_icons.scss */
-.icon-level-down:before {
-  content: '\e8b2';
-}
-
-/* '' */
 /* line 215, ../scss/_icons.scss */
 .icon-list:before {
   content: '\e971';
@@ -8823,1117 +8802,1117 @@ th.hide-for-touch {
 
 /* '' */
 /* line 216, ../scss/_icons.scss */
-.icon-exchange:before {
-  content: '\e8b8';
-}
-
-/* '' */
-/* line 217, ../scss/_icons.scss */
-.icon-expand:before {
-  content: '\e8b9';
-}
-
-/* '' */
-/* line 218, ../scss/_icons.scss */
-.icon-collapse:before {
-  content: '\e8ba';
-}
-
-/* '' */
-/* line 219, ../scss/_icons.scss */
-.icon-expand-right:before {
-  content: '\e8bb';
-}
-
-/* '' */
-/* line 220, ../scss/_icons.scss */
-.icon-collapse-left:before {
-  content: '\e8bc';
-}
-
-/* '' */
-/* line 221, ../scss/_icons.scss */
-.icon-play:before {
-  content: '\e8bd';
-}
-
-/* '' */
-/* line 222, ../scss/_icons.scss */
-.icon-play-circled:before {
-  content: '\e8be';
-}
-
-/* '' */
-/* line 223, ../scss/_icons.scss */
-.icon-play-circled2:before {
-  content: '\e8bf';
-}
-
-/* '' */
-/* line 224, ../scss/_icons.scss */
-.icon-stop:before {
-  content: '\e8c0';
-}
-
-/* '' */
-/* line 225, ../scss/_icons.scss */
-.icon-pause:before {
-  content: '\e8c1';
-}
-
-/* '' */
-/* line 226, ../scss/_icons.scss */
-.icon-to-end:before {
-  content: '\e8c2';
-}
-
-/* '' */
-/* line 227, ../scss/_icons.scss */
-.icon-to-end-alt:before {
-  content: '\e8c3';
-}
-
-/* '' */
-/* line 228, ../scss/_icons.scss */
-.icon-to-start:before {
-  content: '\e8c4';
-}
-
-/* '' */
-/* line 229, ../scss/_icons.scss */
-.icon-to-start-alt:before {
-  content: '\e8c5';
-}
-
-/* '' */
-/* line 230, ../scss/_icons.scss */
-.icon-fast-fw:before {
-  content: '\e8c6';
-}
-
-/* '' */
-/* line 231, ../scss/_icons.scss */
-.icon-fast-bw:before {
-  content: '\e8c7';
-}
-
-/* '' */
-/* line 232, ../scss/_icons.scss */
-.icon-eject:before {
-  content: '\e8d1';
-}
-
-/* '' */
-/* line 233, ../scss/_icons.scss */
-.icon-target:before {
-  content: '\e8d2';
-}
-
-/* '' */
-/* line 234, ../scss/_icons.scss */
-.icon-signal:before {
-  content: '\e8d3';
-}
-
-/* '' */
-/* line 235, ../scss/_icons.scss */
-.icon-award:before {
-  content: '\e8d4';
-}
-
-/* '' */
-/* line 236, ../scss/_icons.scss */
-.icon-desktop:before {
-  content: '\e8db';
-}
-
-/* '' */
-/* line 237, ../scss/_icons.scss */
-.icon-laptop:before {
-  content: '\e8da';
-}
-
-/* '' */
-/* line 238, ../scss/_icons.scss */
-.icon-tablet:before {
-  content: '\e8d9';
-}
-
-/* '' */
-/* line 239, ../scss/_icons.scss */
-.icon-mobile:before {
-  content: '\e8d8';
-}
-
-/* '' */
-/* line 240, ../scss/_icons.scss */
-.icon-inbox:before {
-  content: '\e8d7';
-}
-
-/* '' */
-/* line 241, ../scss/_icons.scss */
-.icon-globe:before {
-  content: '\e8d6';
-}
-
-/* '' */
-/* line 242, ../scss/_icons.scss */
-.icon-sun:before {
-  content: '\e8d5';
-}
-
-/* '' */
-/* line 243, ../scss/_icons.scss */
-.icon-cloud:before {
-  content: '\e8d0';
-}
-
-/* '' */
-/* line 244, ../scss/_icons.scss */
-.icon-flash:before {
-  content: '\e8cf';
-}
-
-/* '' */
-/* line 245, ../scss/_icons.scss */
-.icon-moon:before {
-  content: '\e8ce';
-}
-
-/* '' */
-/* line 246, ../scss/_icons.scss */
-.icon-umbrella:before {
-  content: '\e8cd';
-}
-
-/* '' */
-/* line 247, ../scss/_icons.scss */
-.icon-flight:before {
-  content: '\e8cc';
-}
-
-/* '' */
-/* line 248, ../scss/_icons.scss */
-.icon-fighter-jet:before {
-  content: '\e8cb';
-}
-
-/* '' */
-/* line 249, ../scss/_icons.scss */
-.icon-leaf:before {
-  content: '\e8ca';
-}
-
-/* '' */
-/* line 250, ../scss/_icons.scss */
-.icon-font:before {
-  content: '\e8c9';
-}
-
-/* '' */
-/* line 251, ../scss/_icons.scss */
-.icon-bold:before {
-  content: '\e8c8';
-}
-
-/* '' */
-/* line 252, ../scss/_icons.scss */
-.icon-italic:before {
-  content: '\e95d';
-}
-
-/* '' */
-/* line 253, ../scss/_icons.scss */
-.icon-text-height:before {
-  content: '\e95e';
-}
-
-/* '' */
-/* line 254, ../scss/_icons.scss */
-.icon-text-width:before {
-  content: '\e95f';
-}
-
-/* '' */
-/* line 255, ../scss/_icons.scss */
-.icon-align-left:before {
-  content: '\e960';
-}
-
-/* '' */
-/* line 256, ../scss/_icons.scss */
-.icon-align-center:before {
-  content: '\e961';
-}
-
-/* '' */
-/* line 257, ../scss/_icons.scss */
-.icon-align-right:before {
-  content: '\e962';
-}
-
-/* '' */
-/* line 258, ../scss/_icons.scss */
-.icon-align-justify:before {
-  content: '\e963';
-}
-
-/* '' */
-/* line 259, ../scss/_icons.scss */
-.icon-list-1:before {
-  content: '\e964';
-}
-
-/* '' */
-/* line 260, ../scss/_icons.scss */
-.icon-indent-left:before {
-  content: '\e965';
-}
-
-/* '' */
-/* line 261, ../scss/_icons.scss */
-.icon-indent-right:before {
-  content: '\e966';
-}
-
-/* '' */
-/* line 262, ../scss/_icons.scss */
-.icon-list-bullet:before {
-  content: '\e967';
-}
-
-/* '' */
-/* line 263, ../scss/_icons.scss */
-.icon-list-numbered:before {
-  content: '\e968';
-}
-
-/* '' */
-/* line 264, ../scss/_icons.scss */
-.icon-strike:before {
-  content: '\e969';
-}
-
-/* '' */
-/* line 265, ../scss/_icons.scss */
-.icon-underline:before {
-  content: '\e96a';
-}
-
-/* '' */
-/* line 266, ../scss/_icons.scss */
-.icon-superscript:before {
-  content: '\e96b';
-}
-
-/* '' */
-/* line 267, ../scss/_icons.scss */
-.icon-subscript:before {
-  content: '\e96c';
-}
-
-/* '' */
-/* line 268, ../scss/_icons.scss */
-.icon-table:before {
-  content: '\e96d';
-}
-
-/* '' */
-/* line 269, ../scss/_icons.scss */
-.icon-columns:before {
-  content: '\e96e';
-}
-
-/* '' */
-/* line 270, ../scss/_icons.scss */
-.icon-crop:before {
-  content: '\e96f';
-}
-
-/* '' */
-/* line 271, ../scss/_icons.scss */
-.icon-scissors:before {
-  content: '\e970';
-}
-
-/* '' */
-/* line 272, ../scss/_icons.scss */
-.icon-paste:before {
-  content: '\e95c';
-}
-
-/* '' */
-/* line 273, ../scss/_icons.scss */
-.icon-briefcase:before {
-  content: '\e95b';
-}
-
-/* '' */
-/* line 274, ../scss/_icons.scss */
-.icon-suitcase:before {
-  content: '\e95a';
-}
-
-/* '' */
-/* line 275, ../scss/_icons.scss */
-.icon-ellipsis:before {
-  content: '\e959';
-}
-
-/* '' */
-/* line 276, ../scss/_icons.scss */
-.icon-ellipsis-vert:before {
-  content: '\e957';
-}
-
-/* '' */
-/* line 277, ../scss/_icons.scss */
-.icon-off:before {
-  content: '\e958';
-}
-
-/* '' */
-/* line 278, ../scss/_icons.scss */
-.icon-road:before {
-  content: '\e956';
-}
-
-/* '' */
-/* line 279, ../scss/_icons.scss */
-.icon-list-alt:before {
-  content: '\e955';
-}
-
-/* '' */
-/* line 280, ../scss/_icons.scss */
-.icon-qrcode:before {
-  content: '\e954';
-}
-
-/* '' */
-/* line 281, ../scss/_icons.scss */
-.icon-barcode:before {
-  content: '\e953';
-}
-
-/* '' */
-/* line 282, ../scss/_icons.scss */
-.icon-book:before {
-  content: '\e952';
-}
-
-/* '' */
-/* line 283, ../scss/_icons.scss */
-.icon-ajust:before {
-  content: '\e951';
-}
-
-/* '' */
-/* line 284, ../scss/_icons.scss */
-.icon-tint:before {
-  content: '\e950';
-}
-
-/* '' */
-/* line 285, ../scss/_icons.scss */
-.icon-check:before {
-  content: '\e94f';
-}
-
-/* '' */
-/* line 286, ../scss/_icons.scss */
-.icon-check-empty:before {
-  content: '\e94e';
-}
-
-/* '' */
-/* line 287, ../scss/_icons.scss */
-.icon-circle:before {
-  content: '\e94d';
-}
-
-/* '' */
-/* line 288, ../scss/_icons.scss */
-.icon-circle-empty:before {
-  content: '\e94c';
-}
-
-/* '' */
-/* line 289, ../scss/_icons.scss */
-.icon-dot-circled:before {
-  content: '\e94b';
-}
-
-/* '' */
-/* line 290, ../scss/_icons.scss */
-.icon-asterisk:before {
-  content: '\e94a';
-}
-
-/* '' */
-/* line 291, ../scss/_icons.scss */
-.icon-gift:before {
-  content: '\e949';
-}
-
-/* '' */
-/* line 292, ../scss/_icons.scss */
-.icon-fire:before {
-  content: '\e935';
-}
-
-/* '' */
-/* line 293, ../scss/_icons.scss */
-.icon-magnet:before {
-  content: '\e936';
-}
-
-/* '' */
-/* line 294, ../scss/_icons.scss */
-.icon-chart-bar:before {
-  content: '\e937';
-}
-
-/* '' */
-/* line 295, ../scss/_icons.scss */
-.icon-ticket:before {
-  content: '\e938';
-}
-
-/* '' */
-/* line 296, ../scss/_icons.scss */
-.icon-credit-card:before {
-  content: '\e939';
-}
-
-/* '' */
-/* line 297, ../scss/_icons.scss */
-.icon-floppy:before {
-  content: '\e93a';
-}
-
-/* '' */
-/* line 298, ../scss/_icons.scss */
-.icon-megaphone:before {
-  content: '\e93b';
-}
-
-/* '' */
-/* line 299, ../scss/_icons.scss */
-.icon-hdd:before {
-  content: '\e93c';
-}
-
-/* '' */
-/* line 300, ../scss/_icons.scss */
-.icon-key:before {
-  content: '\e93d';
-}
-
-/* '' */
-/* line 301, ../scss/_icons.scss */
-.icon-fork:before {
-  content: '\e93e';
-}
-
-/* '' */
-/* line 302, ../scss/_icons.scss */
-.icon-rocket:before {
-  content: '\e93f';
-}
-
-/* '' */
-/* line 303, ../scss/_icons.scss */
-.icon-bug:before {
-  content: '\e940';
-}
-
-/* '' */
-/* line 304, ../scss/_icons.scss */
-.icon-certificate:before {
-  content: '\e941';
-}
-
-/* '' */
-/* line 305, ../scss/_icons.scss */
-.icon-tasks:before {
-  content: '\e942';
-}
-
-/* '' */
-/* line 306, ../scss/_icons.scss */
-.icon-filter:before {
-  content: '\e943';
-}
-
-/* '' */
-/* line 307, ../scss/_icons.scss */
-.icon-beaker:before {
-  content: '\e944';
-}
-
-/* '' */
-/* line 308, ../scss/_icons.scss */
-.icon-magic:before {
-  content: '\e945';
-}
-
-/* '' */
-/* line 309, ../scss/_icons.scss */
-.icon-truck:before {
-  content: '\e946';
-}
-
-/* '' */
-/* line 310, ../scss/_icons.scss */
-.icon-money:before {
-  content: '\e947';
-}
-
-/* '' */
-/* line 311, ../scss/_icons.scss */
-.icon-euro:before {
-  content: '\e948';
-}
-
-/* '' */
-/* line 312, ../scss/_icons.scss */
-.icon-pound:before {
-  content: '\e934';
-}
-
-/* '' */
-/* line 313, ../scss/_icons.scss */
-.icon-dollar:before {
-  content: '\e933';
-}
-
-/* '' */
-/* line 314, ../scss/_icons.scss */
-.icon-rupee:before {
-  content: '\e931';
-}
-
-/* '' */
-/* line 315, ../scss/_icons.scss */
-.icon-yen:before {
-  content: '\e932';
-}
-
-/* '' */
-/* line 316, ../scss/_icons.scss */
-.icon-rouble:before {
-  content: '\e930';
-}
-
-/* '' */
-/* line 317, ../scss/_icons.scss */
-.icon-try:before {
-  content: '\e92e';
-}
-
-/* '' */
-/* line 318, ../scss/_icons.scss */
-.icon-won:before {
-  content: '\e92f';
-}
-
-/* '' */
-/* line 319, ../scss/_icons.scss */
-.icon-bitcoin:before {
-  content: '\e92d';
-}
-
-/* '' */
-/* line 320, ../scss/_icons.scss */
-.icon-sort:before {
-  content: '\e92c';
-}
-
-/* '' */
-/* line 321, ../scss/_icons.scss */
-.icon-sort-down:before {
-  content: '\e92b';
-}
-
-/* '' */
-/* line 322, ../scss/_icons.scss */
-.icon-sort-up:before {
-  content: '\e92a';
-}
-
-/* '' */
-/* line 323, ../scss/_icons.scss */
-.icon-sort-alt-up:before {
-  content: '\e929';
-}
-
-/* '' */
-/* line 324, ../scss/_icons.scss */
-.icon-sort-alt-down:before {
-  content: '\e928';
-}
-
-/* '' */
-/* line 325, ../scss/_icons.scss */
-.icon-sort-name-up:before {
-  content: '\e927';
-}
-
-/* '' */
-/* line 326, ../scss/_icons.scss */
-.icon-sort-name-down:before {
-  content: '\e926';
-}
-
-/* '' */
-/* line 327, ../scss/_icons.scss */
-.icon-sort-number-up:before {
-  content: '\e925';
-}
-
-/* '' */
-/* line 328, ../scss/_icons.scss */
-.icon-sort-number-down:before {
-  content: '\e924';
-}
-
-/* '' */
-/* line 329, ../scss/_icons.scss */
-.icon-hammer:before {
-  content: '\e923';
-}
-
-/* '' */
-/* line 330, ../scss/_icons.scss */
-.icon-gauge:before {
-  content: '\e922';
-}
-
-/* '' */
-/* line 331, ../scss/_icons.scss */
-.icon-sitemap:before {
-  content: '\e921';
-}
-
-/* '' */
-/* line 332, ../scss/_icons.scss */
-.icon-spinner:before {
-  content: '\e90d';
-}
-
-/* '' */
-/* line 333, ../scss/_icons.scss */
-.icon-coffee:before {
-  content: '\e90e';
-}
-
-/* '' */
-/* line 334, ../scss/_icons.scss */
-.icon-food:before {
-  content: '\e90f';
-}
-
-/* '' */
-/* line 335, ../scss/_icons.scss */
-.icon-beer:before {
-  content: '\e910';
-}
-
-/* '' */
-/* line 336, ../scss/_icons.scss */
-.icon-user-md:before {
-  content: '\e911';
-}
-
-/* '' */
-/* line 337, ../scss/_icons.scss */
-.icon-stethoscope:before {
-  content: '\e912';
-}
-
-/* '' */
-/* line 338, ../scss/_icons.scss */
-.icon-ambulance:before {
-  content: '\e913';
-}
-
-/* '' */
-/* line 339, ../scss/_icons.scss */
-.icon-medkit:before {
-  content: '\e914';
-}
-
-/* '' */
-/* line 340, ../scss/_icons.scss */
-.icon-h-sigh:before {
-  content: '\e915';
-}
-
-/* '' */
-/* line 341, ../scss/_icons.scss */
-.icon-hospital:before {
-  content: '\e916';
-}
-
-/* '' */
-/* line 342, ../scss/_icons.scss */
-.icon-building:before {
-  content: '\e917';
-}
-
-/* '' */
-/* line 343, ../scss/_icons.scss */
-.icon-smile:before {
-  content: '\e918';
-}
-
-/* '' */
-/* line 344, ../scss/_icons.scss */
-.icon-frown:before {
-  content: '\e919';
-}
-
-/* '' */
-/* line 345, ../scss/_icons.scss */
-.icon-meh:before {
-  content: '\e91a';
-}
-
-/* '' */
-/* line 346, ../scss/_icons.scss */
-.icon-anchor:before {
-  content: '\e91b';
-}
-
-/* '' */
-/* line 347, ../scss/_icons.scss */
-.icon-terminal:before {
-  content: '\e91c';
-}
-
-/* '' */
-/* line 348, ../scss/_icons.scss */
-.icon-eraser:before {
-  content: '\e91d';
-}
-
-/* '' */
-/* line 349, ../scss/_icons.scss */
-.icon-puzzle:before {
-  content: '\e91e';
-}
-
-/* '' */
-/* line 350, ../scss/_icons.scss */
-.icon-shield:before {
-  content: '\e91f';
-}
-
-/* '' */
-/* line 351, ../scss/_icons.scss */
-.icon-extinguisher:before {
-  content: '\e920';
-}
-
-/* '' */
-/* line 352, ../scss/_icons.scss */
-.icon-bullseye:before {
-  content: '\e90c';
-}
-
-/* '' */
-/* line 353, ../scss/_icons.scss */
-.icon-wheelchair:before {
-  content: '\e90b';
-}
-
-/* '' */
-/* line 354, ../scss/_icons.scss */
-.icon-adn:before {
-  content: '\e90a';
-}
-
-/* '' */
-/* line 355, ../scss/_icons.scss */
-.icon-android:before {
-  content: '\e909';
-}
-
-/* '' */
-/* line 356, ../scss/_icons.scss */
-.icon-apple:before {
-  content: '\e908';
-}
-
-/* '' */
-/* line 357, ../scss/_icons.scss */
-.icon-bitbucket:before {
-  content: '\e907';
-}
-
-/* '' */
-/* line 358, ../scss/_icons.scss */
-.icon-bitbucket-squared:before {
-  content: '\e906';
-}
-
-/* '' */
-/* line 359, ../scss/_icons.scss */
-.icon-css3:before {
-  content: '\e905';
-}
-
-/* '' */
-/* line 360, ../scss/_icons.scss */
-.icon-dribbble:before {
-  content: '\e904';
-}
-
-/* '' */
-/* line 361, ../scss/_icons.scss */
-.icon-dropbox:before {
-  content: '\e903';
-}
-
-/* '' */
-/* line 362, ../scss/_icons.scss */
-.icon-facebook:before {
-  content: '\e901';
-}
-
-/* '' */
-/* line 363, ../scss/_icons.scss */
-.icon-facebook-squared:before {
-  content: '\e902';
-}
-
-/* '' */
-/* line 364, ../scss/_icons.scss */
-.icon-flickr:before {
-  content: '\e900';
-}
-
-/* '' */
-/* line 365, ../scss/_icons.scss */
-.icon-foursquare:before {
-  content: '\e8ff';
-}
-
-/* '' */
-/* line 366, ../scss/_icons.scss */
-.icon-github:before {
-  content: '\e8fe';
-}
-
-/* '' */
-/* line 367, ../scss/_icons.scss */
-.icon-github-squared:before {
-  content: '\e8fd';
-}
-
-/* '' */
-/* line 368, ../scss/_icons.scss */
-.icon-github-circled:before {
-  content: '\e8fc';
-}
-
-/* '' */
-/* line 369, ../scss/_icons.scss */
-.icon-gittip:before {
-  content: '\e8fb';
-}
-
-/* '' */
-/* line 370, ../scss/_icons.scss */
-.icon-gplus-squared:before {
-  content: '\e8fa';
-}
-
-/* '' */
-/* line 371, ../scss/_icons.scss */
-.icon-gplus:before {
-  content: '\e8f9';
-}
-
-/* '' */
-/* line 372, ../scss/_icons.scss */
-.icon-html5:before {
-  content: '\e8e5';
-}
-
-/* '' */
-/* line 373, ../scss/_icons.scss */
-.icon-instagramm:before {
-  content: '\e8e6';
-}
-
-/* '' */
-/* line 374, ../scss/_icons.scss */
-.icon-linkedin-squared:before {
-  content: '\e8e7';
-}
-
-/* '' */
-/* line 375, ../scss/_icons.scss */
-.icon-linux:before {
-  content: '\e8e8';
-}
-
-/* '' */
-/* line 376, ../scss/_icons.scss */
-.icon-linkedin:before {
-  content: '\e8e9';
-}
-
-/* '' */
-/* line 377, ../scss/_icons.scss */
-.icon-maxcdn:before {
-  content: '\e8ea';
-}
-
-/* '' */
-/* line 378, ../scss/_icons.scss */
-.icon-pagelines:before {
-  content: '\e8eb';
-}
-
-/* '' */
-/* line 379, ../scss/_icons.scss */
-.icon-pinterest-circled:before {
-  content: '\e8ec';
-}
-
-/* '' */
-/* line 380, ../scss/_icons.scss */
-.icon-pinterest-squared:before {
-  content: '\e8ed';
-}
-
-/* '' */
-/* line 381, ../scss/_icons.scss */
-.icon-renren:before {
-  content: '\e8ee';
-}
-
-/* '' */
-/* line 382, ../scss/_icons.scss */
-.icon-skype:before {
-  content: '\e8ef';
-}
-
-/* '' */
-/* line 383, ../scss/_icons.scss */
-.icon-stackexchange:before {
-  content: '\e8f0';
-}
-
-/* '' */
-/* line 384, ../scss/_icons.scss */
-.icon-stackoverflow:before {
-  content: '\e8f1';
-}
-
-/* '' */
-/* line 385, ../scss/_icons.scss */
-.icon-trello:before {
-  content: '\e8f2';
-}
-
-/* '' */
-/* line 386, ../scss/_icons.scss */
-.icon-tumblr:before {
-  content: '\e8f3';
-}
-
-/* '' */
-/* line 387, ../scss/_icons.scss */
-.icon-tumblr-squared:before {
-  content: '\e8f4';
-}
-
-/* '' */
-/* line 388, ../scss/_icons.scss */
-.icon-twitter-squared:before {
-  content: '\e8f5';
-}
-
-/* '' */
-/* line 389, ../scss/_icons.scss */
-.icon-twitter:before {
-  content: '\e8f8';
-}
-
-/* '' */
-/* line 390, ../scss/_icons.scss */
-.icon-vimeo-squared:before {
-  content: '\e8f6';
-}
-
-/* '' */
-/* line 391, ../scss/_icons.scss */
-.icon-vkontakte:before {
-  content: '\e8f7';
-}
-
-/* '' */
-/* line 392, ../scss/_icons.scss */
-.icon-weibo:before {
-  content: '\e8e4';
-}
-
-/* '' */
-/* line 393, ../scss/_icons.scss */
-.icon-windows:before {
-  content: '\e8e3';
-}
-
-/* '' */
-/* line 394, ../scss/_icons.scss */
-.icon-xing:before {
-  content: '\e8e2';
-}
-
-/* '' */
-/* line 395, ../scss/_icons.scss */
-.icon-xing-squared:before {
-  content: '\e8e1';
-}
-
-/* '' */
-/* line 396, ../scss/_icons.scss */
-.icon-youtube:before {
-  content: '\e8e0';
-}
-
-/* '' */
-/* line 397, ../scss/_icons.scss */
-.icon-youtube-squared:before {
-  content: '\e8df';
-}
-
-/* '' */
-/* line 398, ../scss/_icons.scss */
-.icon-youtube-play:before {
-  content: '\e8de';
-}
-
-/* '' */
-/* line 399, ../scss/_icons.scss */
-.icon-blank:before {
-  content: '\e8dd';
-}
-
-/* '' */
-/* line 400, ../scss/_icons.scss */
 .icon-shuffle:before {
   content: '\e8b3';
 }
 
 /* '' */
+/* line 217, ../scss/_icons.scss */
+.icon-exchange:before {
+  content: '\e8b8';
+}
+
+/* '' */
+/* line 218, ../scss/_icons.scss */
+.icon-expand:before {
+  content: '\e8b9';
+}
+
+/* '' */
+/* line 219, ../scss/_icons.scss */
+.icon-collapse:before {
+  content: '\e8ba';
+}
+
+/* '' */
+/* line 220, ../scss/_icons.scss */
+.icon-expand-right:before {
+  content: '\e8bb';
+}
+
+/* '' */
+/* line 221, ../scss/_icons.scss */
+.icon-collapse-left:before {
+  content: '\e8bc';
+}
+
+/* '' */
+/* line 222, ../scss/_icons.scss */
+.icon-play:before {
+  content: '\e8bd';
+}
+
+/* '' */
+/* line 223, ../scss/_icons.scss */
+.icon-play-circled:before {
+  content: '\e8be';
+}
+
+/* '' */
+/* line 224, ../scss/_icons.scss */
+.icon-play-circled2:before {
+  content: '\e8bf';
+}
+
+/* '' */
+/* line 225, ../scss/_icons.scss */
+.icon-stop:before {
+  content: '\e8c0';
+}
+
+/* '' */
+/* line 226, ../scss/_icons.scss */
+.icon-pause:before {
+  content: '\e8c1';
+}
+
+/* '' */
+/* line 227, ../scss/_icons.scss */
+.icon-to-end:before {
+  content: '\e8c2';
+}
+
+/* '' */
+/* line 228, ../scss/_icons.scss */
+.icon-to-end-alt:before {
+  content: '\e8c3';
+}
+
+/* '' */
+/* line 229, ../scss/_icons.scss */
+.icon-to-start:before {
+  content: '\e8c4';
+}
+
+/* '' */
+/* line 230, ../scss/_icons.scss */
+.icon-to-start-alt:before {
+  content: '\e8c5';
+}
+
+/* '' */
+/* line 231, ../scss/_icons.scss */
+.icon-fast-fw:before {
+  content: '\e8c6';
+}
+
+/* '' */
+/* line 232, ../scss/_icons.scss */
+.icon-fast-bw:before {
+  content: '\e8c7';
+}
+
+/* '' */
+/* line 233, ../scss/_icons.scss */
+.icon-eject:before {
+  content: '\e8d1';
+}
+
+/* '' */
+/* line 234, ../scss/_icons.scss */
+.icon-target:before {
+  content: '\e8d2';
+}
+
+/* '' */
+/* line 235, ../scss/_icons.scss */
+.icon-signal:before {
+  content: '\e8d3';
+}
+
+/* '' */
+/* line 236, ../scss/_icons.scss */
+.icon-award:before {
+  content: '\e8d4';
+}
+
+/* '' */
+/* line 237, ../scss/_icons.scss */
+.icon-desktop:before {
+  content: '\e8db';
+}
+
+/* '' */
+/* line 238, ../scss/_icons.scss */
+.icon-laptop:before {
+  content: '\e8da';
+}
+
+/* '' */
+/* line 239, ../scss/_icons.scss */
+.icon-tablet:before {
+  content: '\e8d9';
+}
+
+/* '' */
+/* line 240, ../scss/_icons.scss */
+.icon-mobile:before {
+  content: '\e8d8';
+}
+
+/* '' */
+/* line 241, ../scss/_icons.scss */
+.icon-inbox:before {
+  content: '\e8d7';
+}
+
+/* '' */
+/* line 242, ../scss/_icons.scss */
+.icon-globe:before {
+  content: '\e8d6';
+}
+
+/* '' */
+/* line 243, ../scss/_icons.scss */
+.icon-sun:before {
+  content: '\e8d5';
+}
+
+/* '' */
+/* line 244, ../scss/_icons.scss */
+.icon-cloud:before {
+  content: '\e8d0';
+}
+
+/* '' */
+/* line 245, ../scss/_icons.scss */
+.icon-flash:before {
+  content: '\e8cf';
+}
+
+/* '' */
+/* line 246, ../scss/_icons.scss */
+.icon-moon:before {
+  content: '\e8ce';
+}
+
+/* '' */
+/* line 247, ../scss/_icons.scss */
+.icon-umbrella:before {
+  content: '\e8cd';
+}
+
+/* '' */
+/* line 248, ../scss/_icons.scss */
+.icon-flight:before {
+  content: '\e8cc';
+}
+
+/* '' */
+/* line 249, ../scss/_icons.scss */
+.icon-fighter-jet:before {
+  content: '\e8cb';
+}
+
+/* '' */
+/* line 250, ../scss/_icons.scss */
+.icon-leaf:before {
+  content: '\e8ca';
+}
+
+/* '' */
+/* line 251, ../scss/_icons.scss */
+.icon-font:before {
+  content: '\e8c9';
+}
+
+/* '' */
+/* line 252, ../scss/_icons.scss */
+.icon-bold:before {
+  content: '\e8c8';
+}
+
+/* '' */
+/* line 253, ../scss/_icons.scss */
+.icon-italic:before {
+  content: '\e95d';
+}
+
+/* '' */
+/* line 254, ../scss/_icons.scss */
+.icon-text-height:before {
+  content: '\e95e';
+}
+
+/* '' */
+/* line 255, ../scss/_icons.scss */
+.icon-text-width:before {
+  content: '\e95f';
+}
+
+/* '' */
+/* line 256, ../scss/_icons.scss */
+.icon-align-left:before {
+  content: '\e960';
+}
+
+/* '' */
+/* line 257, ../scss/_icons.scss */
+.icon-align-center:before {
+  content: '\e961';
+}
+
+/* '' */
+/* line 258, ../scss/_icons.scss */
+.icon-align-right:before {
+  content: '\e962';
+}
+
+/* '' */
+/* line 259, ../scss/_icons.scss */
+.icon-align-justify:before {
+  content: '\e963';
+}
+
+/* '' */
+/* line 260, ../scss/_icons.scss */
+.icon-list-1:before {
+  content: '\e964';
+}
+
+/* '' */
+/* line 261, ../scss/_icons.scss */
+.icon-indent-left:before {
+  content: '\e965';
+}
+
+/* '' */
+/* line 262, ../scss/_icons.scss */
+.icon-indent-right:before {
+  content: '\e966';
+}
+
+/* '' */
+/* line 263, ../scss/_icons.scss */
+.icon-list-bullet:before {
+  content: '\e967';
+}
+
+/* '' */
+/* line 264, ../scss/_icons.scss */
+.icon-list-numbered:before {
+  content: '\e968';
+}
+
+/* '' */
+/* line 265, ../scss/_icons.scss */
+.icon-strike:before {
+  content: '\e969';
+}
+
+/* '' */
+/* line 266, ../scss/_icons.scss */
+.icon-underline:before {
+  content: '\e96a';
+}
+
+/* '' */
+/* line 267, ../scss/_icons.scss */
+.icon-superscript:before {
+  content: '\e96b';
+}
+
+/* '' */
+/* line 268, ../scss/_icons.scss */
+.icon-subscript:before {
+  content: '\e96c';
+}
+
+/* '' */
+/* line 269, ../scss/_icons.scss */
+.icon-table:before {
+  content: '\e96d';
+}
+
+/* '' */
+/* line 270, ../scss/_icons.scss */
+.icon-columns:before {
+  content: '\e96e';
+}
+
+/* '' */
+/* line 271, ../scss/_icons.scss */
+.icon-crop:before {
+  content: '\e96f';
+}
+
+/* '' */
+/* line 272, ../scss/_icons.scss */
+.icon-scissors:before {
+  content: '\e970';
+}
+
+/* '' */
+/* line 273, ../scss/_icons.scss */
+.icon-paste:before {
+  content: '\e95c';
+}
+
+/* '' */
+/* line 274, ../scss/_icons.scss */
+.icon-briefcase:before {
+  content: '\e95b';
+}
+
+/* '' */
+/* line 275, ../scss/_icons.scss */
+.icon-suitcase:before {
+  content: '\e95a';
+}
+
+/* '' */
+/* line 276, ../scss/_icons.scss */
+.icon-ellipsis:before {
+  content: '\e959';
+}
+
+/* '' */
+/* line 277, ../scss/_icons.scss */
+.icon-ellipsis-vert:before {
+  content: '\e957';
+}
+
+/* '' */
+/* line 278, ../scss/_icons.scss */
+.icon-off:before {
+  content: '\e958';
+}
+
+/* '' */
+/* line 279, ../scss/_icons.scss */
+.icon-road:before {
+  content: '\e956';
+}
+
+/* '' */
+/* line 280, ../scss/_icons.scss */
+.icon-list-alt:before {
+  content: '\e955';
+}
+
+/* '' */
+/* line 281, ../scss/_icons.scss */
+.icon-qrcode:before {
+  content: '\e954';
+}
+
+/* '' */
+/* line 282, ../scss/_icons.scss */
+.icon-barcode:before {
+  content: '\e953';
+}
+
+/* '' */
+/* line 283, ../scss/_icons.scss */
+.icon-book:before {
+  content: '\e952';
+}
+
+/* '' */
+/* line 284, ../scss/_icons.scss */
+.icon-ajust:before {
+  content: '\e951';
+}
+
+/* '' */
+/* line 285, ../scss/_icons.scss */
+.icon-tint:before {
+  content: '\e950';
+}
+
+/* '' */
+/* line 286, ../scss/_icons.scss */
+.icon-check:before {
+  content: '\e94f';
+}
+
+/* '' */
+/* line 287, ../scss/_icons.scss */
+.icon-check-empty:before {
+  content: '\e94e';
+}
+
+/* '' */
+/* line 288, ../scss/_icons.scss */
+.icon-circle:before {
+  content: '\e94d';
+}
+
+/* '' */
+/* line 289, ../scss/_icons.scss */
+.icon-circle-empty:before {
+  content: '\e94c';
+}
+
+/* '' */
+/* line 290, ../scss/_icons.scss */
+.icon-dot-circled:before {
+  content: '\e94b';
+}
+
+/* '' */
+/* line 291, ../scss/_icons.scss */
+.icon-asterisk:before {
+  content: '\e94a';
+}
+
+/* '' */
+/* line 292, ../scss/_icons.scss */
+.icon-gift:before {
+  content: '\e949';
+}
+
+/* '' */
+/* line 293, ../scss/_icons.scss */
+.icon-fire:before {
+  content: '\e935';
+}
+
+/* '' */
+/* line 294, ../scss/_icons.scss */
+.icon-magnet:before {
+  content: '\e936';
+}
+
+/* '' */
+/* line 295, ../scss/_icons.scss */
+.icon-chart-bar:before {
+  content: '\e937';
+}
+
+/* '' */
+/* line 296, ../scss/_icons.scss */
+.icon-ticket:before {
+  content: '\e938';
+}
+
+/* '' */
+/* line 297, ../scss/_icons.scss */
+.icon-credit-card:before {
+  content: '\e939';
+}
+
+/* '' */
+/* line 298, ../scss/_icons.scss */
+.icon-floppy:before {
+  content: '\e93a';
+}
+
+/* '' */
+/* line 299, ../scss/_icons.scss */
+.icon-megaphone:before {
+  content: '\e93b';
+}
+
+/* '' */
+/* line 300, ../scss/_icons.scss */
+.icon-hdd:before {
+  content: '\e93c';
+}
+
+/* '' */
+/* line 301, ../scss/_icons.scss */
+.icon-key:before {
+  content: '\e93d';
+}
+
+/* '' */
+/* line 302, ../scss/_icons.scss */
+.icon-fork:before {
+  content: '\e93e';
+}
+
+/* '' */
+/* line 303, ../scss/_icons.scss */
+.icon-rocket:before {
+  content: '\e93f';
+}
+
+/* '' */
+/* line 304, ../scss/_icons.scss */
+.icon-bug:before {
+  content: '\e940';
+}
+
+/* '' */
+/* line 305, ../scss/_icons.scss */
+.icon-certificate:before {
+  content: '\e941';
+}
+
+/* '' */
+/* line 306, ../scss/_icons.scss */
+.icon-tasks:before {
+  content: '\e942';
+}
+
+/* '' */
+/* line 307, ../scss/_icons.scss */
+.icon-filter:before {
+  content: '\e943';
+}
+
+/* '' */
+/* line 308, ../scss/_icons.scss */
+.icon-beaker:before {
+  content: '\e944';
+}
+
+/* '' */
+/* line 309, ../scss/_icons.scss */
+.icon-magic:before {
+  content: '\e945';
+}
+
+/* '' */
+/* line 310, ../scss/_icons.scss */
+.icon-truck:before {
+  content: '\e946';
+}
+
+/* '' */
+/* line 311, ../scss/_icons.scss */
+.icon-money:before {
+  content: '\e947';
+}
+
+/* '' */
+/* line 312, ../scss/_icons.scss */
+.icon-euro:before {
+  content: '\e948';
+}
+
+/* '' */
+/* line 313, ../scss/_icons.scss */
+.icon-pound:before {
+  content: '\e934';
+}
+
+/* '' */
+/* line 314, ../scss/_icons.scss */
+.icon-dollar:before {
+  content: '\e933';
+}
+
+/* '' */
+/* line 315, ../scss/_icons.scss */
+.icon-rupee:before {
+  content: '\e931';
+}
+
+/* '' */
+/* line 316, ../scss/_icons.scss */
+.icon-yen:before {
+  content: '\e932';
+}
+
+/* '' */
+/* line 317, ../scss/_icons.scss */
+.icon-rouble:before {
+  content: '\e930';
+}
+
+/* '' */
+/* line 318, ../scss/_icons.scss */
+.icon-try:before {
+  content: '\e92e';
+}
+
+/* '' */
+/* line 319, ../scss/_icons.scss */
+.icon-won:before {
+  content: '\e92f';
+}
+
+/* '' */
+/* line 320, ../scss/_icons.scss */
+.icon-bitcoin:before {
+  content: '\e92d';
+}
+
+/* '' */
+/* line 321, ../scss/_icons.scss */
+.icon-sort:before {
+  content: '\e92c';
+}
+
+/* '' */
+/* line 322, ../scss/_icons.scss */
+.icon-sort-down:before {
+  content: '\e92b';
+}
+
+/* '' */
+/* line 323, ../scss/_icons.scss */
+.icon-sort-up:before {
+  content: '\e92a';
+}
+
+/* '' */
+/* line 324, ../scss/_icons.scss */
+.icon-sort-alt-up:before {
+  content: '\e929';
+}
+
+/* '' */
+/* line 325, ../scss/_icons.scss */
+.icon-sort-alt-down:before {
+  content: '\e928';
+}
+
+/* '' */
+/* line 326, ../scss/_icons.scss */
+.icon-sort-name-up:before {
+  content: '\e927';
+}
+
+/* '' */
+/* line 327, ../scss/_icons.scss */
+.icon-sort-name-down:before {
+  content: '\e926';
+}
+
+/* '' */
+/* line 328, ../scss/_icons.scss */
+.icon-sort-number-up:before {
+  content: '\e925';
+}
+
+/* '' */
+/* line 329, ../scss/_icons.scss */
+.icon-sort-number-down:before {
+  content: '\e924';
+}
+
+/* '' */
+/* line 330, ../scss/_icons.scss */
+.icon-hammer:before {
+  content: '\e923';
+}
+
+/* '' */
+/* line 331, ../scss/_icons.scss */
+.icon-gauge:before {
+  content: '\e922';
+}
+
+/* '' */
+/* line 332, ../scss/_icons.scss */
+.icon-sitemap:before {
+  content: '\e921';
+}
+
+/* '' */
+/* line 333, ../scss/_icons.scss */
+.icon-spinner:before {
+  content: '\e90d';
+}
+
+/* '' */
+/* line 334, ../scss/_icons.scss */
+.icon-coffee:before {
+  content: '\e90e';
+}
+
+/* '' */
+/* line 335, ../scss/_icons.scss */
+.icon-food:before {
+  content: '\e90f';
+}
+
+/* '' */
+/* line 336, ../scss/_icons.scss */
+.icon-beer:before {
+  content: '\e910';
+}
+
+/* '' */
+/* line 337, ../scss/_icons.scss */
+.icon-user-md:before {
+  content: '\e911';
+}
+
+/* '' */
+/* line 338, ../scss/_icons.scss */
+.icon-stethoscope:before {
+  content: '\e912';
+}
+
+/* '' */
+/* line 339, ../scss/_icons.scss */
+.icon-ambulance:before {
+  content: '\e913';
+}
+
+/* '' */
+/* line 340, ../scss/_icons.scss */
+.icon-medkit:before {
+  content: '\e914';
+}
+
+/* '' */
+/* line 341, ../scss/_icons.scss */
+.icon-h-sigh:before {
+  content: '\e915';
+}
+
+/* '' */
+/* line 342, ../scss/_icons.scss */
+.icon-hospital:before {
+  content: '\e916';
+}
+
+/* '' */
+/* line 343, ../scss/_icons.scss */
+.icon-building:before {
+  content: '\e917';
+}
+
+/* '' */
+/* line 344, ../scss/_icons.scss */
+.icon-smile:before {
+  content: '\e918';
+}
+
+/* '' */
+/* line 345, ../scss/_icons.scss */
+.icon-frown:before {
+  content: '\e919';
+}
+
+/* '' */
+/* line 346, ../scss/_icons.scss */
+.icon-meh:before {
+  content: '\e91a';
+}
+
+/* '' */
+/* line 347, ../scss/_icons.scss */
+.icon-anchor:before {
+  content: '\e91b';
+}
+
+/* '' */
+/* line 348, ../scss/_icons.scss */
+.icon-terminal:before {
+  content: '\e91c';
+}
+
+/* '' */
+/* line 349, ../scss/_icons.scss */
+.icon-eraser:before {
+  content: '\e91d';
+}
+
+/* '' */
+/* line 350, ../scss/_icons.scss */
+.icon-puzzle:before {
+  content: '\e91e';
+}
+
+/* '' */
+/* line 351, ../scss/_icons.scss */
+.icon-shield:before {
+  content: '\e91f';
+}
+
+/* '' */
+/* line 352, ../scss/_icons.scss */
+.icon-extinguisher:before {
+  content: '\e920';
+}
+
+/* '' */
+/* line 353, ../scss/_icons.scss */
+.icon-bullseye:before {
+  content: '\e90c';
+}
+
+/* '' */
+/* line 354, ../scss/_icons.scss */
+.icon-wheelchair:before {
+  content: '\e90b';
+}
+
+/* '' */
+/* line 355, ../scss/_icons.scss */
+.icon-adn:before {
+  content: '\e90a';
+}
+
+/* '' */
+/* line 356, ../scss/_icons.scss */
+.icon-android:before {
+  content: '\e909';
+}
+
+/* '' */
+/* line 357, ../scss/_icons.scss */
+.icon-apple:before {
+  content: '\e908';
+}
+
+/* '' */
+/* line 358, ../scss/_icons.scss */
+.icon-bitbucket:before {
+  content: '\e907';
+}
+
+/* '' */
+/* line 359, ../scss/_icons.scss */
+.icon-bitbucket-squared:before {
+  content: '\e906';
+}
+
+/* '' */
+/* line 360, ../scss/_icons.scss */
+.icon-css3:before {
+  content: '\e905';
+}
+
+/* '' */
+/* line 361, ../scss/_icons.scss */
+.icon-dribbble:before {
+  content: '\e904';
+}
+
+/* '' */
+/* line 362, ../scss/_icons.scss */
+.icon-dropbox:before {
+  content: '\e903';
+}
+
+/* '' */
+/* line 363, ../scss/_icons.scss */
+.icon-facebook:before {
+  content: '\e901';
+}
+
+/* '' */
+/* line 364, ../scss/_icons.scss */
+.icon-facebook-squared:before {
+  content: '\e902';
+}
+
+/* '' */
+/* line 365, ../scss/_icons.scss */
+.icon-flickr:before {
+  content: '\e900';
+}
+
+/* '' */
+/* line 366, ../scss/_icons.scss */
+.icon-foursquare:before {
+  content: '\e8ff';
+}
+
+/* '' */
+/* line 367, ../scss/_icons.scss */
+.icon-github:before {
+  content: '\e8fe';
+}
+
+/* '' */
+/* line 368, ../scss/_icons.scss */
+.icon-github-squared:before {
+  content: '\e8fd';
+}
+
+/* '' */
+/* line 369, ../scss/_icons.scss */
+.icon-github-circled:before {
+  content: '\e8fc';
+}
+
+/* '' */
+/* line 370, ../scss/_icons.scss */
+.icon-gittip:before {
+  content: '\e8fb';
+}
+
+/* '' */
+/* line 371, ../scss/_icons.scss */
+.icon-gplus-squared:before {
+  content: '\e8fa';
+}
+
+/* '' */
+/* line 372, ../scss/_icons.scss */
+.icon-gplus:before {
+  content: '\e8f9';
+}
+
+/* '' */
+/* line 373, ../scss/_icons.scss */
+.icon-html5:before {
+  content: '\e8e5';
+}
+
+/* '' */
+/* line 374, ../scss/_icons.scss */
+.icon-instagramm:before {
+  content: '\e8e6';
+}
+
+/* '' */
+/* line 375, ../scss/_icons.scss */
+.icon-linkedin-squared:before {
+  content: '\e8e7';
+}
+
+/* '' */
+/* line 376, ../scss/_icons.scss */
+.icon-linux:before {
+  content: '\e8e8';
+}
+
+/* '' */
+/* line 377, ../scss/_icons.scss */
+.icon-linkedin:before {
+  content: '\e8e9';
+}
+
+/* '' */
+/* line 378, ../scss/_icons.scss */
+.icon-maxcdn:before {
+  content: '\e8ea';
+}
+
+/* '' */
+/* line 379, ../scss/_icons.scss */
+.icon-pagelines:before {
+  content: '\e8eb';
+}
+
+/* '' */
+/* line 380, ../scss/_icons.scss */
+.icon-pinterest-circled:before {
+  content: '\e8ec';
+}
+
+/* '' */
+/* line 381, ../scss/_icons.scss */
+.icon-pinterest-squared:before {
+  content: '\e8ed';
+}
+
+/* '' */
+/* line 382, ../scss/_icons.scss */
+.icon-renren:before {
+  content: '\e8ee';
+}
+
+/* '' */
+/* line 383, ../scss/_icons.scss */
+.icon-skype:before {
+  content: '\e8ef';
+}
+
+/* '' */
+/* line 384, ../scss/_icons.scss */
+.icon-stackexchange:before {
+  content: '\e8f0';
+}
+
+/* '' */
+/* line 385, ../scss/_icons.scss */
+.icon-stackoverflow:before {
+  content: '\e8f1';
+}
+
+/* '' */
+/* line 386, ../scss/_icons.scss */
+.icon-trello:before {
+  content: '\e8f2';
+}
+
+/* '' */
+/* line 387, ../scss/_icons.scss */
+.icon-tumblr:before {
+  content: '\e8f3';
+}
+
+/* '' */
+/* line 388, ../scss/_icons.scss */
+.icon-tumblr-squared:before {
+  content: '\e8f4';
+}
+
+/* '' */
+/* line 389, ../scss/_icons.scss */
+.icon-twitter-squared:before {
+  content: '\e8f5';
+}
+
+/* '' */
+/* line 390, ../scss/_icons.scss */
+.icon-twitter:before {
+  content: '\e8f8';
+}
+
+/* '' */
+/* line 391, ../scss/_icons.scss */
+.icon-vimeo-squared:before {
+  content: '\e8f6';
+}
+
+/* '' */
+/* line 392, ../scss/_icons.scss */
+.icon-vkontakte:before {
+  content: '\e8f7';
+}
+
+/* '' */
+/* line 393, ../scss/_icons.scss */
+.icon-weibo:before {
+  content: '\e8e4';
+}
+
+/* '' */
+/* line 394, ../scss/_icons.scss */
+.icon-windows:before {
+  content: '\e8e3';
+}
+
+/* '' */
+/* line 395, ../scss/_icons.scss */
+.icon-xing:before {
+  content: '\e8e2';
+}
+
+/* '' */
+/* line 396, ../scss/_icons.scss */
+.icon-xing-squared:before {
+  content: '\e8e1';
+}
+
+/* '' */
+/* line 397, ../scss/_icons.scss */
+.icon-youtube:before {
+  content: '\e8e0';
+}
+
+/* '' */
+/* line 398, ../scss/_icons.scss */
+.icon-youtube-squared:before {
+  content: '\e8df';
+}
+
+/* '' */
+/* line 399, ../scss/_icons.scss */
+.icon-youtube-play:before {
+  content: '\e8de';
+}
+
+/* '' */
+/* line 400, ../scss/_icons.scss */
+.icon-level-down:before {
+  content: '\e8b2';
+}
+
+/* '' */
 /* line 9, ../scss/_portfolio-post.scss */
-.post-nav .button, .post-nav .stalk-button {
+.post-nav .button {
   padding: 0.5rem 0.75rem;
   width: 2.5rem;
   height: 2.5rem;
@@ -10028,7 +10007,7 @@ th.hide-for-touch {
 
   /* line 86, ../scss/_portfolio-post.scss */
   .portfolio-images {
-    width: 63%;
+    width: 65%;
   }
   /* line 88, ../scss/_portfolio-post.scss */
   .portfolio-images img {
@@ -10044,7 +10023,7 @@ th.hide-for-touch {
 
   /* line 99, ../scss/_portfolio-post.scss */
   .portfolio-images {
-    width: 68%;
+    width: 68.6%;
   }
   /* line 101, ../scss/_portfolio-post.scss */
   .portfolio-images img {
@@ -10058,14 +10037,34 @@ th.hide-for-touch {
   }
 }
 /*------//GLOBAL//------*/
-/* line 8, ../scss/app.scss */
+/* line 11, ../scss/app.scss */
 html {
   overflow-y: scroll;
   overflow-x: hidden;
 }
 
+/* Button border style */
+/* line 27, ../scss/app.scss */
+.btn-border {
+  border: 3px solid #fff;
+  color: #fff;
+  background: none;
+}
+
+/* line 33, ../scss/app.scss */
+.btn-border:hover,
+.btn-border:active {
+  color: #1e1e1e;
+  background: #fff;
+}
+
+/* line 37, ../scss/app.scss */
+.wrapper {
+  overflow-x: hidden;
+}
+
 /*------//MENU NAV//------*/
-/* line 32, ../scss/app.scss */
+/* line 47, ../scss/app.scss */
 .tab-bar {
   width: 100%;
   top: 0;
@@ -10076,28 +10075,19 @@ html {
   cursor: pointer;
 }
 
-/* line 41, ../scss/app.scss */
+/* line 56, ../scss/app.scss */
 .close-menu {
   height: 100%;
   width: 100%;
 }
 
-/* line 46, ../scss/app.scss */
-.block-grid-work {
-  height: 100%;
-  padding-left: none;
-  margin-left: -1.125rem;
-  margin-top: 3.125rem;
-  left: 0;
-}
-
-/* line 53, ../scss/app.scss */
+/* line 62, ../scss/app.scss */
 .left-off-canvas-toggle {
   cursor: pointer;
   height: 100%;
 }
 
-/* line 57, ../scss/app.scss */
+/* line 66, ../scss/app.scss */
 #menu-icon {
   width: 1.4375rem;
   cursor: pointer;
@@ -10107,12 +10097,12 @@ html {
   transition: color 150ms ease 0s;
 }
 
-/* line 65, ../scss/app.scss */
+/* line 74, ../scss/app.scss */
 #menu-icon:hover {
   color: #505050;
 }
 
-/* line 68, ../scss/app.scss */
+/* line 77, ../scss/app.scss */
 .logo-small {
   position: absolute;
   left: 50%;
@@ -10121,7 +10111,7 @@ html {
   margin-top: -1.25rem;
 }
 
-/* line 76, ../scss/app.scss */
+/* line 85, ../scss/app.scss */
 .spmenu {
   background-color: #1e1e1e;
   position: fixed;
@@ -10130,7 +10120,7 @@ html {
   top: 0;
   z-index: 1000;
 }
-/* line 85, ../scss/app.scss */
+/* line 94, ../scss/app.scss */
 .spmenu h3 {
   color: #afdefa;
   font-size: 1.9rem;
@@ -10140,7 +10130,7 @@ html {
   background: #0d77b6;
 }
 
-/* line 95, ../scss/app.scss */
+/* line 104, ../scss/app.scss */
 .nav-list {
   position: absolute;
   width: 100%;
@@ -10148,7 +10138,7 @@ html {
   left: 0px;
   margin-top: 1.875rem;
 }
-/* line 103, ../scss/app.scss */
+/* line 112, ../scss/app.scss */
 .nav-list a {
   padding: 1rem;
   padding-left: 2.6875rem;
@@ -10158,162 +10148,100 @@ html {
   font-weight: 300;
   border-bottom: 1px solid #232323;
 }
-/* line 112, ../scss/app.scss */
+/* line 121, ../scss/app.scss */
 .nav-list a:hover {
   background: #232323;
 }
-/* line 115, ../scss/app.scss */
+/* line 124, ../scss/app.scss */
 .nav-list a:active {
   background: #464646;
 }
-/* line 118, ../scss/app.scss */
+/* line 127, ../scss/app.scss */
 .nav-list ul:first-child {
   border-top: 1px solid #232323;
 }
 
-/* line 122, ../scss/app.scss */
+/* line 131, ../scss/app.scss */
 .nav-current {
   background: #232323;
-  border-left: solid 0.625rem #323232;
+  border-left: solid 0.5rem #1cbb9b;
 }
-/* line 125, ../scss/app.scss */
+/* line 134, ../scss/app.scss */
 .nav-current a {
   padding-left: 2.0625rem;
 }
+/* line 137, ../scss/app.scss */
+.nav-current a:active {
+  background: #232323;
+}
 
-/* line 130, ../scss/app.scss */
+/* line 142, ../scss/app.scss */
 .nav-logo {
-  margin-top: 1.5625rem;
+  width: 10rem;
+  margin-top: 1.75rem;
   margin-left: 2.8125rem;
 }
 
-/* line 135, ../scss/app.scss */
+/* line 148, ../scss/app.scss */
 .copyright {
   padding: 0 0 1rem 2.5rem;
   position: absolute;
   left: 0;
   bottom: 0;
 }
-/* line 141, ../scss/app.scss */
+/* line 154, ../scss/app.scss */
 .copyright small {
   color: #505050;
 }
 
-/* line 146, ../scss/app.scss */
-.stalk-button {
-  padding: 0.8625rem 2.9rem 0.8rem;
-  border-bottom: 4px solid #1c1c1c;
-  background-color: #282828;
-  -webkit-transition: all 0.1s ease;
-  -moz-transition: all 0.1s ease;
-  transition: all 0.1s ease;
-}
-
-/* line 153, ../scss/app.scss */
-.stalk-button:hover {
-  background-color: #313131;
-}
-
-/* line 156, ../scss/app.scss */
-.stalk-button:focus {
-  background-color: #282828;
-}
-
-/* line 159, ../scss/app.scss */
-.stalk-button:active {
-  border-bottom: 1px solid #1c1c1c;
-}
-
-/* line 162, ../scss/app.scss */
+/* line 158, ../scss/app.scss */
 .socialism {
   position: absolute;
   bottom: 1.25rem;
-  padding-left: 2.5rem;
+  padding-left: 1.5rem;
 }
-/* line 167, ../scss/app.scss */
+/* line 163, ../scss/app.scss */
 .socialism i {
-  font-size: 1.875rem;
+  font-size: 1.5625rem;
   color: #5a5a5a;
-  padding: 0.5rem 0.3125rem 0.5rem 0;
+  padding: 0.5rem 0.625rem 0.5rem 0;
 }
-/* line 172, ../scss/app.scss */
-.socialism i:last-child {
+/* line 168, ../scss/app.scss */
+.socialism ul:last-child {
   padding-right: 0;
 }
-/* line 175, ../scss/app.scss */
-.socialism i:first-child {
-  margin-left: 0.625rem;
-  padding-right: 0.3125rem;
-}
 
-/* line 180, ../scss/app.scss */
-.stalk-dropdown {
-  margin-top: -108px;
-  width: 9.6875rem;
-}
-/* line 183, ../scss/app.scss */
-.stalk-dropdown:before {
-  content: "";
-  display: block;
-  width: 0;
-  height: 0;
-  border: inset 6px;
-  border-color: white transparent transparent transparent;
-  border-top-style: solid;
-  position: absolute;
-  top: 3rem;
-  z-index: 99;
-}
-/* line 189, ../scss/app.scss */
-.stalk-dropdown:after {
-  content: "";
-  display: block;
-  width: 0;
-  height: 0;
-  border: inset 7px;
-  border-color: #cccccc transparent transparent transparent;
-  border-top-style: solid;
-  position: absolute;
-  top: 3rem;
-  z-index: 98;
-}
-/* line 196, ../scss/app.scss */
-.stalk-dropdown.right:before {
-  left: auto;
-  right: 10px;
-}
-/* line 200, ../scss/app.scss */
-.stalk-dropdown.right:after {
-  left: auto;
-  right: 9px;
+/* line 172, ../scss/app.scss */
+.reveal-modal {
+  border-top: 6px solid #1cbb9b;
 }
 
 /* Animation classes */
-/* line 209, ../scss/app.scss */
+/* line 178, ../scss/app.scss */
 .spmenu-left {
   left: -15rem;
 }
 
-/* line 214, ../scss/app.scss */
+/* line 183, ../scss/app.scss */
 .spmenu-left.spmenu-open,
 .tab-bar-left {
   left: 0;
 }
 
-/* line 219, ../scss/app.scss */
+/* line 188, ../scss/app.scss */
 .spmenu-push {
   overflow-x: hidden;
   position: relative;
   left: 0;
 }
 
-/* line 226, ../scss/app.scss */
+/* line 195, ../scss/app.scss */
 .spmenu-push-toright,
 .tab-bar-left.tab-bar-open {
   left: 15rem;
 }
 
-/* line 234, ../scss/app.scss */
+/* line 203, ../scss/app.scss */
 .spmenu,
 .spmenu-push,
 .tab-bar-active,
@@ -10324,39 +10252,45 @@ html {
 }
 
 /*------//BLOCK GRID//------*/
-/* line 241, ../scss/app.scss */
+/* line 209, ../scss/app.scss */
+.block-grid-work {
+  height: 100%;
+  padding-left: none;
+  left: 0;
+}
+/* line 210, ../scss/app.scss */
 .block-grid-work [class*="block-grid-"]:after {
   clear: none;
 }
-/* line 244, ../scss/app.scss */
+/* line 213, ../scss/app.scss */
 .block-grid-work ul {
   -webkit-margin-before: 0rem;
   -webkit-margin-after: 0rem;
 }
 
-/* line 250, ../scss/app.scss */
+/* line 222, ../scss/app.scss */
 .large-block-grid-3 img {
   max-width: none;
   width: 100%;
 }
 
-/* line 256, ../scss/app.scss */
+/* line 228, ../scss/app.scss */
 .portfolio-grid {
   /* figcaption span:before {
   	content: 'by ';
   } */
 }
-/* line 257, ../scss/app.scss */
+/* line 229, ../scss/app.scss */
 .portfolio-grid li {
   display: inline-block;
 }
-/* line 263, ../scss/app.scss */
+/* line 235, ../scss/app.scss */
 .portfolio-grid figure {
   margin: 0;
   position: relative;
   overflow: hidden;
 }
-/* line 268, ../scss/app.scss */
+/* line 240, ../scss/app.scss */
 .portfolio-grid figure img {
   max-width: none;
   width: 100%;
@@ -10366,13 +10300,13 @@ html {
   -moz-transition: -moz-transform 0.4s;
   transition: transform 0.4s;
 }
-/* line 278, ../scss/app.scss */
+/* line 250, ../scss/app.scss */
 .portfolio-grid figcaption {
   position: absolute;
   left: 0;
-  padding: 20px;
-  background: #2c3f52;
-  color: #ed4e6e;
+  padding: 1.25rem;
+  background: #354a5f;
+  color: #fff;
   height: 100px;
   width: 100%;
   top: auto;
@@ -10386,25 +10320,25 @@ html {
   -moz-transition: -moz-transform 0.4s, opacity 0.1s 0.3s;
   transition: transform 0.4s, opacity 0.1s 0.3s;
 }
-/* line 296, ../scss/app.scss */
+/* line 268, ../scss/app.scss */
 .portfolio-grid figcaption h3 {
   margin: 0;
   padding: 0;
   color: #fff;
 }
-/* line 301, ../scss/app.scss */
+/* line 273, ../scss/app.scss */
 .portfolio-grid figcaption a {
   text-align: center;
-  padding: 5px 10px;
+  padding: 0.3125rem 0.625rem;
   display: inline-block;
-  background: #ed4e6e;
+  background: #1cbb9b;
   color: #fff;
   position: absolute;
   bottom: 1.875rem;
   right: 20px;
 }
 
-/* line 316, ../scss/app.scss */
+/* line 288, ../scss/app.scss */
 .no-touch .portfolio-grid figure:hover img,
 .portfolio-grid figure.cs-hover img {
   -webkit-transform: translateY(-50px);
@@ -10413,7 +10347,7 @@ html {
   transform: translateY(-50px);
 }
 
-/* line 321, ../scss/app.scss */
+/* line 293, ../scss/app.scss */
 .no-touch .portfolio-grid figure:hover figcaption,
 .portfolio-grid figure.cs-hover figcaption {
   opacity: 1;
@@ -10427,115 +10361,103 @@ html {
 }
 
 /*------//CONTACT MODAL//------*/
-/* line 331, ../scss/app.scss */
+/* line 303, ../scss/app.scss */
 .submit-btn {
   width: 100%;
 }
 
 /*------//JOURNAL PAGE//------*/
-/* line 337, ../scss/app.scss */
+/* line 309, ../scss/app.scss */
 .sidebar {
   float: right;
   width: 15rem;
 }
 
-/* line 341, ../scss/app.scss */
+/* line 313, ../scss/app.scss */
 .sticky-sidebar .panel {
   width: 15rem;
 }
 
 /*------//MEDIA QUERIES//------*/
 @media only screen {
-  /* line 348, ../scss/app.scss */
+  /* line 320, ../scss/app.scss */
   .wrapper {
-    padding-left: 0;
-    padding-top: 3.125rem;
+    margin-left: 0;
+    margin-top: 3.125rem;
   }
 
-  /* line 353, ../scss/app.scss */
+  /* line 325, ../scss/app.scss */
   #menu-icon {
     margin: 0.4375rem 0 0 1.25rem;
   }
 
-  /* line 356, ../scss/app.scss */
+  /* line 328, ../scss/app.scss */
   .name-field {
     margin-right: 0;
   }
 
-  /* line 359, ../scss/app.scss */
+  /* line 331, ../scss/app.scss */
   .submit-btn {
     width: 100%;
   }
 
-  /* line 362, ../scss/app.scss */
+  /* line 334, ../scss/app.scss */
   .top-reveal-field {
     width: 100%;
     float: left;
   }
 
-  /* line 366, ../scss/app.scss */
+  /* line 338, ../scss/app.scss */
   .textarea-field textarea {
     height: 7.1875rem;
   }
-
-  /* line 369, ../scss/app.scss */
-  .stalk-dropdown {
-    margin-left: 2.25rem;
-    width: 9.6875rem !important;
-    max-width: 100% !important;
-  }
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 379, ../scss/app.scss */
+  /* line 346, ../scss/app.scss */
   .wrapper {
-    padding-left: 0;
-    padding-top: 3.125rem;
+    margin-left: 0;
+    margin-top: 3.125rem;
   }
 
-  /* line 383, ../scss/app.scss */
+  /* line 350, ../scss/app.scss */
   #menu-icon {
     margin: 0.4375rem 0 0 1.25rem;
   }
 
-  /* line 386, ../scss/app.scss */
+  /* line 353, ../scss/app.scss */
   .name-field {
     margin-right: 5%;
   }
 
-  /* line 389, ../scss/app.scss */
+  /* line 356, ../scss/app.scss */
   .submit-btn {
     width: 100%;
   }
 
-  /* line 392, ../scss/app.scss */
+  /* line 359, ../scss/app.scss */
   .top-reveal-field {
     width: 47.5%;
     float: left;
   }
 
-  /* line 396, ../scss/app.scss */
+  /* line 363, ../scss/app.scss */
   .textarea-field textarea {
     height: 10rem;
   }
-
-  /* line 399, ../scss/app.scss */
-  .stalk-dropdown {
-    margin-left: 0;
-  }
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 406, ../scss/app.scss */
+  /* line 370, ../scss/app.scss */
   .wrapper {
-    padding-top: 0;
-    padding-left: 5rem;
+    margin-top: 0;
+    margin-left: 5rem;
   }
 
-  /* line 410, ../scss/app.scss */
+  /* line 374, ../scss/app.scss */
   #menu-icon {
     margin: 1.25rem 0 0 1.6875rem;
   }
 
-  /* line 413, ../scss/app.scss */
+  /* line 377, ../scss/app.scss */
   .tab-bar {
     width: 5rem;
     top: 0;
@@ -10543,23 +10465,17 @@ html {
     height: 100%;
   }
 
-  /* line 419, ../scss/app.scss */
-  .block-grid-work {
-    padding-left: 5rem;
-    margin-top: 0;
-  }
-
-  /* line 423, ../scss/app.scss */
+  /* line 383, ../scss/app.scss */
   .submit-btn {
     width: 13.75rem;
   }
 }
 @media only screen and (min-width: 90.063em) {
-  /* line 432, ../scss/app.scss */
+  /* line 392, ../scss/app.scss */
   .xlarge-grid {
     display: block;
     padding: 0;
-    margin: 0 -rem-calc(0)/2;
+    margin: 0 0;
     *zoom: 1;
   }
   /* line 165, ../bower_components/foundation/scss/foundation/components/_global.scss */
@@ -10576,12 +10492,12 @@ html {
     display: inline;
     height: auto;
     float: left;
-    padding: 0 rem-calc(0)/2 rem-calc(0);
+    padding: 0 0 0;
   }
   /* line 44, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
   .xlarge-grid > li {
     width: 25%;
-    padding: 0 rem-calc(0)/2 rem-calc(0);
+    padding: 0 0 0;
   }
   /* line 48, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
   .xlarge-grid > li:nth-of-type(n) {
@@ -10593,7 +10509,7 @@ html {
   }
 }
 @media screen and (max-height: 35em) {
-  /* line 443, ../scss/app.scss */
+  /* line 403, ../scss/app.scss */
   .nav-list {
     position: absolute;
     width: 100%;
@@ -10602,69 +10518,62 @@ html {
     margin-top: 1.25rem;
   }
 
-  /* line 451, ../scss/app.scss */
+  /* line 411, ../scss/app.scss */
   .nav-logo {
     width: 7.5rem;
     margin-top: 1.5625rem;
     margin-left: 2.1875rem;
   }
 
-  /* line 456, ../scss/app.scss */
+  /* line 416, ../scss/app.scss */
   .spmenu {
     width: 11.875rem;
   }
 
-  /* line 460, ../scss/app.scss */
+  /* line 420, ../scss/app.scss */
   .nav-list a {
     font-size: 90%;
     padding: 0.8rem;
     padding-left: 2.0625rem;
   }
 
-  /* line 466, ../scss/app.scss */
+  /* line 426, ../scss/app.scss */
   .nav-current {
     border-left: solid 0.5rem #323232;
   }
-  /* line 468, ../scss/app.scss */
+  /* line 428, ../scss/app.scss */
   .nav-current a {
     padding-left: 1.5625rem;
   }
 
-  /* line 472, ../scss/app.scss */
+  /* line 432, ../scss/app.scss */
   .copyright {
     padding: 0px 0px 1rem 2.0625rem;
   }
 
-  /* line 477, ../scss/app.scss */
+  /* line 437, ../scss/app.scss */
   .spmenu-left,
   .spmenu-push-toleft {
     left: -11.875rem;
   }
 
-  /* line 481, ../scss/app.scss */
+  /* line 441, ../scss/app.scss */
   .tab-bar-left {
     left: 0;
   }
 
-  /* line 484, ../scss/app.scss */
+  /* line 444, ../scss/app.scss */
   .tab-bar-left.tab-bar-open {
     left: 11.875rem;
   }
 
-  /* line 488, ../scss/app.scss */
+  /* line 448, ../scss/app.scss */
   .spmenu-push-toright {
     left: 11.875rem;
   }
-
-  /* line 491, ../scss/app.scss */
-  .stalk-button {
-    padding: 0.8625rem 2.7rem 0.8rem;
-    font-size: 80%;
-    margin-left: -0.625rem;
-  }
 }
 @media screen and (max-height: 28.3em) {
-  /* line 499, ../scss/app.scss */
+  /* line 454, ../scss/app.scss */
   .nav-logo {
     display: none;
   }

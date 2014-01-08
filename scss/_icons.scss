@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icon_font';
-  src: url('../fonts/icon_font.eot?28561774');
-  src: url('../fonts/icon_font.eot?28561774#iefix') format('embedded-opentype'),
-       url('../fonts/icon_font.woff?28561774') format('woff'),
-       url('../fonts/icon_font.ttf?28561774') format('truetype'),
-       url('../fonts/icon_font.svg?28561774#icon_font') format('svg');
+  src: url('../fonts/icon_font.eot?99161719');
+  src: url('../fonts/icon_font.eot?99161719#iefix') format('embedded-opentype'),
+       url('../fonts/icon_font.woff?99161719') format('woff'),
+       url('../fonts/icon_font.ttf?99161719') format('truetype'),
+       url('../fonts/icon_font.svg?99161719#icon_font') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -14,7 +14,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'icon_font';
-    src: url('../font/icon_font.svg?28561774#icon_font') format('svg');
+    src: url('../font/icon_font.svg?99161719#icon_font') format('svg');
   }
 }
 */
@@ -28,11 +28,12 @@
  
 .icon-foundation:before { content: '\e972'; } /* '' */
 .icon-lemon:before { content: '\e8dc'; } /* '' */
+.icon-mail:before { content: '\e803'; } /* '' */
 .icon-x:before { content: '\e973'; } /* '' */
+.icon-hw:before { content: '\e974'; } /* '' */
 .icon-glass:before { content: '\e800'; } /* '' */
 .icon-music:before { content: '\e801'; } /* '' */
 .icon-search:before { content: '\e802'; } /* '' */
-.icon-mail:before { content: '\e803'; } /* '' */
 .icon-mail-alt:before { content: '\e804'; } /* '' */
 .icon-heart:before { content: '\e805'; } /* '' */
 .icon-heart-empty:before { content: '\e806'; } /* '' */
@@ -211,8 +212,8 @@
 .icon-ccw:before { content: '\e8af'; } /* '' */
 .icon-arrows-cw:before { content: '\e8b0'; } /* '' */
 .icon-level-up:before { content: '\e8b1'; } /* '' */
-.icon-level-down:before { content: '\e8b2'; } /* '' */
 .icon-list:before { content: '\e971'; } /* '' */
+.icon-shuffle:before { content: '\e8b3'; } /* '' */
 .icon-exchange:before { content: '\e8b8'; } /* '' */
 .icon-expand:before { content: '\e8b9'; } /* '' */
 .icon-collapse:before { content: '\e8ba'; } /* '' */
@@ -396,5 +397,4 @@
 .icon-youtube:before { content: '\e8e0'; } /* '' */
 .icon-youtube-squared:before { content: '\e8df'; } /* '' */
 .icon-youtube-play:before { content: '\e8de'; } /* '' */
-.icon-blank:before { content: '\e8dd'; } /* '' */
-.icon-shuffle:before { content: '\e8b3'; } /* '' */
+.icon-level-down:before { content: '\e8b2'; } /* '' */

@@ -28,25 +28,25 @@
     </header>
 
     <nav class="spmenu spmenu-left" id="spmenu-s1">
-      <div class="nav-logo"><img src="img/logo_150px.png" alt="large logo"/></div>
+      <div class="nav-logo"><img src="img/logo_150px.svg" alt="large logo"/></div>
       <div class="nav-list">
         <ul class="no-bullet">
-          <li class="nav-current"><a href="#">Portfolio</a></li>
+          <li class="nav-current has-dropdown"><a href="#">Portfolio <span class="icon-"></span></a></li>
           <li><a href="#">Journal</a></li>
           <li><a href="#">Details</a></li>
           <li><a href="#" id="hideLeftPush" data-reveal-id="contactModal">Contact</a></li>
         </ul>
       </div>
-      
+
       <div class="socialism">
-        <a href="#" data-dropdown="drop1" class="stalk-button">Stalk Me</a>
-        <ul id="drop1" class="f-dropdown stalk-dropdown" data-dropdown-content>
-          </li><a href=""><i class="icon-linkedin-squared"></i></a></li>
-          </li><i class=" icon-youtube-squared"></i></li>
-          </li><i class="icon-github-squared"></i></li>
-          </li><i class="icon-twitter-squared"></i></li>
+        <ul>
+          </li><a href=""><i class="icon-linkedin"></i></a></li>
+          </li><i class="icon-youtube-play"></i></li>
+          </li><i class="icon-twitter"></i></li>
+        </li><i class="icon-gplus"></i></li>
         </ul>
       </div>
+
       <div class="copyright">
         <small>© Hamish Williams 2014.</small>
       </div>
@@ -59,7 +59,7 @@
         <div class="name-field top-reveal-field"> 
           <label>Your name*</label> 
           <input type="text" required pattern="[a-zA-Z]+"> 
-          <small class="error">Name is required and must be a string.</small> 
+          <small class="error">Your name is required.</small> 
         </div> 
         <div class="email-field top-reveal-field"> 
           <label>Email*</label> 
@@ -69,7 +69,7 @@
         <div class="textarea-field">
           <label>Message*</label>
           <textarea required pattern="alpha_numeric" placeholder="Throw me a message" ></textarea>
-          <small class="error">You need to actually write a message.</small> 
+          <small class="error">You need to write a message.</small> 
         </div>
         <button class="submit-btn" type="submit">Send Message</button>
         <!-- <button id="close-btn" class="close-reveal-modal">Close</button> -->
@@ -77,32 +77,34 @@
       <a class="close-reveal-modal">&#215;</a> 
     </div>
 
-    <section class="block-grid-work">
-      <ul class="portfolio-grid small-block-grid-1 medium-block-grid-2 large-block-grid-3 xlarge-grid">
-        <li>
-          <figure>
-            <img src="img/library/test_fox_400px.jpg" alt="img04">
-            <figcaption>
-              <h3>Fox Card</h3>
-              <span>A personal illustration</span>
-              <a href="#">View Project</a>
-            </figcaption>
-          </figure>
-        </li>
-        <li><img src="http://placehold.it/400" /></li> 
-        <li><img src="http://placehold.it/400" /></li>
-        <li><img src="http://placehold.it/400" /></li> 
-        <li><img src="http://placehold.it/400" /></li> 
-        <li><img src="http://placehold.it/400" /></li> 
-        <li><img src="http://placehold.it/400" /></li> 
-        <li><img src="http://placehold.it/400" /></li> 
-        <li><img src="http://placehold.it/400" /></li>
-        <li><img src="http://placehold.it/400" /></li> 
-        <li><img src="http://placehold.it/400" /></li> 
-        <li><img src="http://placehold.it/400" /></li>  
-      </ul>
-    </section>
-    <a href="#" class="close-menu"></a>
+    <div class="wrapper">
+      <section class="block-grid-work">
+        <ul class="portfolio-grid small-block-grid-1 medium-block-grid-2 large-block-grid-3 xlarge-grid">
+          <li>
+            <figure>
+              <img src="img/library/test_fox_400px.jpg" alt="img04">
+              <figcaption>
+                <h3>Fox Card</h3>
+                <span>Illustration, Print</span>
+                <a href="#">View Project</a>
+              </figcaption>
+            </figure>
+          </li>
+          <li><img src="http://placehold.it/400" /></li> 
+          <li><img src="http://placehold.it/400" /></li>
+          <li><img src="http://placehold.it/400" /></li> 
+          <li><img src="http://placehold.it/400" /></li> 
+          <li><img src="http://placehold.it/400" /></li> 
+          <li><img src="http://placehold.it/400" /></li> 
+          <li><img src="http://placehold.it/400" /></li> 
+          <li><img src="http://placehold.it/400" /></li>
+          <li><img src="http://placehold.it/400" /></li> 
+          <li><img src="http://placehold.it/400" /></li> 
+          <li><img src="http://placehold.it/400" /></li>  
+        </ul>
+      </section>
+    </div>
+
     <script src="bower_components/jquery/jquery.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>
     <script src="js/app.js"></script>

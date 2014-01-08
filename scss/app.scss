@@ -5,12 +5,13 @@
 
 /*------//GLOBAL//------*/
 
+$nblue: #354a5f;
+$nav-internal-color: #2c3e50;
+
 html {
 	overflow-y: scroll;
    	overflow-x: hidden;
-
 }
-
 @mixin transition($type, $dur) {
   	-webkit-transition: $type $dur ease;
     -moz-transition: $type $dur ease;
@@ -21,6 +22,20 @@ html {
 		-moz-transform: translateY($size);
 		-ms-transform: translateY($size);
 		transform: translateY($size);
+}
+/* Button border style */
+.btn-border {
+	border: 3px solid #fff;
+	color: #fff;
+	background: none;
+}
+.btn-border:hover,
+.btn-border:active {
+	color: rgb(30, 30, 30);
+	background: #fff;
+}
+.wrapper {
+   	overflow-x: hidden;
 }
 
 /*------//MENU NAV//------*/
@@ -43,13 +58,7 @@ $tab-bar-width: 5rem;
 	height: 100%;
 	width: 100%;
 }
-.block-grid-work {
-	height: 100%;
-	padding-left: none;
-	margin-left: -1.125rem;
-	margin-top: 3.125rem;
-	left: 0;
-}
+
 .left-off-canvas-toggle {
 	cursor: pointer;
 	height: 100%;
@@ -121,14 +130,18 @@ $tab-bar-width: 5rem;
 }
 .nav-current {
 	background: rgb(35, 35, 35);
-	border-left: solid rem-calc(10) rgb(50, 50, 50);
+	border-left: solid rem-calc(8) /* rgb(50, 50, 50) */ $primary-color;
 	a {
 		padding-left: rem-calc(33);
+	}
+	a:active {
+		background: rgb(35, 35, 35);
 	}
 }
 
 .nav-logo {
-	margin-top: rem-calc(25);
+	width: rem-calc(160);
+	margin-top: rem-calc(28);
 	margin-left: $spmenu-logo-gap / 2;
 }
 
@@ -142,67 +155,23 @@ $tab-bar-width: 5rem;
 		color: rgb(80, 80, 80);
 	}
 }
-
-.stalk-button {
-	@extend .button;
-	padding: 0.8625rem 2.9rem 0.8rem;
-	border-bottom: 4px solid rgb(28, 28, 28);
-	background-color: rgb(40, 40, 40);
-	@include transition(all, 0.1s);
-}
-.stalk-button:hover {
-	background-color: rgb(49, 49, 49);
-}
-.stalk-button:focus {
-	background-color: rgb(40, 40, 40);
-}
-.stalk-button:active {
-	border-bottom: 1px solid rgb(28, 28, 28);
-}
 .socialism {
 	position: absolute;
 	bottom: rem-calc(20);
-	padding-left: 2.5rem;
+	padding-left: 1.5rem;
 
 	i {
-		font-size: rem-calc(30);
+		font-size: rem-calc(25);
 		color: rgb(90, 90, 90);
-		padding: rem-calc(8) rem-calc(5) rem-calc(8) 0;
+		padding: rem-calc(8) rem-calc(10) rem-calc(8) 0;
 	}
-	i:last-child {
+	ul:last-child {
 		padding-right: 0;
 	}
-	i:first-child {
-		margin-left: rem-calc(10);
-		padding-right: rem-calc(5);
-	}
 }	
-.stalk-dropdown {
-	margin-top: -108px;
-	width: rem-calc(155);
-	&:before {
-      @include css-triangle($f-dropdown-triangle-size, $f-dropdown-triangle-color, top);
-      position: absolute;
-   	  top: rem-calc(48);
-      z-index: 99;
-    }
-    &:after {
-      @include css-triangle($f-dropdown-triangle-size + 1, $f-dropdown-border-color, top);
-      position: absolute;
-      top: rem-calc(48);
-      z-index: 98;
-    }
-
-    &.right:before {
-      left: auto;
-      right: $f-dropdown-triangle-side-offset;
-    }
-    &.right:after {
-      left: auto;
-      right: $f-dropdown-triangle-side-offset - 1;
-    }
+.reveal-modal {
+	border-top: 6px solid $primary-color;
 }
-
 /* Animation classes */
 
 // Push menu
@@ -245,6 +214,9 @@ $tab-bar-width: 5rem;
 		-webkit-margin-before: 0rem;
 		-webkit-margin-after: 0rem;
 	}
+	height: 100%;
+	padding-left: none;
+	left: 0;
 }
 .large-block-grid-3 {
 	img {
@@ -278,9 +250,9 @@ $tab-bar-width: 5rem;
 	figcaption {
 		position: absolute;
 		left: 0;
-		padding: 20px;
-		background: #2c3f52;
-		color: #ed4e6e;
+		padding: rem-calc(20);
+		background: /* #2c3f52 */ $nblue;
+		color: #fff;
 		height: 100px;
 		width: 100%;
 		top: auto;
@@ -300,10 +272,10 @@ $tab-bar-width: 5rem;
 	}
 	figcaption a {
 		text-align: center;
-		padding: 5px 10px;
+		padding: rem-calc(5) rem-calc(10);
 		// border-radius: 2px;
 		display: inline-block;
-		background: #ed4e6e;
+		background: $primary-color;
 		color: #fff;
 
 		position: absolute;
@@ -346,8 +318,8 @@ $tab-bar-width: 5rem;
 // Mobile
 @media only screen { 
 	.wrapper {
-		padding-left: rem-calc(0);
-		padding-top: 3.125rem;
+		margin-left: rem-calc(0);
+		margin-top: 3.125rem;
 	}
 
 	#menu-icon {
@@ -366,19 +338,14 @@ $tab-bar-width: 5rem;
 	.textarea-field textarea{
 		height: rem-calc(115);
 	}
-	.stalk-dropdown {
-		margin-left: rem-calc(36); 
-		width: rem-calc(155) !important; 
-		max-width: 100% !important; 
-	}
 
 }
 
 // Medium
 @media only screen and (min-width: 40.063em) { 
 	.wrapper {
-		padding-left: rem-calc(0);
-		padding-top: 3.125rem;
+		margin-left: rem-calc(0);
+		margin-top: 3.125rem;
 	}
 	#menu-icon {
 		margin: rem-calc(7) 0 0 rem-calc(20);
@@ -396,16 +363,13 @@ $tab-bar-width: 5rem;
 	.textarea-field textarea{
 		height: 10rem;
 	}
-	.stalk-dropdown {
-		margin-left: rem-calc(0); 
-	}
 
 }
 // Large screens
 @media only screen and (min-width: 64.063em) { 
 	.wrapper {
-		padding-top: rem-calc(0);
-		padding-left: rem-calc(80);
+		margin-top: rem-calc(0);
+		margin-left: rem-calc(80);
 	}
 	#menu-icon {
 		margin: rem-calc(20) 0 0 rem-calc(27);
@@ -415,10 +379,6 @@ $tab-bar-width: 5rem;
 		top: 0;
 		bottom: 0;
 		height: 100%;
-	}
-	.block-grid-work {
-		padding-left: $tab-bar-width;
-		margin-top: 0;
 	}
 	.submit-btn {
 		width: rem-calc(220);
@@ -488,11 +448,6 @@ $tab-bar-width: 5rem;
 	.spmenu-push-toright {
         left: rem-calc(190);
     }
- 	.stalk-button {
-		padding: 0.8625rem 2.7rem 0.8rem;
-		font-size: 80%;
-		margin-left: rem-calc(-10);
-	}
 
 }
 @media screen and (max-height: 28.3em){
