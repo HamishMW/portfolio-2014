@@ -16,7 +16,7 @@
     <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
     <link rel="apple-touch-icon-precomposed" href="img/icons/apple-touch-icon-precomposed.png">
 
-    <link rel="stylesheet" href="stylesheets/app.css" />
+    <link rel="stylesheet" href="style.css" />
     <script src="bower_components/modernizr/modernizr.js"></script>
 
   </head>
@@ -31,7 +31,7 @@
       <div class="nav-logo"><img src="img/logo_150px.svg" alt="large logo"/></div>
       <div class="nav-list">
         <ul class="no-bullet">
-          <li class="nav-current has-dropdown"><a href="#">Portfolio <span class="icon-"></span></a></li>
+          <li class="nav-current has-dropdown"><a href="index.html">Portfolio <span class="icon-"></span></a></li>
           <li><a href="#">Journal</a></li>
           <li><a href="#">Details</a></li>
           <li><a href="#" id="hideLeftPush" data-reveal-id="contactModal">Contact</a></li>
@@ -40,10 +40,10 @@
 
       <div class="socialism">
         <ul>
-          </li><a href=""><i class="icon-linkedin"></i></a></li>
-          </li><i class="icon-youtube-play"></i></li>
-          </li><i class="icon-twitter"></i></li>
-        </li><i class="icon-gplus"></i></li>
+          <li><a href="http://lnkd.in/bbXaTCd" class="icon-linkedin"></a></li>
+          <li><a href="http://www.youtube.com/user/Yamanotaka" class="icon-youtube-play"></a></li>
+          <li><a href="https://twitter.com/hamishMW" class="icon-twitter"></a></li>
+          <li><a href="https://plus.google.com/u/0/+HamishWilliams/" class="icon-gplus"></a></li>
         </ul>
       </div>
 
@@ -71,7 +71,7 @@
           <textarea required pattern="alpha_numeric" placeholder="Throw me a message" ></textarea>
           <small class="error">You need to write a message.</small> 
         </div>
-        <button class="submit-btn" type="submit">Send Message</button>
+        <button class="submit-btn btn-border" type="submit">Send Message</button>
         <!-- <button id="close-btn" class="close-reveal-modal">Close</button> -->
       </form>
       <a class="close-reveal-modal">&#215;</a> 
@@ -81,14 +81,18 @@
       <section class="block-grid-work">
         <ul class="portfolio-grid small-block-grid-1 medium-block-grid-2 large-block-grid-3 xlarge-grid">
           <li>
-            <figure>
+            <a href="portfolio-post.html">
+              <figure>
               <img src="img/library/test_fox_400px.jpg" alt="img04">
-              <figcaption>
-                <h3>Fox Card</h3>
-                <span>Illustration, Print</span>
-                <a href="#">View Project</a>
+              <figcaption class="no-touch">
+                <div class="figure-text">
+                  <h3><strong>Fox Card</strong></h3>
+                  <span>Illustration, Print</span>
+                </div>
+                <!-- <a class="btn-border" href="portfolio-post.html">View Project</a> -->
               </figcaption>
             </figure>
+          </a>
           </li>
           <li><img src="http://placehold.it/400" /></li> 
           <li><img src="http://placehold.it/400" /></li>

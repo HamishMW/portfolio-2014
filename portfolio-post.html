@@ -16,7 +16,7 @@
     <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
     <link rel="apple-touch-icon-precomposed" href="img/icons/apple-touch-icon-precomposed.png">
 
-    <link rel="stylesheet" href="stylesheets/app.css" />
+    <link rel="stylesheet" href="style.css" />
     <script src="bower_components/modernizr/modernizr.js"></script>
 
   </head>
@@ -31,19 +31,19 @@
       <div class="nav-logo"><img src="img/logo_150px.svg" alt="large logo"/></div>
       <div class="nav-list">
         <ul class="no-bullet">
-          <li class="nav-current"><a href="#">Portfolio</a></li>
+          <li class="nav-current has-dropdown"><a href="index.html">Portfolio <span class="icon-"></span></a></li>
           <li><a href="#">Journal</a></li>
           <li><a href="#">Details</a></li>
           <li><a href="#" id="hideLeftPush" data-reveal-id="contactModal">Contact</a></li>
         </ul>
       </div>
-      
+
       <div class="socialism">
         <ul>
-          </li><a href=""><i class="icon-linkedin"></i></a></li>
-          </li><i class="icon-youtube-play"></i></li>
-          </li><i class="icon-twitter"></i></li>
-        </li><i class="icon-gplus"></i></li>
+          </li><a href="http://lnkd.in/bbXaTCd" class="icon-linkedin"></a></li>
+          </li><a href="http://www.youtube.com/user/Yamanotaka" class="icon-youtube-play"></a></li>
+          </li><a href="https://twitter.com/hamishMW" class="icon-twitter"></a></li>
+          </li><a href="https://plus.google.com/u/0/+HamishWilliams/" class="icon-gplus"></a></li>
         </ul>
       </div>
 
@@ -59,7 +59,7 @@
         <div class="name-field top-reveal-field"> 
           <label>Your name*</label> 
           <input type="text" required pattern="[a-zA-Z]+"> 
-          <small class="error">Name is required and must be a string.</small> 
+          <small class="error">Your name is required.</small> 
         </div> 
         <div class="email-field top-reveal-field"> 
           <label>Email*</label> 
@@ -69,9 +69,9 @@
         <div class="textarea-field">
           <label>Message*</label>
           <textarea required pattern="alpha_numeric" placeholder="Throw me a message" ></textarea>
-          <small class="error">You need to actually write a message.</small> 
+          <small class="error">You need to write a message.</small> 
         </div>
-        <button class="submit-btn" type="submit">Send Message</button>
+        <button class="submit-btn btn-border" type="submit">Send Message</button>
         <!-- <button id="close-btn" class="close-reveal-modal">Close</button> -->
       </form>
       <a class="close-reveal-modal">&#215;</a> 
@@ -80,15 +80,17 @@
     <div class="wrapper">
     
       <div class="portfolio-images">
-        <!-- <ul class="example-orbit" data-orbit> 
-          <li> <img src="http://placehold.it/1000x400&text=[ slide 1 ]" /></li> 
-          <li> <img src="http://placehold.it/1000x400&text=[ slide 2 ]" /> </li> 
-          <li> <img src="http://placehold.it/1000x400&text=[ slide 3 ]" /></li> 
-        </ul> -->
-        <img src="http://placehold.it/1000x550&text=[ img 1 ]">
-        <img src="http://placehold.it/1000x550&text=[ img 2 ]">
-        <img src="http://placehold.it/1000x550&text=[ img 3 ]">
-        <img src="http://placehold.it/1000x550&text=[ img 4 ]">
+        <ul class="no-bullet">
+          <!-- <ul class="example-orbit" data-orbit> 
+            <li> <img src="http://placehold.it/1000x400&text=[ slide 1 ]" /></li> 
+            <li> <img src="http://placehold.it/1000x400&text=[ slide 2 ]" /> </li> 
+            <li> <img src="http://placehold.it/1000x400&text=[ slide 3 ]" /></li> 
+          </ul> -->
+          <li><img src="http://placehold.it/1000x550&text=[ img 1 ]"></li>
+          <li><img src="http://placehold.it/1000x550&text=[ img 2 ]"></li>
+          <li><img src="http://placehold.it/1000x550&text=[ img 3 ]"></li>
+          <li><img src="http://placehold.it/1000x550&text=[ img 4 ]"></li>
+        </ul>
       </div>
 
       <aside id="right-push" class="description-sticky right-description">

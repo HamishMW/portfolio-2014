@@ -1,6 +1,6 @@
 // class helper functions from bonzo https://github.com/ded/bonzo
 
-( function( window ) {
+/*( function( window ) {*/
 
 'use strict';
 
@@ -55,7 +55,7 @@ window.classie = {
   toggle: toggleClass
 };
     // for touch devices: add class cs-hover to the figures when touching the items
-    if( Modernizr.touch ) {
+    /*if( Modernizr.touch ) {
         // transport
         if ( typeof define === 'function' && define.amd ) {
             // AMD
@@ -74,9 +74,9 @@ window.classie = {
             }, false );
         } );
 
-    }
+    }*/
 
-})( window );
+/*})( window );*/
 
 // Custom off-canvas javascript
 

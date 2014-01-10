@@ -18,10 +18,10 @@
 	}
 }
 .share-links {
-	padding: rem-calc(8) rem-calc(12);
+	padding: rem-calc(9) rem-calc(11);
 	width: rem-calc(40);
 	height: rem-calc(40);
-	font-size: rem-calc(20);
+	font-size: rem-calc(19);
 	border-right: 1px solid rgba(255, 255, 255, 0.5);
 }
 
@@ -50,7 +50,9 @@
     opacity: 1;
     pointer-events: auto;
 }
-
+.portfolio-images ul {
+	margin: 0;
+}
 @media only screen {  
 	.right-open {
 		right: 0rem;
@@ -106,7 +108,7 @@
 //Short 
 @media screen and (max-height: 36em){
 	.description-sticky {
-		overflow: scroll;
+		overflow-y: scroll;
 		
 	}
 }

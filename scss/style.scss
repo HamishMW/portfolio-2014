@@ -1,3 +1,4 @@
+@import "info";
 @import "settings";
 @import "foundation";
 @import "icons";
@@ -5,9 +6,13 @@
 
 /*------//GLOBAL//------*/
 
+$primary-color-dark: #1aa382;
 $nblue: #354a5f;
-$nav-internal-color: #2c3e50;
+$nblue-dark: #2c3e50;
 
+.btn-border {
+	border-bottom: 4px solid $primary-color-dark;
+}
 html {
 	overflow-y: scroll;
    	overflow-x: hidden;
@@ -24,7 +29,7 @@ html {
 		transform: translateY($size);
 }
 /* Button border style */
-.btn-border {
+/* .btn-border {
 	border: 3px solid #fff;
 	color: #fff;
 	background: none;
@@ -36,7 +41,7 @@ html {
 }
 .wrapper {
    	overflow-x: hidden;
-}
+} */
 
 /*------//MENU NAV//------*/
 
@@ -108,8 +113,8 @@ $tab-bar-width: 5rem;
 	left: 0px;
 	// top: 30%; 
 	margin-top: rem-calc(30);
-
 	a {
+		@include transition(all, 0.3s);
 		padding: 1rem;
 		padding-left: rem-calc(43);
 		display: block;
@@ -129,10 +134,12 @@ $tab-bar-width: 5rem;
 	}
 }
 .nav-current {
+
 	background: rgb(35, 35, 35);
 	border-left: solid rem-calc(8) /* rgb(50, 50, 50) */ $primary-color;
 	a {
 		padding-left: rem-calc(33);
+		color: $primary-color;
 	}
 	a:active {
 		background: rgb(35, 35, 35);
@@ -143,6 +150,7 @@ $tab-bar-width: 5rem;
 	width: rem-calc(160);
 	margin-top: rem-calc(28);
 	margin-left: $spmenu-logo-gap / 2;
+	 @include transition(all, 0.3s);
 }
 
 .copyright {
@@ -159,8 +167,12 @@ $tab-bar-width: 5rem;
 	position: absolute;
 	bottom: rem-calc(20);
 	padding-left: 1.5rem;
-
-	i {
+	li {
+		list-style: none outside none;
+		display: inline-block;
+	}
+	a {
+		@include transition(all, 0.3s);
 		font-size: rem-calc(25);
 		color: rgb(90, 90, 90);
 		padding: rem-calc(8) rem-calc(10) rem-calc(8) 0;
@@ -168,9 +180,13 @@ $tab-bar-width: 5rem;
 	ul:last-child {
 		padding-right: 0;
 	}
+	a:hover {
+		color: $primary-color;
+	}
 }	
 .reveal-modal {
 	border-top: 6px solid $primary-color;
+	overflow: visible;
 }
 /* Animation classes */
 
@@ -236,6 +252,7 @@ $tab-bar-width: 5rem;
 		margin: 0;
 		position: relative;
 		overflow: hidden;
+
 	}
 	figure img {
 		max-width: none;
@@ -243,59 +260,50 @@ $tab-bar-width: 5rem;
 		display: block;
 		position: relative;
 
-		-webkit-transition: -webkit-transform 0.4s;
-		-moz-transition: -moz-transform 0.4s;
-		transition: transform 0.4s;
+
 	}
 	figcaption {
 		position: absolute;
 		left: 0;
+		text-align: center;
 		padding: rem-calc(20);
-		background: /* #2c3f52 */ $nblue;
+		background: rgba(28, 187, 155, 0.5);
 		color: #fff;
-		height: 100px;
+		height: 100%;
 		width: 100%;
 		top: auto;
 		bottom: 0;
 		opacity: 0;
+		@include transition(all, 0.3s);
+	}
 
-		@include transform(100%);
-
-		-webkit-transition: -webkit-transform 0.4s, opacity 0.1s 0.3s;
-		-moz-transition: -moz-transform 0.4s, opacity 0.1s 0.3s;
-		transition: transform 0.4s, opacity 0.1s 0.3s;
+	figcaption:before {
+	  content: '';
+	  display: inline-block;
+	  height: 100%;
+	  vertical-align: middle;
+	  margin-right: -0.25em; /* Adjusts for spacing */
+	}
+	.figure-text {
+		display: inline-block;
+  		vertical-align: middle;
+  		transform: translateY(rem-calc(30)); 
+  		@include transition(all, 0.3s);
 	}
 	figcaption h3 {
-		margin: 0;
-		padding: 0;
 		color: #fff;
+		margin-bottom: rem-calc(-4);
 	}
-	figcaption a {
-		text-align: center;
-		padding: rem-calc(5) rem-calc(10);
-		// border-radius: 2px;
-		display: inline-block;
-		background: $primary-color;
+	span {
 		color: #fff;
-
-		position: absolute;
-		bottom: rem-calc(30);
-		right: 20px;
+		font-size: rem-calc(13);
 	}
 }
-
-.no-touch .portfolio-grid figure:hover img,
-.portfolio-grid figure.cs-hover img {
-	@include transform(-50px);
-}
-
-.no-touch .portfolio-grid figure:hover figcaption,
-.portfolio-grid figure.cs-hover figcaption {
+.portfolio-grid figure:hover figcaption {
 	opacity: 1;
-	@include transform(0px);
-	-webkit-transition: -webkit-transform 0.4s, opacity 0.1s;
-	-moz-transition: -moz-transform 0.4s, opacity 0.1s;
-	transition: transform 0.4s, opacity 0.1s;
+}
+.portfolio-grid figure:hover figcaption .figure-text {
+	transform: translateY(0px);
 }
 
 /*------//CONTACT MODAL//------*/
@@ -424,7 +432,7 @@ $tab-bar-width: 5rem;
       	}
     }
     .nav-current {
-    	border-left: solid rem-calc(8) rgb(50, 50, 50);
+    	border-left: solid rem-calc(8) $primary-color;
 		a {
 			padding-left: rem-calc(25);
 		}
@@ -447,6 +455,9 @@ $tab-bar-width: 5rem;
 	// Push body 
 	.spmenu-push-toright {
         left: rem-calc(190);
+    }
+    .socialism a {
+    	font-size: 98%;
     }
 
 }
