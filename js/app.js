@@ -1,7 +1,5 @@
 // class helper functions from bonzo https://github.com/ded/bonzo
 
-/*( function( window ) {*/
-
 'use strict';
 
 function classReg( className ) {
@@ -54,29 +52,7 @@ window.classie = {
   remove: removeClass,
   toggle: toggleClass
 };
-    // for touch devices: add class cs-hover to the figures when touching the items
-    /*if( Modernizr.touch ) {
-        // transport
-        if ( typeof define === 'function' && define.amd ) {
-            // AMD
-            define( classie );
-        } else {
-            // browser global
-            window.classie = classie;
-        }
 
-        [].slice.call( document.querySelectorAll( 'ul.portfolio-grid > li > figure' ) ).forEach( function( el, i ) {
-            el.querySelector( 'figcaption > a' ).addEventListener( 'touchstart', function(e) {
-                e.stopPropagation();
-            }, false );
-            el.addEventListener( 'touchstart', function(e) {
-                classie.toggle( this, 'cs-hover' );
-            }, false );
-        } );
-
-    }*/
-
-/*})( window );*/
 
 // Custom off-canvas javascript
 
@@ -115,6 +91,11 @@ function reveal() {
 showLeftPush.onclick = reveal;
 hideLeftPush.onclick = reveal;
 
+/*( function( window ) {
+  // Call off-canvas toggles
+  
+})(window);
+*/
 // Media query js conditionals 
 $(window).on('resize',function(){
     if(Modernizr.mq('(min-width: 64.063em)')) $(".tab-bar").removeClass("tab-bar-active");
@@ -124,31 +105,26 @@ $(window).on('resize',function(){
 });
 
 //Custom dropdowns
+var Dropd = document.getElementById( 'dd' );
 
 function DropDown(el) {
-    this.dd = el;
+    Dropd = el;
     this.initEvents();
 }
 DropDown.prototype = {
   initEvents : function() {
-    var obj = this;
+    /*var obj = this;*/
 
-    obj.dd.on('click', function(event){
-      $(this).toggleClass('active');
+    Dropd.on('click', function(event){
+      Dropd.toggleClass('share-active');
       event.stopPropagation();
     }); 
   }
 }
+//Custom dropdowns
+var dd = new DropDown( $('#dd') );
 
-$(function(){ // document ready
- 
-  //Custom dropdowns
-  var dd = new DropDown( $('#dd') );
-
-  $(document).click(function() {
-    // all dropdowns
-    $('.wrapper-dropdown').removeClass('active');
-  });
+/*$(function(){ // document ready
 
   // Sticky sidebar   
   if (!!$('.sticky-active').offset()) { // make sure ".sticky-active" element exists
@@ -170,7 +146,7 @@ $(function(){ // document ready
  
   }
  
-});
+});*/
 
 // Foundation JavaScript
 // Documentation can be found at: http://foundation.zurb.com/docs

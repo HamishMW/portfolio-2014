@@ -1,0 +1,65 @@
+.head-description {
+	h3 {
+		padding-top: rem-calc(40);
+		padding-bottom: rem-calc(20);
+	}
+	h1, p, hr {
+		padding-bottom: rem-calc(30);
+	}
+}
+
+/* This parent can be any width and height */
+.img-centerer{
+  text-align: center;
+}
+ 
+/* The ghost, nudged to maintain perfect centering */
+.img-centerer:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.25em; /* Adjusts for spacing */
+}
+
+/* The element to be centered, can
+   also be of any width and height */ 
+.img-centerer img {
+  display: inline-block;
+  vertical-align: middle;
+}
+.cv-btn {
+	padding-left: rem-calc(35);
+	padding-right: rem-calc(40);
+	margin-right: rem-calc(5);
+	i {
+		padding-right: rem-calc(10);
+	}
+}
+//small only
+@media only screen and (max-width: 40em) { 
+	.cv-btn {
+		width: 100%;
+	}
+}
+// medium up 
+@media only screen and (min-width: 40.063em) { 
+	.content-page {
+		padding-left: 4%;
+		padding-right: 4%;
+	}
+}
+// Large
+@media only screen and (min-width: 64.063em) { 
+	.content-page {
+		padding-left: 7%;
+		padding-right: 7%;
+	}
+}
+// Xlarge
+@media only screen and (min-width: 90.063em) { 
+	.content-page {
+		padding-left: 13%;
+		padding-right: 13%;
+	}
+}

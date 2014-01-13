@@ -15,7 +15,7 @@
 
 		<!-- mobile meta -->
 		<meta name="HandheldFriendly" content="True">
-		<!-- <meta name="MobileOptimized" content="320"> -->
+		<meta name="MobileOptimized" content="320">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
 		<!-- icons & favicons -->
@@ -36,7 +36,7 @@
 
 	</head>
 
-	<body class="spmenu-push" <?php body_class(); ?>>
+	<body <?php body_class('spmenu-push'); ?>>
 
 	<header class="tab-bar tab-bar-left tab-bar-active" id="showLeftPush">
       <i id="menu-icon" class="icon-list"></i>
@@ -47,9 +47,8 @@
       <div class="nav-logo"><img src="<?php echo get_template_directory_uri(); ?>/img/logo_150px.png" alt="large logo"/></div>
       <div class="nav-list">
         <ul class="no-bullet">
-          <li class="nav-current has-dropdown"><a href="index.html">Portfolio <span class="icon-"></span></a></li>
-          <li><a href="#">Journal</a></li>
-          <li><a href="#">Details</a></li>
+          <?php wp_list_pages('title_li=');?>
+
           <li><a href="#" id="hideLeftPush" data-reveal-id="contactModal">Contact</a></li>
         </ul>
       </div>
@@ -69,27 +68,6 @@
     </nav>
     
     <div id="contactModal" class="reveal-modal" data-reveal> 
-      <h2>Awesome. I have it.</h2> 
-      <hr>
-      <form data-abide> 
-        <div class="name-field top-reveal-field"> 
-          <label>Your name*</label> 
-          <input type="text" required pattern="[a-zA-Z]+"> 
-          <small class="error">Your name is required.</small> 
-        </div> 
-        <div class="email-field top-reveal-field"> 
-          <label>Email*</label> 
-          <input type="email" required> 
-          <small class="error">A valid email address is required.</small> 
-        </div> 
-        <div class="textarea-field">
-          <label>Message*</label>
-          <textarea required pattern="alpha_numeric" placeholder="Throw me a message" ></textarea>
-          <small class="error">You need to write a message.</small> 
-        </div>
-        <button class="submit-btn btn-border" type="submit">Send Message</button>
-        <!-- <button id="close-btn" class="close-reveal-modal">Close</button> -->
-      </form>
-      <a class="close-reveal-modal">&#215;</a> 
+      <?php include (TEMPLATEPATH . '/contact.php'); ?>
     </div>
 			

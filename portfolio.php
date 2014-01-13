@@ -27,12 +27,14 @@ Template Name: Portfolio
 
         echo '<figcaption class="no-touch"><div class="figure-text">';
         echo '<h3><strong>'; the_title(); echo'</strong></h3><span>';
-        $posttags = get_the_tags();
+        
+        $posttags = get_the_tags(); $sep = '';
         if ($posttags) {
           foreach($posttags as $tag) {
-            echo $tag->name . ', ', ''; 
+            echo $sep.$tag->name; $sep = ', ';
           }
         }
+
         echo '</span></div></figcaption></figure>';
         echo '</a></li>';
             

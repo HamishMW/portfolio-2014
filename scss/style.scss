@@ -1,8 +1,9 @@
-@import "info";
+@import "wp-info";
 @import "settings";
 @import "foundation";
 @import "icons";
 @import "portfolio-post";
+@import "details";
 
 /*------//GLOBAL//------*/
 
@@ -28,6 +29,7 @@ html {
 		-ms-transform: translateY($size);
 		transform: translateY($size);
 }
+
 /* Button border style */
 /* .btn-border {
 	border: 3px solid #fff;
@@ -114,7 +116,6 @@ $tab-bar-width: 5rem;
 	// top: 30%; 
 	margin-top: rem-calc(30);
 	a {
-		@include transition(all, 0.3s);
 		padding: 1rem;
 		padding-left: rem-calc(43);
 		display: block;
@@ -133,7 +134,7 @@ $tab-bar-width: 5rem;
 		border-top: 1px solid rgb(35, 35, 35);
 	}
 }
-.nav-current {
+.current_page_item {
 
 	background: rgb(35, 35, 35);
 	border-left: solid rem-calc(8) /* rgb(50, 50, 50) */ $primary-color;
@@ -231,7 +232,7 @@ $tab-bar-width: 5rem;
 		-webkit-margin-after: 0rem;
 	}
 	height: 100%;
-	padding-left: none;
+	padding-left: 0;
 	left: 0;
 }
 .large-block-grid-3 {
@@ -287,7 +288,7 @@ $tab-bar-width: 5rem;
 	.figure-text {
 		display: inline-block;
   		vertical-align: middle;
-  		transform: translateY(rem-calc(30)); 
+  		@include transform(rem-calc(30)); 
   		@include transition(all, 0.3s);
 	}
 	figcaption h3 {
@@ -303,7 +304,7 @@ $tab-bar-width: 5rem;
 	opacity: 1;
 }
 .portfolio-grid figure:hover figcaption .figure-text {
-	transform: translateY(0px);
+	@include transform(0px);
 }
 
 /*------//CONTACT MODAL//------*/
@@ -323,7 +324,7 @@ $tab-bar-width: 5rem;
 }
 /*------//MEDIA QUERIES//------*/
 
-// Mobile
+// Small screens up
 @media only screen { 
 	.wrapper {
 		margin-left: rem-calc(0);
@@ -349,7 +350,7 @@ $tab-bar-width: 5rem;
 
 }
 
-// Medium
+// Medium screens up
 @media only screen and (min-width: 40.063em) { 
 	.wrapper {
 		margin-left: rem-calc(0);
@@ -373,7 +374,7 @@ $tab-bar-width: 5rem;
 	}
 
 }
-// Large screens
+// Large screens up
 @media only screen and (min-width: 64.063em) { 
 	.wrapper {
 		margin-top: rem-calc(0);
@@ -394,7 +395,7 @@ $tab-bar-width: 5rem;
 
 }
 
-// XLarge screens
+// XLarge screens up
 @media only screen and (min-width: 90.063em) { 
 
 	.xlarge-grid {

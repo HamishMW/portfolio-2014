@@ -46,7 +46,7 @@
 	@include transition(all, 0.15s, ease-out);
 }
  
-.wrapper-dropdown.active .share-dropdown {
+.wrapper-dropdown.share-active .share-dropdown {
     opacity: 1;
     pointer-events: auto;
 }
@@ -76,12 +76,12 @@
 }
 
 // Medium screens
-@media only screen and (min-width: rem-calc(817)) { 
+@media only screen and (min-width: 51.063em) { 
 	.right-open {
 		right: -15rem;
 	}
 	.description-sticky {
-		padding: rem-calc(20) + rem-calc(50) rem-calc(40) rem-calc(50) rem-calc(40p);
+		padding: rem-calc(20) + rem-calc(50) rem-calc(40) rem-calc(50) rem-calc(40);
 		width: 35%;
 		position: fixed;
 	}
@@ -93,7 +93,7 @@
 	}
 }
 // Large screens
-@media only screen and (min-width: 64.063rem) { 
+@media only screen and (min-width: 64.063em) { 
 	.description-sticky {
 		width: 30%;
 		padding: rem-calc(35) rem-calc(40) rem-calc(50) rem-calc(40);

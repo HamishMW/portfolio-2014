@@ -1,4 +1,4 @@
-  <div id="contactModal" class="reveal-modal" data-reveal> 
+
       <h2>Awesome. I have it.</h2> 
       <hr>
       <form data-abide> 
@@ -21,4 +21,3 @@
         <!-- <button id="close-btn" class="close-reveal-modal">Close</button> -->
       </form>
       <a class="close-reveal-modal">&#215;</a> 
-  </div>

@@ -30,7 +30,9 @@ THUMNAIL SIZE OPTIONS
 *********************/
 
 // Thumbnail sizes
-/*add_image_size( 'joints-thumb-600', 600, 150, true );
+/*add_image_size( 'joints-thumb-300', 50, 50, true );
+add_image_size( 'joints-thumb-300', 400, 400, true );
+add_image_size( 'joints-thumb-600', 600, 150, true );
 add_image_size( 'joints-thumb-300', 300, 100, true );*/
 /*
 to add more sizes, simply copy a line from above
@@ -57,7 +59,7 @@ you like.
 MENUS & NAVIGATION
 *********************/
 // registering wp3+ menus
-register_nav_menus(
+/*register_nav_menus(
 	array(
 		'main-nav' => __( 'The Main Menu' ),   // main nav in header
 		'footer-links' => __( 'Footer Links' ) // secondary nav in footer
@@ -65,7 +67,7 @@ register_nav_menus(
 );
 
 // the main menu
-function joints_main_nav() {
+function hw_main_nav() {
 	// display the wp3 menu if available
     wp_nav_menu(array(
     	'container' => false,                           // remove nav container
@@ -79,7 +81,7 @@ function joints_main_nav() {
         'link_after' => '',                             // after each link
     	'fallback_cb' => 'joints_main_nav_fallback'      // fallback function
 	));
-} /* end joints main nav */
+}  */
 
 
 /*********************
