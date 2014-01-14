@@ -85,6 +85,7 @@ function reveal() {
     classie.toggle( showLeftPush, 'tab-bar-open' );
     classie.add( showLeftPush, 'tab-bar-active' );
     
+    /*$("body").addClass("dummyClass").removeClass("dummyClass");*/
     /*disableOther( 'showLeftPush' );*/
 };
 
@@ -113,7 +114,6 @@ function DropDown(el) {
 }
 DropDown.prototype = {
   initEvents : function() {
-    /*var obj = this;*/
 
     Dropd.on('click', function(event){
       Dropd.toggleClass('share-active');
