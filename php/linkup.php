@@ -20,7 +20,7 @@ add_action('after_setup_theme','hw_start', 16);
 function hw_start() {
 
     // launching operation cleanup
-    /*add_action('init', 'hw_head_cleanup');
+    add_action('init', 'hw_head_cleanup');
     // remove WP version from RSS
     add_filter('the_generator', 'hw_rss_version');
     // remove pesky injected css for recent comments widget
@@ -28,14 +28,14 @@ function hw_start() {
     // clean up comment styles in the head
     add_action('wp_head', 'hw_remove_recent_comments_style', 1);
     // clean up gallery output in wp
-    add_filter('gallery_style', 'hw_gallery_style');*/
+    add_filter('gallery_style', 'hw_gallery_style');
 
     // enqueue base scripts and styles
     add_action('wp_enqueue_scripts', 'hw_scripts_and_styles', 999);
     // ie conditional wrapper
 
     // launching this stuff after theme setup
-    /*hw_theme_support();
+    hw_theme_support();
 
     // adding sidebars to Wordpress (these are created in functions.php)
     add_action( 'widgets_init', 'hw_register_sidebars' );
@@ -45,7 +45,7 @@ function hw_start() {
     // cleaning up random code around images
     add_filter('the_content', 'hw_filter_ptags_on_images');
     // cleaning up excerpt
-    add_filter('excerpt_more', 'hw_excerpt_more');*/
+    add_filter('excerpt_more', 'hw_excerpt_more');
 
 } /* end hw start */
 
@@ -55,7 +55,7 @@ The default wordpress head is a mess.
 Let's clean it up by removing all the junk we don't need.
 *********************/
 
-/*function hw_head_cleanup() {
+function hw_head_cleanup() {
 	// category feeds
 	// remove_action( 'wp_head', 'feed_links_extra', 3 );
 	// post and comment feeds
@@ -79,10 +79,10 @@ Let's clean it up by removing all the junk we don't need.
   // remove Wp version from scripts
   add_filter( 'script_loader_src', 'hw_remove_wp_ver_css_js', 9999 );
 
-}*/ /* end hw head cleanup */
+} /* end hw head cleanup */
 
 // remove WP version from RSS
-/*function hw_rss_version() { return ''; }
+function hw_rss_version() { return ''; }
 
 // remove WP version from scripts
 function hw_remove_wp_ver_css_js( $src ) {
@@ -109,7 +109,7 @@ function hw_remove_recent_comments_style() {
 // remove injected CSS from gallery
 function hw_gallery_style($css) {
   return preg_replace("!<style type='text/css'>(.*?)</style>!s", '', $css);
-}*/
+}
 
 
 /*********************
@@ -128,7 +128,7 @@ function hw_scripts_and_styles() {
     wp_register_script( 'foundation-js', get_template_directory_uri() . '/bower_components/foundation/js/foundation.min.js', array( 'jquery' ), '', true );
    
     // register main stylesheet
-  	/* wp_register_style( 'hw-stylesheet', get_stylesheet_directory_uri() . '/library/css/style.css', array(), '', 'all' );*/
+  	wp_register_style( 'hw-stylesheet', get_stylesheet_directory_uri() . '/style.css', array(), '', 'all' );
 
     // comment reply script for threaded comments
     if ( is_singular() AND comments_open() AND (get_option('thread_comments') == 1)) {
@@ -161,8 +161,8 @@ function hw_scripts_and_styles() {
 if (!is_admin()) add_action("wp_enqueue_scripts", "my_jquery_enqueue", 11);
 function my_jquery_enqueue() {
    wp_deregister_script('jquery');
-   wp_register_script('jquery', get_template_directory_uri() . '/bower_components/jquery/jquery.js', array(), '', true);
-   /*wp_register_script('jquery', "http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.js", true, null, true);*/
+   /*wp_register_script('jquery', get_template_directory_uri() . '/bower_components/jquery/jquery.js', array(), '', true);*/
+   wp_register_script('jquery', "http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js", true, null, true);
    wp_enqueue_script('jquery');
 }
 
@@ -171,7 +171,7 @@ THEME SUPPORT
 *********************/
 
 // Adding WP 3+ Functions & Theme Support
-/*function hw_theme_support() {
+function hw_theme_support() {
 
 	// wp thumbnails (sizes handled in functions.php)
 	add_theme_support('post-thumbnails');
@@ -213,14 +213,14 @@ THEME SUPPORT
 	// wp menus
 	add_theme_support( 'menus' );
 
-} *//* end hw theme support */
+} /* end hw theme support */
 
 /*********************
 RELATED POSTS FUNCTION
 *********************/
 
 // Related Posts Function (call using hw_related_posts(); )
-/*function hw_related_posts() {
+function hw_related_posts() {
 	echo '<ul id="hw-related-posts">';
 	global $post;
 	$tags = wp_get_post_tags($post->ID);
@@ -242,14 +242,14 @@ RELATED POSTS FUNCTION
 	}
 	wp_reset_query();
 	echo '</ul>';
-}*/ /* end hw related posts function */
+} /* end hw related posts function */
 
 /*********************
 PAGE NAVI
 *********************/
 
 // Numeric Page Navi (built into the theme by default)
-/*function hw_page_navi($before = '', $after = '') {
+function hw_page_navi($before = '', $after = '') {
 	global $wpdb, $wp_query;
 	$request = $wp_query->request;
 	$posts_per_page = intval(get_query_var('posts_per_page'));
@@ -302,28 +302,28 @@ PAGE NAVI
 		echo '<li class="bpn-last-page-link"><a href="'.get_pagenum_link($max_page).'" title="'.$last_page_text.'">'.$last_page_text.'</a></li>';
 	}
 	echo '</ul></nav>'.$after."";
-}*/ /* end page navi */
+} /* end page navi */
 
 /*********************
 SEARCH FORM LAYOUT WITH FOUNDATION BUTTONS
 *********************/
 
 // Search Form
-/*function hw_wpsearch($form) {
+function hw_wpsearch($form) {
 	$form = '<form role="search" method="get" id="searchform" action="' . home_url( '/' ) . '" >
 	<label class="screen-reader-text" for="s">' . __('Search for:', 'hwtheme') . '</label>
 	<input type="text" value="' . get_search_query() . '" name="s" id="s" placeholder="'.esc_attr__('Search the Site...','hwtheme').'" />
 	<input type="submit" id="searchsubmit" class="button" value="'. esc_attr__('Search') .'" />
 	</form>';
 	return $form;
-}*/ // don't remove this bracket!
+} // don't remove this bracket!
 
 /*********************
 RANDOM CLEANUP ITEMS
 *********************/
 
 // remove the p from around imgs
-/*function hw_filter_ptags_on_images($content){
+function hw_filter_ptags_on_images($content){
    return preg_replace('/<p>\s*(<a .*>)?\s*(<img .* \/>)\s*(<\/a>)?\s*<\/p>/iU', '\1\2\3', $content);
 }
 
@@ -332,14 +332,14 @@ function hw_excerpt_more($more) {
 	global $post;
 	// edit here if you like
 return '...  <a class="excerpt-read-more" href="'. get_permalink($post->ID) . '" title="'. __('Read', 'hwtheme') . get_the_title($post->ID).'">'. __('Read more &raquo;', 'hwtheme') .'</a>';
-}*/
+}
 
 /*
  * This is a modified the_author_posts_link() which just returns the link.
  *
  * This is necessary to allow usage of the usual l10n process with printf().
  */
-/*function hw_get_the_author_posts_link() {
+function hw_get_the_author_posts_link() {
 	global $authordata;
 	if ( !is_object( $authordata ) )
 		return false;
@@ -350,10 +350,10 @@ return '...  <a class="excerpt-read-more" href="'. get_permalink($post->ID) . '"
 		get_the_author()
 	);
 	return $link;
-}*/
+}
 
 // Add "has-dropdown" CSS class to navigation menu items that have children in a submenu.
-/*function nav_menu_item_parent_classing( $classes, $item )
+function nav_menu_item_parent_classing( $classes, $item )
 {
     global $wpdb;
     
@@ -368,15 +368,15 @@ $has_children = $wpdb -> get_var( "SELECT COUNT(meta_id) FROM {$wpdb->prefix}pos
 }
  
 add_filter( "nav_menu_css_class", "nav_menu_item_parent_classing", 10, 2 );
-*/
+
 	
 
 //Deletes empty classes and changes the sub menu class name
-    /*function change_submenu_class($menu) {
+    function change_submenu_class($menu) {
         $menu = preg_replace('/ class="sub-menu"/',' class="dropdown"',$menu);
         return $menu;
     }
-    add_filter ('wp_nav_menu','change_submenu_class');*/
+    add_filter ('wp_nav_menu','change_submenu_class');
     
 ?>
  

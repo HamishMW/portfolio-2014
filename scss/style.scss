@@ -109,6 +109,7 @@ $tab-bar-width: 5rem;
 	
 }
 .nav-list {
+
 	position: absolute;
  	width: 100%;
 	height: rem-calc(100);
@@ -116,6 +117,8 @@ $tab-bar-width: 5rem;
 	// top: 30%; 
 	margin-top: rem-calc(30);
 	a {
+		@include transition(opacity, 0.3s);
+		background: rgb(30, 30, 30);
 		padding: 1rem;
 		padding-left: rem-calc(43);
 		display: block;
@@ -136,11 +139,12 @@ $tab-bar-width: 5rem;
 }
 .current_page_item {
 
-	background: rgb(35, 35, 35);
+	
 	border-left: solid rem-calc(8) /* rgb(50, 50, 50) */ $primary-color;
 	a {
 		padding-left: rem-calc(33);
 		color: $primary-color;
+		background: rgb(35, 35, 35);
 	}
 	a:active {
 		background: rgb(35, 35, 35);
@@ -194,15 +198,22 @@ $tab-bar-width: 5rem;
 // Push menu
 .spmenu-left {
     left: -15rem;
+    a {
+	    opacity: 0;
+	}
 }
  
 .spmenu-left.spmenu-open,
 .tab-bar-left {
     left: 0;
+    a {
+		opacity: 1;
+	}
 }
 
 // Push body and tab bar
 .spmenu-push {
+	
     overflow-x: hidden;
     position: relative;
     left: 0;

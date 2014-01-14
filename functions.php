@@ -59,7 +59,7 @@ you like.
 MENUS & NAVIGATION
 *********************/
 // registering wp3+ menus
-/*register_nav_menus(
+register_nav_menus(
 	array(
 		'main-nav' => __( 'The Main Menu' ),   // main nav in header
 		'footer-links' => __( 'Footer Links' ) // secondary nav in footer
@@ -81,7 +81,7 @@ function hw_main_nav() {
         'link_after' => '',                             // after each link
     	'fallback_cb' => 'joints_main_nav_fallback'      // fallback function
 	));
-}  */
+}  
 
 
 /*********************
@@ -89,7 +89,7 @@ COMMENT LAYOUT
 *********************/
 
 // Comment Layout
-/*function joints_comments($comment, $args, $depth) {
+function joints_comments($comment, $args, $depth) {
    $GLOBALS['comment'] = $comment; ?>
 	<li <?php comment_class('panel'); ?>>
 		<article id="comment-<?php comment_ID(); ?>" class="clearfix large-12 columns">
@@ -120,8 +120,8 @@ COMMENT LAYOUT
 			<?php comment_reply_link(array_merge( $args, array('depth' => $depth, 'max_depth' => $args['max_depth']))) ?>
 		</article>
 	<!-- </li> is added by WordPress automatically -->
-<?php*/
-/*}*/ // don't remove this bracket!
+<?php
+} // don't remove this bracket!
 ?>
 
 

@@ -65,9 +65,12 @@ otherClose = document.getElementById( 'other-close' ),
 
 menuIcon = document.getElementById( 'menu-icon' ),
 
+// Social dropdown
+Dropd = document.getElementById( 'dd' ),
+
 body = document.body;
       	
-function reveal() {
+$( "#showLeftPush, #hideLeftPush" ).click(function() {
     // Pushes any content stuck to the right if it exists
     if (!!$('.right-description').offset()) {
       classie.toggle( rightPush, 'right-open' );
@@ -77,26 +80,29 @@ function reveal() {
     classie.toggle( body, 'spmenu-push-toright' );
     classie.toggle( menuLeft, 'spmenu-open' );
 
+    // Push the tab bar
+    classie.toggle( showLeftPush, 'tab-bar-open' );
+    classie.add( showLeftPush, 'tab-bar-active' );
+
     //Change the menu icon
     classie.toggle( menuIcon, 'icon-list');
     classie.toggle( menuIcon, 'icon-x');
 
-    // Push the tab bar
-    classie.toggle( showLeftPush, 'tab-bar-open' );
-    classie.add( showLeftPush, 'tab-bar-active' );
     
     /*$("body").addClass("dummyClass").removeClass("dummyClass");*/
     /*disableOther( 'showLeftPush' );*/
-};
+});
 
-showLeftPush.onclick = reveal;
-hideLeftPush.onclick = reveal;
+$( Dropd ).click(function() {
+  if (!!$(Dropd).offset()) {
+    classie.toggle( Dropd, 'share-active');
+  }
+});
+
 
 /*( function( window ) {
-  // Call off-canvas toggles
-  
-})(window);
-*/
+})(window);*/
+
 // Media query js conditionals 
 $(window).on('resize',function(){
     if(Modernizr.mq('(min-width: 64.063em)')) $(".tab-bar").removeClass("tab-bar-active");
@@ -105,25 +111,28 @@ $(window).on('resize',function(){
     if(Modernizr.mq('(max-height: 35em)')) $(".tab-bar").addClass("tab-bar-active");
 });
 
-//Custom dropdowns
-var Dropd = document.getElementById( 'dd' );
+  //Custom dropdowns
 
-function DropDown(el) {
-    Dropd = el;
-    this.initEvents();
-}
-DropDown.prototype = {
-  initEvents : function() {
-
-    Dropd.on('click', function(event){
-      Dropd.toggleClass('share-active');
-      event.stopPropagation();
-    }); 
+/*  function DropDown(el) {
+      Dropd = el;
+      this.initEvents();
   }
-}
-//Custom dropdowns
-var dd = new DropDown( $('#dd') );
+  DropDown.prototype = {
+    initEvents : function() {
 
+      Dropd.on('click', function(event){
+        Dropd.toggleClass('share-active');
+        event.stopPropagation();
+      }); 
+    }
+  }
+
+if (!!$('#dd').offset()) {
+  //Custom dropdowns
+  var Dropd = document.getElementById( 'dd' );
+  var dd = new DropDown( $('#dd') );
+}
+*/
 /*$(function(){ // document ready
 
   // Sticky sidebar   
