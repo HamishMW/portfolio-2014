@@ -55,16 +55,28 @@
 	margin: 0;
 }
 .description-sticky {
-	
+	a {
+		opacity: 1;
+	}
+	-webkit-transition: left, right 0.3s ease;
+    -moz-transition: left, right 0.3s ease;
+    transition: left, right 0.3s ease;
+
 	height: 100%;
 	top: 0px;
 	right: 0;
 	z-index: 1;
 	background: none repeat scroll 0% 0% rgb(255, 255, 255);
 }
+
+//small only
 @media only screen and (max-width: 51.063em) {  
 	.right-open {
 		right: 0rem;
+		a {
+			opacity: 0.999;
+		}
+		
 	}
 	.description-sticky {
 		position: relative;
@@ -84,6 +96,9 @@
 @media only screen and (min-width: 51.063em) { 
 	.right-open {
 		right: -15rem;
+		a {
+			opacity: 0.999;
+		}
 	}
 	.description-sticky {
 		padding: rem-calc(20) + rem-calc(50) rem-calc(40) rem-calc(50) rem-calc(40);

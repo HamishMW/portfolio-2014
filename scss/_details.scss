@@ -36,6 +36,32 @@
 		padding-right: rem-calc(10);
 	}
 }
+.parallax-top {
+	padding-top: rem-calc(70);
+	padding-bottom: rem-calc(70);
+}
+.hero {
+ background:url(http://4.bp.blogspot.com/_AQ0vcRxFu0A/S9shDGGyMTI/AAAAAAAAAYk/kn3WTkY2LoQ/s1600/IMG_0714.JPG);
+  background-size:cover;
+  background-position:center center;
+  background-attachment:fixed;
+  margin-bottom: rem-calc(70);
+
+  h1, p, h3 {
+  	color: #fff;
+  }
+}
+.hero, .content{
+  position:relative;
+  width: 100%;
+}
+
+.hero .inner{
+  background: rgba(0,0,0,0.7) url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAYAAACddGYaAAAAD0lEQVQIW2NkQABjRmQOAAM+AGkQsDBSAAAAAElFTkSuQmCC) repeat;
+}
+.profile, .approach {
+	padding-bottom: 70px;
+}
 //small only
 @media only screen and (max-width: 40em) { 
 	.cv-btn {

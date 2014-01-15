@@ -227,9 +227,10 @@ $tab-bar-width: 5rem;
 // CSS transition config
 .spmenu,
 .spmenu-push, 
-.tab-bar-active,
-.description-sticky {
-    @include transition(all, 0.3s);
+.tab-bar-active {
+    -webkit-transition: left 0.3s ease;
+    -moz-transition: left 0.3s ease;
+    transition: left 0.3s ease;
 }
 
 /*------//BLOCK GRID//------*/

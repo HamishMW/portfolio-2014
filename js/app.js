@@ -82,7 +82,7 @@ $( "#showLeftPush, #hideLeftPush" ).click(function() {
 
     // Push the tab bar
     classie.toggle( showLeftPush, 'tab-bar-open' );
-    classie.add( showLeftPush, 'tab-bar-active' );
+    /*classie.add( showLeftPush, 'tab-bar-active' );*/
 
     //Change the menu icon
     classie.toggle( menuIcon, 'icon-list');
@@ -104,12 +104,12 @@ $( Dropd ).click(function() {
 })(window);*/
 
 // Media query js conditionals 
-$(window).on('resize',function(){
+/*$(window).on('resize',function(){
     if(Modernizr.mq('(min-width: 64.063em)')) $(".tab-bar").removeClass("tab-bar-active");
     if(Modernizr.mq('(min-width: 40.063em)')) $(".sticky-sidebar").removeClass("sticky-active");
     if(Modernizr.mq('(min-width: 64.063em)')) $(".sticky-sidebar").addClass("sticky-active");
     if(Modernizr.mq('(max-height: 35em)')) $(".tab-bar").addClass("tab-bar-active");
-});
+});*/
 
   //Custom dropdowns
 
