@@ -61,14 +61,20 @@
 	-webkit-transition: left, right 0.3s ease;
     -moz-transition: left, right 0.3s ease;
     transition: left, right 0.3s ease;
-
+    position: absolute;
 	height: 100%;
 	top: 0px;
 	right: 0;
 	z-index: 1;
 	background: none repeat scroll 0% 0% rgb(255, 255, 255);
 }
+.right-scrollable {
+	position: absolute;
+}
+.right-fixed {
+			position: fixed;
 
+}
 //small only
 @media only screen and (max-width: 51.063em) {  
 	.right-open {
@@ -103,7 +109,6 @@
 	.description-sticky {
 		padding: rem-calc(20) + rem-calc(50) rem-calc(40) rem-calc(50) rem-calc(40);
 		width: 35%;
-		position: fixed;
 		
 	}
 	.portfolio-images {
@@ -128,8 +133,8 @@
 }
 //Short 
 @media screen and (max-height: 36em){
-	.description-sticky {
+	/* .description-sticky {
 		overflow-y: scroll;
 		
-	}
+	} */
 }

@@ -72,7 +72,7 @@ body = document.body;
       	
 $( "#showLeftPush, #hideLeftPush" ).click(function() {
     // Pushes any content stuck to the right if it exists
-    if (!!$('.right-description').offset()) {
+    if (!!$('.right-description').offset() && $('#right-text').isOnScreen()) {
       classie.toggle( rightPush, 'right-open' );
     }
     // Push the page & menu
@@ -99,9 +99,103 @@ $( Dropd ).click(function() {
   }
 });
 
+$.fn.isOnScreen = function(){
+    
+    var win = $(window);
+    
+    var viewport = {
+        top : win.scrollTop(),
+        /*left : win.scrollLeft()*/
+    };
+    /*viewport.right = viewport.left + win.width();*/
+    viewport.bottom = viewport.top + win.height();
+    
+    var bounds = this.offset();
+    /*bounds.right = bounds.left + this.outerWidth();*/
+    bounds.bottom = bounds.top + this.outerHeight();
+    
+    return (!(viewport.bottom < bounds.bottom || viewport.top > bounds.bottom));
+    
+};
 
-/*( function( window ) {
-})(window);*/
+// Determine if post sidebar fixed/!fixed
+function rightCheck() {
+  if (!!$('#right-text').offset()) {
+    if($('#right-text').isOnScreen()) {
+      classie.remove( rightPush, 'right-scrollable' );
+      classie.add( rightPush, 'right-fixed' );
+    } else {
+      classie.add( rightPush, 'right-scrollable' );
+      classie.remove( rightPush, 'right-fixed' );
+    }
+  }
+};
+
+// Parallax
+var parallaxScroll,
+  _this = this;
+
+parallaxScroll = function() {
+  var currentScrollPosition;
+  currentScrollPosition = $(_this).scrollTop();
+
+  $('#hero-text').css({
+    /*'top': (currentScrollPosition / 3) + "px",*/
+    'opacity': 1 - (currentScrollPosition / 410)
+  });
+};
+
+$("#contactForm").on("valid invalid submit", function(e){
+e.stopPropagation();
+e.preventDefault();
+if (e.type === "valid"){
+
+  // sending animation here
+
+  // Define input values
+  var name = $("input#name").val(); 
+  var email = $("input#email").val();
+  var message = $("textarea#message").val();
+
+  // Create stringfrom grabbed values
+  var dataString = 'name='+ name + '&email=' + email + '&message=' + message;
+
+  //alert (dataString);return false;  
+
+  $.ajax({  
+    type: "POST",  
+    url: "/wp-admin/admin-ajax.php",  
+    data: 'action=ajax_contact&' + dataString,
+    success: function(data, textStatus, XMLHttpRequest){  
+      // message sent actions here
+      $('#contactForm').html("<div id='message'></div>");  
+      $('#message').html("<h2>Contact Form Submitted!</h2>")  
+      .append("<p>We will be in touch soon.</p>")  
+      .hide()  
+      .fadeIn(1500, function() {  
+        $('#message').append("<img id='checkmark' src='img/profile.png' />");  
+      });  
+    },  
+    error: function(MLHttpRequest, textStatus, errorThrown){  
+      alert(errorThrown + dataString);  
+    } 
+  });  
+  return false;  
+}
+});
+
+// Init functions
+$( document ).ready(function() {
+  $(window).scroll(function() {
+    parallaxScroll();
+  });
+  rightCheck();
+});
+
+$(window).on('resize',function(){
+  rightCheck();
+});
+
 
 // Media query js conditionals 
 /*$(window).on('resize',function(){

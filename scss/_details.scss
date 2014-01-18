@@ -38,14 +38,14 @@
 }
 .parallax-top {
 	padding-top: rem-calc(70);
-	padding-bottom: rem-calc(70);
+	padding-bottom: rem-calc(78);
 }
 .hero {
- background:url(http://4.bp.blogspot.com/_AQ0vcRxFu0A/S9shDGGyMTI/AAAAAAAAAYk/kn3WTkY2LoQ/s1600/IMG_0714.JPG);
+ background: rgb(28, 187, 155) url(img/polygon.svg);
   background-size:cover;
   background-position:center center;
   background-attachment:fixed;
-  margin-bottom: rem-calc(70);
+  margin-bottom: rem-calc(80);
 
   h1, p, h3 {
   	color: #fff;
@@ -55,12 +55,25 @@
   position:relative;
   width: 100%;
 }
-
-.hero .inner{
-  background: rgba(0,0,0,0.7) url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAYAAACddGYaAAAAD0lEQVQIW2NkQABjRmQOAAM+AGkQsDBSAAAAAElFTkSuQmCC) repeat;
+.details-buttons {
+	padding-top: 17px;
 }
+
+/* .hero .inner{
+  background: rgba(28, 187, 155, 0.8);
+} */
 .profile, .approach {
 	padding-bottom: 70px;
+}
+.profile {
+	background: url(img/mesh.svg) repeat-x;
+}
+.no-svg .profile {
+  background-image: url(img/mesh.png) repeat-x;
+}
+.approach {
+	padding-top: 70px;
+	background: #e4eae8;
 }
 //small only
 @media only screen and (max-width: 40em) { 
@@ -84,6 +97,9 @@
 }
 // Xlarge
 @media only screen and (min-width: 90.063em) { 
+	.head-description h1 {
+		font-size: 400%;
+	}
 	.content-page {
 		padding-left: 13%;
 		padding-right: 13%;

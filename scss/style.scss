@@ -29,21 +29,9 @@ html {
 		-ms-transform: translateY($size);
 		transform: translateY($size);
 }
-
-/* Button border style */
-/* .btn-border {
-	border: 3px solid #fff;
-	color: #fff;
-	background: none;
+p {
+	font-size: 1.04rem;
 }
-.btn-border:hover,
-.btn-border:active {
-	color: rgb(30, 30, 30);
-	background: #fff;
-}
-.wrapper {
-   	overflow-x: hidden;
-} */
 
 /*------//MENU NAV//------*/
 
@@ -190,6 +178,7 @@ $tab-bar-width: 5rem;
 	}
 }	
 .reveal-modal {
+
 	border-top: 6px solid $primary-color;
 	overflow: visible;
 }
@@ -228,9 +217,7 @@ $tab-bar-width: 5rem;
 .spmenu,
 .spmenu-push, 
 .tab-bar-active {
-    -webkit-transition: left 0.3s ease;
-    -moz-transition: left 0.3s ease;
-    transition: left 0.3s ease;
+    @include transition(left, 0.3s);
 }
 
 /*------//BLOCK GRID//------*/

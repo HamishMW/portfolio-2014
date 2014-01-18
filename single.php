@@ -32,6 +32,7 @@
       </div>
 
       <aside id="right-push" class="description-sticky right-description">
+        <div id="right-text">
           <ul class="button-group post-nav">
             <li><a href="<?php echo get_settings('home'); ?>" class="button icon-th"></a></li>
             <li><a href="<?php $nextPost = get_next_post($in_same_cat = true);
@@ -60,10 +61,10 @@
               </ul>
             </div>
 
-        <?php endwhile; else: ?>
-          <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
-        <?php endif; ?>
-
+          <?php endwhile; else: ?>
+            <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
+          <?php endif; ?>
+        </div> <!--end right text-->
       </aside>
 </div> <!-- END WRAPPER -->
 
