@@ -24,15 +24,14 @@
 		<!--[if IE]>
 			<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
 		<![endif]-->
-		<meta name="msapplication-TileColor" content="#f01d4f">
+		<meta name="msapplication-TileColor" content="#1cbb9b">
 		<meta name="msapplication-TileImage" content="<?php echo get_template_directory_uri(); ?>/img/icons/win8-tile-icon.png">
-
-  	
 
 		<?php wp_head(); ?>
 		
-		<!-- drop Google Analytics Here -->
-		<!-- end analytics -->
+		<!-- Google Analytics -->
+    <?php include_once("php/analyticstracking.php") ?>
+    <!-- end analytics -->
 
 	</head>
 
@@ -40,11 +39,11 @@
 
 	<header class="tab-bar tab-bar-left tab-bar-active" id="showLeftPush">
       <i id="menu-icon" class="icon-list"></i>
-      <a class="logo-small"><img src="<?php echo get_template_directory_uri(); ?>/img/logo_40px.png" alt="small logo"/></a>
+      <a class="logo-small"><img src="<?php echo get_template_directory_uri(); ?>/img/logo_40px.svg" onerror="<?php echo get_template_directory_uri(); ?>/img/logo_40px.png" alt="small logo"/></a>
     </header>
 
     <nav class="spmenu spmenu-left" id="spmenu-s1">
-      <div class="nav-logo"><img src="<?php echo get_template_directory_uri(); ?>/img/logo_150px.png" alt="large logo"/></div>
+      <div class="nav-logo"><img src="<?php echo get_template_directory_uri(); ?>/img/logo_150px.svg" onerror="<?php echo get_template_directory_uri(); ?>/img/logo_150px.png" alt="large logo"/></div>
       <div class="nav-list">
         <ul class="no-bullet">
           <?php wp_list_pages('title_li=');?>

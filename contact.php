@@ -17,7 +17,7 @@
           <textarea id="message" required pattern="alpha_numeric" placeholder="Throw me a message" ></textarea>
           <small class="error">Message text is required.</small> 
         </div>
-        <button name="submit" class="submit-btn btn-border" type="submit">Send Message</button>
+        <button name="submit" id="sendButton" class="load-button slide-left submit-btn btn-border" type="submit"><span class="load-span">Send Message</span> <span class="spinner"></span></button>
         <!-- <button id="close-btn" class="close-reveal-modal">Close</button> -->
       </form>
       <a class="close-reveal-modal">&#215;</a> 

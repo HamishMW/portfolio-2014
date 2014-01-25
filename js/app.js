@@ -1,5 +1,6 @@
-// class helper functions from bonzo https://github.com/ded/bonzo
-
+///////////////////////////////////////////
+//// classie helper functions from bonzo https://github.com/ded/bonzo
+///////////////////////////////////////////
 'use strict';
 
 function classReg( className ) {
@@ -54,22 +55,60 @@ window.classie = {
 };
 
 
-// Custom off-canvas javascript
+///////////////////////////////////////////
+//// KONAMI
+///////////////////////////////////////////
+$.fn.konami = function( options ) {
 
+  var opts, masterKey, controllerCode, code;
+  opts = $.extend({}, $.fn.konami.defaults, options);
+
+  return this.each(function() {
+
+    controllerCode = [];
+
+    $( window ).keyup(function( evt ) {
+      code = evt.keyCode || evt.which;
+
+      if ( opts.code.length > controllerCode.push( code ) ) {
+        return;
+      } // end if
+
+      if ( opts.code.length < controllerCode.length ) {
+        controllerCode.shift();
+      } // end if
+
+      if ( opts.code.toString() !== controllerCode.toString() ) {
+        return;
+      } // end for
+
+      opts.cheat();
+
+    }); // end keyup
+
+  }); // end each
+
+}; // end opts
+
+$.fn.konami.defaults = {
+  code : [38,38,40,40,37,39,37,39,66,65],
+  cheat: null
+};
+
+///////////////////////////////////////////   
+//// Custom off-canvas javascript
+///////////////////////////////////////////
+// Grab IDs
 var menuLeft = document.getElementById( 'spmenu-s1' ),
-  
 showLeftPush = document.getElementById( 'showLeftPush' ),
 hideLeftPush = document.getElementById( 'hideLeftPush' ),
 rightPush = document.getElementById( 'right-push' ),
 otherClose = document.getElementById( 'other-close' ),
-
 menuIcon = document.getElementById( 'menu-icon' ),
-
 // Social dropdown
 Dropd = document.getElementById( 'dd' ),
-
 body = document.body;
-      	
+
 $( "#showLeftPush, #hideLeftPush" ).click(function() {
     // Pushes any content stuck to the right if it exists
     if (!!$('.right-description').offset() && $('#right-text').isOnScreen()) {
@@ -82,16 +121,15 @@ $( "#showLeftPush, #hideLeftPush" ).click(function() {
 
     // Push the tab bar
     classie.toggle( showLeftPush, 'tab-bar-open' );
-    /*classie.add( showLeftPush, 'tab-bar-active' );*/
 
     //Change the menu icon
     classie.toggle( menuIcon, 'icon-list');
     classie.toggle( menuIcon, 'icon-x');
-
-    
-    /*$("body").addClass("dummyClass").removeClass("dummyClass");*/
-    /*disableOther( 'showLeftPush' );*/
 });
+
+///////////////////////////////////////////
+//// Dropdowns
+///////////////////////////////////////////
 
 $( Dropd ).click(function() {
   if (!!$(Dropd).offset()) {
@@ -99,23 +137,30 @@ $( Dropd ).click(function() {
   }
 });
 
+$("#testClick").click( function() {
+  var $t = $(this);
+  var $menu = $t.next(".sub-menu");
+  $menu.slideToggle('fast');
+  $menu.toggleClass('openmenu');
+});
+
+///////////////////////////////////////////
+//// Scrolling rightbar check
+///////////////////////////////////////////
+
 $.fn.isOnScreen = function(){
     
     var win = $(window);
     
     var viewport = {
-        top : win.scrollTop(),
-        /*left : win.scrollLeft()*/
+      top : win.scrollTop(),
     };
-    /*viewport.right = viewport.left + win.width();*/
+
     viewport.bottom = viewport.top + win.height();
-    
     var bounds = this.offset();
-    /*bounds.right = bounds.left + this.outerWidth();*/
     bounds.bottom = bounds.top + this.outerHeight();
     
     return (!(viewport.bottom < bounds.bottom || viewport.top > bounds.bottom));
-    
 };
 
 // Determine if post sidebar fixed/!fixed
@@ -129,9 +174,11 @@ function rightCheck() {
       classie.remove( rightPush, 'right-fixed' );
     }
   }
-};
+}
+///////////////////////////////////////////
+//// Parallax
+///////////////////////////////////////////
 
-// Parallax
 var parallaxScroll,
   _this = this;
 
@@ -145,12 +192,20 @@ parallaxScroll = function() {
   });
 };
 
+///////////////////////////////////////////
+//// Contact form
+///////////////////////////////////////////
+
 $("#contactForm").on("valid invalid submit", function(e){
 e.stopPropagation();
 e.preventDefault();
 if (e.type === "valid"){
 
-  // sending animation here
+    // Send button 
+    sendButton = document.getElementById( 'sendButton' );
+    if( typeof sendButton.getAttribute( 'data-loading' ) !== 'string' ) {
+      sendButton.setAttribute( 'data-loading', '' );
+    }
 
   // Define input values
   var name = $("input#name").val(); 
@@ -169,11 +224,11 @@ if (e.type === "valid"){
     success: function(data, textStatus, XMLHttpRequest){  
       // message sent actions here
       $('#contactForm').html("<div id='message'></div>");  
-      $('#message').html("<h2>Contact Form Submitted!</h2>")  
+      $('#message').html("<h2><strong>Yeah! Message sent</strong></h2>")  
       .append("<p>We will be in touch soon.</p>")  
       .hide()  
       .fadeIn(1500, function() {  
-        $('#message').append("<img id='checkmark' src='img/profile.png' />");  
+        $('#message').append();  
       });  
     },  
     error: function(MLHttpRequest, textStatus, errorThrown){  
@@ -184,18 +239,42 @@ if (e.type === "valid"){
 }
 });
 
-// Init functions
+///////////////////////////////////////////
+//// Init functions
+///////////////////////////////////////////
+
 $( document ).ready(function() {
+
+
+  // Parallax
   $(window).scroll(function() {
     parallaxScroll();
   });
+  // Right-bar stickiness
   rightCheck();
+  //Konami code
+  $( window ).konami({  
+    cheat: function() {
+      alert( 'Cheat code activated!' );
+    }
+  });
+
+
 });
 
 $(window).on('resize',function(){
   rightCheck();
 });
 
+$(window).load(function() {
+  // Prevent caption FOUC
+  setTimeout(
+  function() 
+  {
+     $(".figure-text").removeClass("hide");
+  }, 300);
+
+});
 
 // Media query js conditionals 
 /*$(window).on('resize',function(){

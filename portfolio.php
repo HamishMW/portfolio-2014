@@ -8,8 +8,7 @@ Template Name: Portfolio
 
   <div id="content" class="wrapper">
 
-      <section class="block-grid-work">
-        <ul class="portfolio-grid small-block-grid-1 medium-block-grid-2 large-block-grid-3 xlarge-grid">
+      <section id="masonry">
 
         <?php
 
@@ -21,12 +20,12 @@ Template Name: Portfolio
 
         while ( $the_query->have_posts() ) : $the_query->the_post();
 
-        echo '<li><a href="'; the_permalink(); echo'"><figure>';
+        echo '<a href="'; the_permalink(); echo'"><div class="item">';
 
-        the_post_thumbnail();
+        the_post_thumbnail('full');
 
-        echo '<figcaption class="no-touch"><div class="figure-text">';
-        echo '<h3><strong>'; the_title(); echo'</strong></h3><span>';
+        echo '<div class="fcaption"><span class="mask"></span><div class="figure-text">';
+        echo '<h2><strong>'; the_title(); echo'</strong></h2><span>';
         
         $posttags = get_the_tags(); $sep = '';
         if ($posttags) {
@@ -35,8 +34,9 @@ Template Name: Portfolio
           }
         }
 
-        echo '</span></div></figcaption></figure>';
-        echo '</a></li>';
+        echo '</span>'; 
+        echo'<a href="'; the_permalink(); echo'" class="button proj-button">View project</a>';
+        echo '</div></div></div></a>';
             
         endwhile;
 
@@ -45,8 +45,7 @@ Template Name: Portfolio
         wp_reset_postdata();
 
         ?>
-
-        </ul>
+        
       </section>
   </div>
 

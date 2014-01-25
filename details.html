@@ -30,8 +30,13 @@
     <nav class="spmenu spmenu-left" id="spmenu-s1">
       <div class="nav-logo"><img src="img/logo_150px.svg" alt="large logo"/></div>
       <div class="nav-list">
-        <ul class="no-bullet">
-          <li class="current_page_item"><a href="index.html">Portfolio <span class="icon-"></span></a></li>
+        <ul class="no-bullet topmenu">
+          <li id="testClick" class="current_page_item"><a href="#0">Portfolio <span class="icon-"></span></a></li>
+            <ul class="sub-menu">
+              <li> <a href="#0">Illustration</a></li>
+               <li> <a href="#0">Web Design</a></li>
+              <li> <a href="#0">Print</a></li>
+            </ul>
           <li><a href="#">Journal</a></li>
           <li><a href="#">Details</a></li>
           <li><a href="#" id="hideLeftPush" data-reveal-id="contactModal">Contact</a></li>
@@ -87,7 +92,7 @@
     <div id="hero-text" class="large-12 columns head-description">
     <h3>Details</h3>
     <h1><strong>Through research, conceptualization, and design, I create kickass visual media.</strong></h1>
-    <p>I synthesise illustration, animation, typography, and code to create a diverse range of products. I'm that designer who can draw and isn't afraid to get his hands dirty with code. </p>
+    <h4>I synthesise illustration, animation, typography, and code to create a diverse range of solutions.</h4>
     </div>
   </div>
   </div>
@@ -96,11 +101,9 @@
 <!-- Three-up Content Blocks -->
 
 
-  <div class="row profile content-page">
+  <section class="row profile content-page">
     <div class="large-4 columns img-centerer">
       <img src="img/profile.png" />
-      <!-- <h4>This is a content section.</h4>
-      <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p> -->
     </div>
     
     <div class="large-8 columns">
@@ -108,26 +111,39 @@
       <h4>Profile</h4>
       <p>Hi, I'm Hamish Williams. Nano-computer spook shoes uplink into. math- receding RAF long-chain hydrocarbons assault j-pop convenience store camera decay digital sign warehouse drone. smart- corporation into wristwatch ablative plastic carbon urban systemic sub-orbital shoes grenade industrial grade lights. disposable garage vinyl rebar chrome jeans market tank-traps kanji tiger-team urban motion faded. </p>
       <div class="details-buttons"><a class="button btn-border cv-btn"><i class="icon-download"></i> Download CV</a>
-      <a class="button btn-border cv-btn"><i class="icon-mail"></i> Contact me</a></div>
+      <a class="button btn-border cv-btn" data-reveal-id="contactModal"><i class="icon-mail"></i> Contact me</a></div>
     </div>
     
-  </div>
+  </section>
     
-  <div class="row approach content-page">
+  <section class="row approach content-page">
       
-      <div class="large-6 columns">
+      <div class="large-4 columns">
         <h4>Approach</h4>
         <p>Nano-computer spook shoes uplink into. math- receding RAF long-chain hydrocarbons assault j-pop convenience store camera decay digital sign warehouse drone. smart- corporation into wristwatch ablative plastic carbon urban systemic sub-orbital shoes grenade industrial grade lights. disposable garage vinyl rebar chrome jeans market tank-traps kanji tiger-team urban motion faded. </p>
       </div>
 
-      <div class="large-6 columns">
+      <div class="large-8 columns">
         <h4>Skills</h4>
-        <p>Nano-computer spook shoes uplink into. math- receding RAF long-chain hydrocarbons assault j-pop convenience store camera decay digital sign warehouse drone. smart- corporation into wristwatch ablative plastic carbon urban systemic sub-orbital shoes grenade industrial grade lights. disposable garage vinyl rebar chrome jeans market tank-traps kanji tiger-team urban motion faded. </p>
+        <ul class="skill-list">
+          <li>Adobe Creative Suite</li>
+          <li>Typography and layout</li>
+          <li>Motion Graphics</li>
+          <li>Illustration</li>
+        </ul>
+        <ul class="skill-list">
+          <li>Maya, 3DS Max, Blender</li> 
+          <li>CSS, SASS & Compass</li>
+          <li>Javascript/jQuery</li>
+          <li>Flash/Actionscript 3</li>
+        </ul>
+
+      
       </div>
       
-  </div>
+  </section>
 
-    </div>
+  </div>
 
     <script src="bower_components/jquery/jquery.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>

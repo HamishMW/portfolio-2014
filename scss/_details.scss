@@ -47,9 +47,12 @@
   background-attachment:fixed;
   margin-bottom: rem-calc(80);
 
-  h1, p, h3 {
+  h1, h4, h3 {
   	color: #fff;
   }
+}
+.no-svg .hero {
+  background-image: url(img/polygon.png) repeat-x;
 }
 .hero, .content{
   position:relative;
@@ -75,10 +78,29 @@
 	padding-top: 70px;
 	background: #e4eae8;
 }
+.skill-list {
+	display: inline-block;
+	list-style-type: none;
+	margin-left: 0;
+	width: 49%;
+
+	li {
+		margin-bottom: rem-calc(4);
+		padding: rem-calc(10) 0 rem-calc(10) rem-calc(30);
+		width: 100%;
+		background: rgb(220, 220, 220);
+	}
+	
+}
+
 //small only
 @media only screen and (max-width: 40em) { 
 	.cv-btn {
 		width: 100%;
+	}
+	.skill-list {
+		width: 100%;
+		margin-bottom: 0;
 	}
 }
 // medium up 

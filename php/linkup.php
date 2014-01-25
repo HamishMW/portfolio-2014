@@ -97,14 +97,14 @@ function ajax_contact()
 	$usermail = $_POST['email'];
 	$content = nl2br($_POST['message']);
 
-	$subject = "hamishw.com message";
+	$subject = "Message from hamishw.com";
 	$headers = "From: " . strip_tags($usermail) . "\r\n";
 	$headers .= "Reply-To: ". strip_tags($usermail) . "\r\n";
 	$headers .= "MIME-Version: 1.0\r\n";
 	$headers .= "Content-Type: text/html;charset=utf-8 \r\n";
 
 	$msg = "<html><body style='font-family:Arial,sans-serif;'>";
-	$msg .= "<h2 style='font-weight:bold;border-bottom:1px dotted #ccc;'>Message from your site</h2>\r\n";
+	$msg .= "<h2 style='font-weight:bold;border-bottom:1px dotted #ccc;'>Hello, Commander</h2>\r\n";
 	$msg .= "<p><strong>Name:</strong> ".$name."</p>\r\n";
 	$msg .= "<p><strong>Email:</strong> ".$usermail."</p>\r\n";
 	$msg .= "<p><strong>Message:</strong> ".$content."</p>\r\n";
@@ -155,11 +155,17 @@ function hw_gallery_style($css) {
 /*********************
 SCRIPTS & ENQUEUEING
 *********************/
-
+function load_fonts() {
+            
+        }
+ 
+    
 // loading modernizr and jquery, and reply script
 function hw_scripts_and_styles() {
   global $wp_styles; // call global $wp_styles variable to add conditional wrapper around ie stylesheet the WordPress way
   if (!is_admin()) {
+    // Load fonts 
+    wp_register_style('googleFonts', 'http://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic,300');
 
     // modernizr
     wp_register_script( 'hw-modernizr', get_stylesheet_directory_uri() . '/bower_components/modernizr/modernizr.js', array(), '2.5.3', false );
@@ -178,7 +184,18 @@ function hw_scripts_and_styles() {
     //adding scripts file in the footer
     wp_register_script( 'hw-js', get_stylesheet_directory_uri() . '/js/app.js', array( 'jquery' ), '', true );
 
+    if(is_page()){ //Check if we are viewing a page
+	global $wp_query;
+
+        //Check which template is assigned to current page we are looking at
+        $template_name = get_post_meta( $wp_query->post->ID, '_wp_page_template', true );
+	if($template_name == 'portfolio.php'){
+           //If page is using slider portfolio template then load our slider script
+	   wp_enqueue_script('isotope', get_template_directory_uri() .'/js/jquery.isotope.min.js', array( 'jquery' ), '', true );		
+	}
+   }
     // enqueue styles and scripts
+   	wp_enqueue_style( 'googleFonts');
     wp_enqueue_script( 'hw-modernizr' );
     wp_enqueue_script ('foundation-js');
     wp_enqueue_style( 'hw-stylesheet' );
