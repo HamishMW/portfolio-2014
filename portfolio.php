@@ -24,8 +24,8 @@ Template Name: Portfolio
 
         the_post_thumbnail('full');
 
-        echo '<div class="fcaption"><span class="mask"></span><div class="figure-text">';
-        echo '<h2><strong>'; the_title(); echo'</strong></h2><span>';
+        echo '<div class="fcaption"><span class="mask"></span><div class="figure-text hide">';
+        echo '<h3><strong>'; the_title(); echo'</strong></h3><span>';
         
         $posttags = get_the_tags(); $sep = '';
         if ($posttags) {
@@ -45,7 +45,7 @@ Template Name: Portfolio
         wp_reset_postdata();
 
         ?>
-        
+
       </section>
   </div>
 

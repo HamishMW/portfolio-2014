@@ -47,7 +47,7 @@ Template Name: Details
       </div>
 
       <div class="large-8 columns">
-        <h4>Skills</h4>
+        <h4>Skills &amp; Technology</h4>
         <ul class="skill-list">
           <li>Adobe Creative Suite</li>
           <li>Typography and layout</li>
@@ -56,7 +56,7 @@ Template Name: Details
         </ul>
         <ul class="skill-list">
           <li>Maya, 3DS Max, Blender</li> 
-          <li>CSS, SASS & Compass</li>
+          <li>HTML5, CSS3, SASS &amp; Compass</li>
           <li>Javascript/jQuery</li>
           <li>Flash/Actionscript 3</li>
         </ul>

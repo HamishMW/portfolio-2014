@@ -51,8 +51,11 @@
     opacity: 1;
     pointer-events: auto;
 }
-.portfolio-images ul {
-	margin: 0;
+.portfolio-images {
+	background: none repeat scroll 0% 0% rgb(244, 244, 244);
+	ul {
+		margin: 0;
+	}
 }
 .description-sticky {
 	a {

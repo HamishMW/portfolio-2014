@@ -26,7 +26,7 @@
 		<![endif]-->
 		<meta name="msapplication-TileColor" content="#1cbb9b">
 		<meta name="msapplication-TileImage" content="<?php echo get_template_directory_uri(); ?>/img/icons/win8-tile-icon.png">
-
+    
 		<?php wp_head(); ?>
 		
 		<!-- Google Analytics -->
@@ -54,10 +54,10 @@
 
       <div class="socialism">
         <ul>
-          <li><a href="http://lnkd.in/bbXaTCd" class="icon-linkedin"></a></li>
-          <li><a href="http://www.youtube.com/user/Yamanotaka" class="icon-youtube-play"></a></li>
-          <li><a href="https://twitter.com/hamishMW" class="icon-twitter"></a></li>
-          <li><a href="https://plus.google.com/u/0/+HamishWilliams/" class="icon-gplus"></a></li>
+          <li><a href="http://lnkd.in/bbXaTCd" target="_blank" class="icon-linkedin"></a></li>
+          <li><a href="http://www.youtube.com/user/Yamanotaka" target="_blank" class="icon-youtube-play"></a></li>
+          <li><a href="https://twitter.com/hamishMW" target="_blank" class="icon-twitter"></a></li>
+          <li><a href="https://plus.google.com/u/0/+HamishWilliams/" target="_blank" class="icon-gplus"></a></li>
         </ul>
       </div>
 
@@ -69,4 +69,4 @@
     <div id="contactModal" class="reveal-modal" data-reveal> 
       <?php include (TEMPLATEPATH . '/contact.php'); ?>
     </div>
-			
+			 <div id="konami" class="reveal-modal large" data-reveal> </div>

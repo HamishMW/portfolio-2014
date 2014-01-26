@@ -137,12 +137,12 @@ $( Dropd ).click(function() {
   }
 });
 
-$("#testClick").click( function() {
+/*$("#testClick").click( function() {
   var $t = $(this);
   var $menu = $t.next(".sub-menu");
   $menu.slideToggle('fast');
   $menu.toggleClass('openmenu');
-});
+});*/
 
 ///////////////////////////////////////////
 //// Scrolling rightbar check
@@ -225,7 +225,7 @@ if (e.type === "valid"){
       // message sent actions here
       $('#contactForm').html("<div id='message'></div>");  
       $('#message').html("<h2><strong>Yeah! Message sent</strong></h2>")  
-      .append("<p>We will be in touch soon.</p>")  
+      .append("<p>I'll get back to you soon.</p>")  
       .hide()  
       .fadeIn(1500, function() {  
         $('#message').append();  
@@ -255,7 +255,17 @@ $( document ).ready(function() {
   //Konami code
   $( window ).konami({  
     cheat: function() {
-      alert( 'Cheat code activated!' );
+      /*alert( 'Cheat code activated!' );*/
+     // url with custom callbacks
+    $('#konami').foundation('reveal', 'open', {
+    url: 'http://www.hamishw.com/wp-content/themes/Portfolio_2014/img/library/konami.html',
+    success: function(data) {
+        alert('modal data loaded');
+    },
+    error: function() {
+        alert('failed loading modal');
+    }
+});
     }
   });
 
@@ -273,7 +283,14 @@ $(window).load(function() {
   {
      $(".figure-text").removeClass("hide");
   }, 300);
-
+  //Fade items on load - sexiness incresed by 120%
+  var theImages = $(".wrapper img");
+  theImages.show();
+  theImages.hide().one("load",function(){
+    $(this).fadeIn(500);
+  }).each(function(){
+    if(this.complete) $(this).trigger("load");
+  });
 });
 
 // Media query js conditionals 

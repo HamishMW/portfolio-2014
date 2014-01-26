@@ -1,5 +1,5 @@
 
-      <h2>Awesome. I have it.</h2> 
+      <h2>Let's do this.</h2> 
       <hr>
       <form id="contactForm" data-abide> 
         <div class="name-field top-reveal-field"> 

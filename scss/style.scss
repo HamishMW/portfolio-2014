@@ -7,9 +7,10 @@
 
 /*------//GLOBAL//------*/
 $primary-color-dark: #1aa382;
-$nblue: #354a5f;
-$nblue-dark: #2c3e50;
 $nav-bg: rgb(30, 30, 30);
+.wrapper img {
+	display: none;
+}
 .hide {
 	display: none !important;
 }
@@ -264,59 +265,37 @@ $tab-bar-width: 5rem;
 
 #masonry {
     display: none;
-}
-#masonry .item {
-	float: left;
-
-	width: 20%;
-    height: 400px;
-
-}
-#masonry img {
-    width: 100%;
-    height: 100%;
-}
-#masonry .item-w2 {
-	width: 40%;
-
-}
-#masonry .item-h2 {
-	height: 400px;
-
-}
-#masonry .item-h4 {
-	height: 800px;
-
-}
-.isotope .isotope-item {
-	-webkit-transition-duration: 0.3s;
-	-moz-transition-duration: 0.3s;
-	transition-duration: 0.3s;
-	-webkit-transition-property: -webkit-transform, opacity;
-	-moz-transition-property: -moz-transform, opacity;
-	transition-property: transform, opacity;
-}
-
-.isotope {
-
+    img {
+	    width: 100%;
+	    height: 100%;
+	    max-width: none;
+		display: block;
+		position: absolute;
+	}
 	.item {
 		margin: 0;
 		position: relative;
 		overflow: hidden;
 		cursor: pointer;
+		float: left;
+		width: 20%;
+	    height: 400px;
+	   
 	}
-	.item img {
-		max-width: none;
-		width: 100%;
-		display: block;
-		position: absolute;
+	.item-w2 {
+		width: 40%;
 	}
-
+	.item-h2 {
+		height: 400px;
+	}
+	.item-h4 {
+		height: 800px;
+	}
 	.fcaption {
 		position: absolute;
 		left: 0;
 		text-align: center;
-		padding: rem-calc(20);
+		padding: rem-calc(10);
 		/* background: rgba(28, 187, 155, 0.85); */
 		color: #fff;
 		height: 100%;
@@ -334,44 +313,24 @@ $tab-bar-width: 5rem;
 	  vertical-align: middle;
 	  margin-right: -0.25em; /* Adjusts for spacing */
 	}
-/* 	.figure-text:after {
-	    height: 1px;
-	    width: 180%;
-	    top: 30%;
-	    left: 50%;
-	    margin-left: -150px;
-	    background-color: rgba(255, 255, 255, 0.4);
-	    transform: rotate(25deg);
-	    transform-origin: center center 0px;
-	    z-index: -1;
-	    content: "";
-	display: block;
-	position: absolute;
-	} */
 	.figure-text {
+		width: 90%;
 		display: inline-block;
   		vertical-align: middle;
-
   		@include transform(rem-calc(30)); 
-
   		-webkit-transition: all 0.3s ease 0.4s;
    		-moz-transition: all 0.3s ease 0.4s;
     	transition: all 0.3s ease 0.4s;
-
     	opacity: 0;
 	}
 
-	.fcaption h2 {
+	.fcaption h3 {
 		color: #fff;
-	
 	}
 	span {
 		color: #fff;
-		font-size: rem-calc(14);
-		overflow: visible;
-		width: 100%;
+		font-size: 90%;
 	}
-
 	.mask {
 		position: absolute;
 	    overflow: hidden;
@@ -410,14 +369,21 @@ $tab-bar-width: 5rem;
 		background: #fff;
 	}
 }
-/* .portfolio-grid figure:hover figcaption, .isotope .item:hover .fcaption {
-	opacity: 1;
-} */
-.isotope .item:hover .figure-text {
+
+.isotope .isotope-item {
+	-webkit-transition-duration: 0.3s;
+	-moz-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-property: -webkit-transform, opacity;
+	-moz-transition-property: -moz-transform, opacity;
+	transition-property: transform, opacity;
+}
+
+#masonry .item:hover .figure-text {
 	@include transform(0);
 	opacity: 1;
 }
-.isotope .item:hover .mask {
+#masonry .item:hover .mask {
     opacity:1;
 
     -webkit-transform: translate(-15%, -15%) rotate(45deg);
@@ -492,6 +458,24 @@ $tab-bar-width: 5rem;
 	left: 50%;
 }
 
+
+//squid
+
+#konami {
+    visibility: hidden;
+    display: none;
+    position: absolute;
+    z-index: 99;
+    background-color: rgb(255, 255, 255);
+    box-shadow: none;
+    top: 6.25rem;
+    border: 0px none rgb(102, 102, 102);
+    width: 800px;
+    left: 50%;
+    margin-left: -400px;
+    height: 600px;
+    padding: 0;
+}
 /*------//MEDIA QUERIES//------*/
 
 // Small screens up
@@ -519,6 +503,7 @@ $tab-bar-width: 5rem;
 	}
 
 }
+
 // Medium screens up
 @media only screen and (min-width: 40.063em) { 
 	.wrapper {
@@ -561,6 +546,7 @@ $tab-bar-width: 5rem;
 	.submit-btn {
 		width: rem-calc(220);
 	}
+
 }
 // Short screens (left nav)
 @media screen and (max-height: 35em){
@@ -588,7 +574,7 @@ $tab-bar-width: 5rem;
       		padding-left: 2.0625rem;
       	}
     }
-    .nav-current {
+    .current_page_item {
     	border-left: solid rem-calc(8) $primary-color;
 		a {
 			padding-left: rem-calc(25);
@@ -611,7 +597,9 @@ $tab-bar-width: 5rem;
 	.spmenu-push-toright {
         left: rem-calc(190);
     }
-
+    .socialism a {
+    	font-size: 125%;
+    }
 
 }
 @media screen and (max-height: 28.3em){
