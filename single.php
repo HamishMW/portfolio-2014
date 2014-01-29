@@ -28,7 +28,9 @@
              };
         };
         ?>
+        <li><?php echo get_post_meta($post->ID, 'video', true); ?></li>
         </ul>
+        <?php echo get_post_meta($post->ID, 'slider', true); ?>
       </div>
 
       <aside id="right-push" class="description-sticky right-description">

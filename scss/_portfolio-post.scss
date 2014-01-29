@@ -1,5 +1,4 @@
-
-
+$post-bg: rgb(236, 236, 236);
 
 .post-nav {
 	
@@ -52,7 +51,7 @@
     pointer-events: auto;
 }
 .portfolio-images {
-	background: none repeat scroll 0% 0% rgb(244, 244, 244);
+	background: none repeat scroll 0% 0% $post-bg;
 	ul {
 		margin: 0;
 	}
@@ -124,11 +123,11 @@
 // Large screens
 @media only screen and (min-width: 64.063em) { 
 	.description-sticky {
-		width: 30%;
+		width: 28%;
 		padding: rem-calc(35) rem-calc(40) rem-calc(50) rem-calc(40);
 	}
 	.portfolio-images {
-		width: 68.6%;
+		width: 70%;
 		img {
 			width: 100%;
 		}

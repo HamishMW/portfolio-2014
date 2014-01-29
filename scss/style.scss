@@ -8,6 +8,7 @@
 /*------//GLOBAL//------*/
 $primary-color-dark: #1aa382;
 $nav-bg: rgb(30, 30, 30);
+
 .wrapper img {
 	display: none;
 }
@@ -35,8 +36,22 @@ html {
 body {
 	cursor: auto;
 }
+.custom-flex-video-class {
+  @include flex-video-container();
+  	display: none;
+ 	margin-bottom: 0;
 
-
+ 	iframe body, .ytp-error {
+ 		
+ 		background-color: rgb(230, 230, 230);
+ 	}
+}
+.video-container {
+	padding: 8% 4.5%;
+}
+.orbit-container {
+	padding-bottom: rem-calc(40);
+}
 /*------//MENU NAV//------*/
 
 $spmenu-width: rem-calc(240);

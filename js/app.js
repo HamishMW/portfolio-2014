@@ -244,7 +244,14 @@ if (e.type === "valid"){
 ///////////////////////////////////////////
 
 $( document ).ready(function() {
-
+  //Fade items on load - sexiness incresed by 120%
+  var theImages = $(".wrapper img");
+  
+  theImages.hide().one("load",function(){
+    $(this).fadeIn(500);
+  }).each(function(){
+    if(this.complete) $(this).trigger("load");
+  });
 
   // Parallax
   $(window).scroll(function() {
@@ -255,20 +262,13 @@ $( document ).ready(function() {
   //Konami code
   $( window ).konami({  
     cheat: function() {
-      /*alert( 'Cheat code activated!' );*/
-     // url with custom callbacks
-    $('#konami').foundation('reveal', 'open', {
-    url: 'http://www.hamishw.com/wp-content/themes/Portfolio_2014/img/library/konami.html',
-    success: function(data) {
-        alert('modal data loaded');
-    },
-    error: function() {
-        alert('failed loading modal');
-    }
-});
+        /*alert( 'Cheat code activated!' );*/
+       // url with custom callbacks
+      $('#konami').foundation('reveal', 'open', {
+        url: 'http://www.hamishw.com/wp-content/themes/Portfolio_2014/img/library/konami.html',
+      });
     }
   });
-
 
 });
 
@@ -277,20 +277,15 @@ $(window).on('resize',function(){
 });
 
 $(window).load(function() {
+
+   $(".wrapper .custom-flex-video-class").show();
   // Prevent caption FOUC
   setTimeout(
   function() 
   {
      $(".figure-text").removeClass("hide");
   }, 300);
-  //Fade items on load - sexiness incresed by 120%
-  var theImages = $(".wrapper img");
-  theImages.show();
-  theImages.hide().one("load",function(){
-    $(this).fadeIn(500);
-  }).each(function(){
-    if(this.complete) $(this).trigger("load");
-  });
+  
 });
 
 // Media query js conditionals 
@@ -350,5 +345,10 @@ if (!!$('#dd').offset()) {
 // Foundation JavaScript
 // Documentation can be found at: http://foundation.zurb.com/docs
 
-$(document).foundation();
+$(document).foundation({
+  orbit: {
+      slide_number: false,
+      timer: false, // Does the slider have a timer visible?
+  }
+});
 
