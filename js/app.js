@@ -131,11 +131,11 @@ $( "#showLeftPush, #hideLeftPush" ).click(function() {
 //// Dropdowns
 ///////////////////////////////////////////
 
-$( Dropd ).click(function() {
+/*$( Dropd ).click(function() {
   if (!!$(Dropd).offset()) {
     classie.toggle( Dropd, 'share-active');
   }
-});
+});*/
 
 /*$("#testClick").click( function() {
   var $t = $(this);
@@ -179,18 +179,30 @@ function rightCheck() {
 //// Parallax
 ///////////////////////////////////////////
 
-var parallaxScroll,
-  _this = this;
+var iOS = false,
+parallaxHero = document.getElementById( 'hero1' );
 
-parallaxScroll = function() {
-  var currentScrollPosition;
-  currentScrollPosition = $(_this).scrollTop();
+if (navigator.userAgent.match(/(iPod|iPhone|iPad)/i)) {
+  iOS = true;
+}
 
-  $('#hero-text').css({
-    /*'top': (currentScrollPosition / 3) + "px",*/
-    'opacity': 1 - (currentScrollPosition / 410)
-  });
-};
+if (!!$('.parallax-trigger').offset() && iOS == true) { 
+    classie.remove( parallaxHero, 'parallax-trigger' );
+}
+  var parallaxScroll,
+    _this = this;
+
+  parallaxScroll = function() {
+
+    var currentScrollPosition;
+    currentScrollPosition = $(_this).scrollTop();
+
+    $('#hero-text').css({
+      //'top': (currentScrollPosition / 3) + "px",
+      'opacity': 1 - (currentScrollPosition / 410)
+    });
+  };
+
 
 ///////////////////////////////////////////
 //// Contact form
@@ -254,9 +266,9 @@ $( document ).ready(function() {
   });
 
   // Parallax
-  $(window).scroll(function() {
-    parallaxScroll();
-  });
+    $(window).scroll(function() {
+      parallaxScroll();
+    });
   // Right-bar stickiness
   rightCheck();
   //Konami code
@@ -287,6 +299,26 @@ $(window).load(function() {
   }, 300);
   
 });
+
+///////////////////////////////////////////
+//// PNG fallback for SVGs
+///////////////////////////////////////////
+
+// Check if browser can handle SVG
+if(!Modernizr.svg){
+    // Get all img tag of the document and create variables
+    var i=document.getElementsByTagName("img"),j,y;
+
+    // For each img tag
+    for(j = i.length ; j-- ; ){
+        y = i[j].src
+        // If filenames ends with SVG
+        if( y.match(/svg$/) ){
+            // Replace "svg" by "png"
+            i[j].src = y.slice(0,-3) + 'png'
+        }
+    }
+}
 
 // Media query js conditionals 
 /*$(window).on('resize',function(){

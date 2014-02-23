@@ -10,12 +10,7 @@
 
 		<title><?php wp_title('|','true','right'); ?><?php bloginfo('name'); ?></title>
 
-		<!-- Google Chrome Frame for IE -->
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
 		<!-- mobile meta -->
-		<meta name="HandheldFriendly" content="True">
-		<meta name="MobileOptimized" content="320">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
 		<!-- icons & favicons -->
@@ -39,11 +34,11 @@
 
 	<header class="tab-bar tab-bar-left tab-bar-active" id="showLeftPush">
       <i id="menu-icon" class="icon-list"></i>
-      <a class="logo-small"><img src="<?php echo get_template_directory_uri(); ?>/img/logo_40px.svg" onerror="<?php echo get_template_directory_uri(); ?>/img/logo_40px.png" alt="small logo"/></a>
+      <a class="logo-small"><img src="<?php echo get_template_directory_uri(); ?>/img/logo_40px.svg" alt="small logo"/></a>
     </header>
 
     <nav class="spmenu spmenu-left" id="spmenu-s1">
-      <div class="nav-logo"><img src="<?php echo get_template_directory_uri(); ?>/img/logo_150px.svg" onerror="<?php echo get_template_directory_uri(); ?>/img/logo_150px.png" alt="large logo"/></div>
+      <div class="nav-logo"><img src="<?php echo get_template_directory_uri(); ?>/img/logo_150px.svg" alt="large logo"/></div>
       <div class="nav-list">
         <ul class="no-bullet">
           <?php wp_list_pages('title_li=');?>
@@ -54,10 +49,10 @@
 
       <div class="socialism">
         <ul>
-          <li><a href="http://lnkd.in/bbXaTCd" target="_blank" class="icon-linkedin"></a></li>
-          <li><a href="http://www.youtube.com/user/Yamanotaka" target="_blank" class="icon-youtube-play"></a></li>
-          <li><a href="https://twitter.com/hamishMW" target="_blank" class="icon-twitter"></a></li>
-          <li><a href="https://plus.google.com/u/0/+HamishWilliams/" target="_blank" class="icon-gplus"></a></li>
+          <li><a href="http://lnkd.in/bbXaTCd" target="_blank" class="icon-linkedin"><span class="screen-reader-text">linked in</span></a></li>
+          <li><a href="http://www.youtube.com/user/Yamanotaka" target="_blank" class="icon-youtube-play"><span class="screen-reader-text">youtube</span></a></li>
+          <li><a href="https://twitter.com/hamishMW" target="_blank" class="icon-twitter"></a><span class="screen-reader-text">twitter</span></li>
+          <li><a href="https://plus.google.com/u/0/+HamishWilliams/" target="_blank" class="icon-gplus"><span class="screen-reader-text">google plus</span></a></li>
         </ul>
       </div>
 

@@ -54,14 +54,14 @@
               echo $szDescription;
             ?>
 
-          <div id="dd" class="wrapper-dropdown">
+          <!-- <div id="dd" class="wrapper-dropdown">
             <a class="button icon-link-ext share-links"></a>
               <ul class="share-dropdown button-group post-nav">
                 <li><a href="http://www.facebook.com/sharer.php?u=<?php the_permalink();?>&t=<?php the_title(); ?>" target="blank" class="button icon-facebook"></a></li>
                 <li><a href="https://plus.google.com/share?url=<?php the_permalink();?>" class="button icon-gplus"></a></li>
                 <li><a href="http://twitter.com/share?text=<?php echo urlencode(the_title()); ?>&url=<?php echo urlencode(the_permalink()); ?>&via=HamishMW&related=<?php echo urlencode("Hamish Williams – Graphic artist & designer"); ?>" title="Share on Twitter" rel="nofollow" target="_blank" class="button icon-twitter"></a></li>
               </ul>
-            </div>
+            </div> -->
 
           <?php endwhile; else: ?>
             <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>

@@ -38,21 +38,22 @@
 }
 .parallax-top {
 	padding-top: rem-calc(70);
-	padding-bottom: rem-calc(78);
+	padding-bottom: 6rem;
 }
 .hero {
- background: rgb(28, 187, 155) url(img/polygon.svg);
+  background: rgb(28, 187, 155) url(../img/polygon.svg) 50% 0 no-repeat;
   background-size:cover;
-  background-position:center center;
-  background-attachment:fixed;
-  margin-bottom: rem-calc(80);
+  margin-bottom: rem-calc(100);
 
   h1, h4, h3 {
   	color: #fff;
   }
 }
+.parallax-trigger {
+	background-attachment:fixed;
+}
 .no-svg .hero {
-  background-image: url(img/polygon.png) repeat-x;
+  background-image: url(../img/polygon.png) repeat-x;
 }
 .hero, .content{
   position:relative;
@@ -62,17 +63,17 @@
 	padding-top: 17px;
 }
 
-/* .hero .inner{
-  background: rgba(28, 187, 155, 0.8);
-} */
+//.hero .inner{
+//  background: rgba(28, 187, 155, 0.8);
+//}
 .profile, .approach {
 	padding-bottom: 70px;
 }
 .profile {
-	background: url(img/mesh.svg) repeat-x;
+	background: url(../img/mesh.svg) repeat-x;
 }
 .no-svg .profile {
-  background-image: url(img/mesh.png) repeat-x;
+  background-image: url(../img/mesh.png) repeat-x;
 }
 .approach {
 	padding-top: 70px;
@@ -86,7 +87,7 @@
 
 	li {
 		margin-bottom: rem-calc(4);
-		padding: rem-calc(10) 0 rem-calc(10) rem-calc(30);
+		padding: rem-calc(14) 0 rem-calc(14) rem-calc(30);
 		width: 100%;
 		background: rgb(220, 220, 220);
 	}
@@ -101,6 +102,9 @@
 	.skill-list {
 		width: 100%;
 		margin-bottom: 0;
+	}
+	.profile h4, .approach h4 {
+		font-size: 1.375rem;
 	}
 }
 // medium up 

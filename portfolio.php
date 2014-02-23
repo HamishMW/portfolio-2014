@@ -20,24 +20,36 @@ Template Name: Portfolio
 
         while ( $the_query->have_posts() ) : $the_query->the_post();
 
-        echo '<a href="'; the_permalink(); echo'"><div class="item">';
+        ?>
 
-        the_post_thumbnail('full');
+        <a href="<?php the_permalink(); ?>">
+          <div class="item">
 
-        echo '<div class="fcaption"><span class="mask"></span><div class="figure-text hide">';
-        echo '<h3><strong>'; the_title(); echo'</strong></h3><span>';
+            <?php the_post_thumbnail('full'); ?>
+
+            <div class="fcaption">
+              <span class="mask"></span>
+              <div class="figure-text hide">
+                <h3><strong><?php the_title(); ?></strong></h3>
+                <?php
+                echo "<span>";
+                $posttags = get_the_tags(); $sep = '';
+                if ($posttags) {
+                  foreach($posttags as $tag) {
+                    echo $sep.$tag->name; $sep = ', ';
+                  }
+                }
+                echo "</span>";
+                ?>
+
+                <span class="button proj-button">View project</span>
+              </div>
+            </div>
+          </div>
+        </a>
         
-        $posttags = get_the_tags(); $sep = '';
-        if ($posttags) {
-          foreach($posttags as $tag) {
-            echo $sep.$tag->name; $sep = ', ';
-          }
-        }
+        <?php
 
-        echo '</span>'; 
-        echo'<a href="'; the_permalink(); echo'" class="button proj-button">View project</a>';
-        echo '</div></div></div></a>';
-            
         endwhile;
 
         // Reset Post Data

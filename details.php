@@ -9,12 +9,12 @@ Template Name: Details
     <div class="wrapper">
       <!-- First Band (Slider) -->
  
- <section id="hero1" class="hero">
+ <section id="hero1" class="hero parallax-trigger">
   <div class="inner">
     <div class="row content-page parallax-top">
     <div id="hero-text" class="large-12 columns head-description">
     <h3>Details</h3>
-    <h1><strong>Through research, conceptualization, and design, I create kickass visual media.</strong></h1>
+    <h1><strong>Through research, conceptualization, and design, I create kick-ass visual media.</strong></h1>
     <h4>I synthesise illustration, animation, typography, and code to create a diverse range of solutions.</h4>
     </div>
   </div>
@@ -26,14 +26,13 @@ Template Name: Details
 
   <section class="row profile content-page">
     <div class="large-4 columns img-centerer">
-      <img src="<?php echo get_template_directory_uri(); ?>/img/profile.png" />
+      <img src="<?php echo get_template_directory_uri(); ?>/img/profile.png" alt="profile picture" />
     </div>
     
     <div class="large-8 columns">
-      
       <h4>Profile</h4>
-      <p>Hi, I'm Hamish Williams. Nano-computer spook shoes uplink into. math- receding RAF long-chain hydrocarbons assault j-pop convenience store camera decay digital sign warehouse drone. smart- corporation into wristwatch ablative plastic carbon urban systemic sub-orbital shoes grenade industrial grade lights. disposable garage vinyl rebar chrome jeans market tank-traps kanji tiger-team urban motion faded. </p>
-      <div class="details-buttons"><a class="button btn-border cv-btn"><i class="icon-download"></i> Download CV</a>
+      <p>Hi, I'm Hamish Williams. I am an alumnus of The University of Waikato's <a href="http://www.waikato.ac.nz/study/qualifications/bcgd.shtml">Bachelor of Computer Graphic Design</a> – a comprehensive degree that combines both technical and creative skills. For the past year I have had extensive experience working as a Graphic Designer with Bold Horizon, a Hamilton-based design and marketing agency. During this time I've worked on branding and advertising across a variety of print and digital media.</p>
+      <div class="details-buttons"><a href="<?php echo get_template_directory_uri(); ?>/img/library/CV2014-Hamish-Williams.pdf" class="button btn-border cv-btn"><i class="icon-download"></i> Download CV</a>
       <a class="button btn-border cv-btn" data-reveal-id="contactModal"><i class="icon-mail"></i> Contact me</a></div>
     </div>
     
@@ -43,25 +42,23 @@ Template Name: Details
       
       <div class="large-4 columns">
         <h4>Approach</h4>
-        <p>Nano-computer spook shoes uplink into. math- receding RAF long-chain hydrocarbons assault j-pop convenience store camera decay digital sign warehouse drone. smart- corporation into wristwatch ablative plastic carbon urban systemic sub-orbital shoes grenade industrial grade lights. disposable garage vinyl rebar chrome jeans market tank-traps kanji tiger-team urban motion faded. </p>
+        <p>Although I'm a massive design nerd and love every bit of the latest technology in the industry, I like to take things back to old-school pencil, ink, and paper when laying down concepts for a new project. This approach allows for the rapid research and development of a diversity of ideas that can be easily developed or iterated on digitally. </p>
       </div>
 
       <div class="large-8 columns">
         <h4>Skills &amp; Technology</h4>
         <ul class="skill-list">
           <li>Adobe Creative Suite</li>
-          <li>Typography and layout</li>
           <li>Motion Graphics</li>
           <li>Illustration</li>
+          <li>Maya, 3DS Max, Blender</li> 
         </ul>
         <ul class="skill-list">
-          <li>Maya, 3DS Max, Blender</li> 
+          <li>UX &amp; Interaction Design</li>
           <li>HTML5, CSS3, SASS &amp; Compass</li>
           <li>Javascript/jQuery</li>
           <li>Flash/Actionscript 3</li>
         </ul>
-
-      
       </div>
       
   </section>
