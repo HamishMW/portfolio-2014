@@ -24,6 +24,7 @@
   font-style: normal;
   font-weight: normal;
   speak: none;
+  -webkit-font-smoothing: antialiased;
 }
  
 .icon-foundation:before { content: '\e972'; } /* '' */

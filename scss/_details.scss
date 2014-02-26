@@ -131,3 +131,13 @@
 		padding-right: 13%;
 	}
 }
+// XX large
+@media only screen and (min-width: 118.6em) { 
+	.head-description h1 {
+		font-size: 400%;
+	}
+	.content-page {
+		padding-left: 16%;
+		padding-right: 16%;
+	}
+}

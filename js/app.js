@@ -128,23 +128,6 @@ $( "#showLeftPush, #hideLeftPush" ).click(function() {
 });
 
 ///////////////////////////////////////////
-//// Dropdowns
-///////////////////////////////////////////
-
-/*$( Dropd ).click(function() {
-  if (!!$(Dropd).offset()) {
-    classie.toggle( Dropd, 'share-active');
-  }
-});*/
-
-/*$("#testClick").click( function() {
-  var $t = $(this);
-  var $menu = $t.next(".sub-menu");
-  $menu.slideToggle('fast');
-  $menu.toggleClass('openmenu');
-});*/
-
-///////////////////////////////////////////
 //// Scrolling rightbar check
 ///////////////////////////////////////////
 
@@ -266,15 +249,16 @@ $( document ).ready(function() {
   });
 
   // Parallax
+  if (!!$('.parallax-trigger').offset() && iOS == false) { 
     $(window).scroll(function() {
       parallaxScroll();
     });
+  }
   // Right-bar stickiness
   rightCheck();
   //Konami code
   $( window ).konami({  
     cheat: function() {
-        /*alert( 'Cheat code activated!' );*/
        // url with custom callbacks
       $('#konami').foundation('reveal', 'open', {
         url: 'http://www.hamishw.com/wp-content/themes/Portfolio_2014/img/library/konami.html',
@@ -284,9 +268,9 @@ $( document ).ready(function() {
 
 });
 
-$(window).on('resize',function(){
+/*$(window).on('resize',function(){
   rightCheck();
-});
+});*/
 
 $(window).load(function() {
 
@@ -319,60 +303,6 @@ if(!Modernizr.svg){
         }
     }
 }
-
-// Media query js conditionals 
-/*$(window).on('resize',function(){
-    if(Modernizr.mq('(min-width: 64.063em)')) $(".tab-bar").removeClass("tab-bar-active");
-    if(Modernizr.mq('(min-width: 40.063em)')) $(".sticky-sidebar").removeClass("sticky-active");
-    if(Modernizr.mq('(min-width: 64.063em)')) $(".sticky-sidebar").addClass("sticky-active");
-    if(Modernizr.mq('(max-height: 35em)')) $(".tab-bar").addClass("tab-bar-active");
-});*/
-
-  //Custom dropdowns
-
-/*  function DropDown(el) {
-      Dropd = el;
-      this.initEvents();
-  }
-  DropDown.prototype = {
-    initEvents : function() {
-
-      Dropd.on('click', function(event){
-        Dropd.toggleClass('share-active');
-        event.stopPropagation();
-      }); 
-    }
-  }
-
-if (!!$('#dd').offset()) {
-  //Custom dropdowns
-  var Dropd = document.getElementById( 'dd' );
-  var dd = new DropDown( $('#dd') );
-}
-*/
-/*$(function(){ // document ready
-
-  // Sticky sidebar   
-  if (!!$('.sticky-active').offset()) { // make sure ".sticky-active" element exists
-    
-    var stickyTop = $('.sticky-active').offset().top; // returns number
- 
-    $(window).scroll(function(){ // scroll event
- 
-      var windowTop = $(window).scrollTop(); // returns number
- 
-      if (stickyTop < windowTop){
-        $('.sticky-active').css({ position: 'fixed', top: 0 });
-      }
-      else {
-        $('.sticky-active').css('position','static');
-      }
- 
-    });
- 
-  }
- 
-});*/
 
 // Foundation JavaScript
 // Documentation can be found at: http://foundation.zurb.com/docs
