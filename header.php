@@ -18,7 +18,7 @@
   <![endif]-->
   <meta name="msapplication-TileColor" content="#1cbb9b">
   <meta name="msapplication-TileImage" content="<?php echo get_template_directory_uri(); ?>/img/icons/win8-tile-icon.png">
-  <link rel="author" href="https://www.google.com/+HamishWilliams" content="Hamish Williams – designer and evil mastermind."/>
+
   <?php wp_head(); ?>
   <!-- Google Analytics -->
     <?php include_once("php/analyticstracking.php") ?>

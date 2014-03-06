@@ -1,5 +1,4 @@
 @import "settings";
-/* @import "foundation"; */
 @import "button-groups";
 @import "buttons";
 @import "flex-video";
@@ -15,6 +14,7 @@
 @import "icons";
 @import "portfolio-post";
 @import "details";
+@import "404";
 
 /*------//GLOBAL//------*/
 $primary-color-dark: #1aa382;
@@ -40,9 +40,7 @@ $nav-bg: rgb(30, 30, 30);
 .btn-border {
 	border-bottom: 4px solid $primary-color-dark; 
 }
-.hello {
-	
-}
+
 html {
 	overflow-y: scroll;
    	overflow-x: hidden;
@@ -114,7 +112,11 @@ body {
     	}
 	}
 }
-
+// Modals
+.reveal-modal {
+	border-top: 6px solid $primary-color;
+	overflow: visible;
+}
 
 /*------//MENU NAV//------*/
 
@@ -254,9 +256,6 @@ $tab-bar-width: 5rem;
 	background: -ms-linear-gradient(top,  rgba(30,30,30,0) 0%,rgba(30,30,30,1) 50%); /* IE10+ */
 	background: linear-gradient(to bottom,  rgba(30,30,30,0) 0%,rgba(30,30,30,1) 50%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e1e1e', endColorstr='#1e1e1e',GradientType=0 ); /* IE6-9 */
-
-
-
 	width: 100%;
 	li {
 		list-style: none outside none;
@@ -275,32 +274,6 @@ $tab-bar-width: 5rem;
 		color: $primary-color;
 	}
 }	
-
-.reveal-modal {
-	border-top: 6px solid $primary-color;
-	overflow: visible;
-}
-
-  //sub menus
-  .sub-menu {
-  	list-style-type: none;
-  	margin: 0;
-    display: none;
-    li {
-      a {
-      	font-size: 92%;
-        padding-left: 3rem;
-        background: shade($nav-bg, 12%);
-
-        &:hover {
-          background: shade($nav-bg,1%);
-        }
-      }
-    }
-  }
-.openmenu {
-	display: block;
-}
 
 /* Animation classes */
 
@@ -412,23 +385,23 @@ $tab-bar-width: 5rem;
 	}
 	.mask {
 		position: absolute;
-	    overflow: hidden;
-	    top: 0;
-	    left: 0;
-	    background: rgba(28, 187, 155, 0.8);
-	    width: 150%;
-	    padding: 60px;
-	    height: 150%;
-	    opacity: 0;
+	   	overflow: hidden;
+	   	top: 0;
+	   	left: 0;
+	   	background: rgba(28, 187, 155, 0.8);
+	   	width: 150%;
+	   	padding: 60px;
+	   	height: 150%;
+	   	opacity: 0;
 
-	    -webkit-transform: translate(100%, 100%) rotate(45deg);
+	   	-webkit-transform: translate(100%, 100%) rotate(45deg);
 		-moz-transform: translate(100%, 100%) rotate(45deg);
 		-ms-transform: translate(100%, 100%) rotate(45deg);
-	    transform: translate(100%, 100%) rotate(45deg);
+	   	transform: translate(100%, 100%) rotate(45deg);
 
 	   	-webkit-transition: all 0.7s ease-in-out;
    		-moz-transition: all 0.7s ease-in-out;
-	    transition: all 0.7s ease-in-out;
+	   	transition: all 0.7s ease-in-out;
 	}
 	.proj-button {
 		display: block;
@@ -463,31 +436,15 @@ $tab-bar-width: 5rem;
 	opacity: 1;
 }
 #masonry .item:hover .mask {
-    opacity:1;
+   	opacity:1;
 
-    -webkit-transform: translate(-15%, -15%) rotate(45deg);
+   	-webkit-transform: translate(-15%, -15%) rotate(45deg);
 	-moz-transform: translate(-15%, -15%) rotate(45deg);
 	-ms-transform: translate(-15%, -15%) rotate(45deg);
-    transform: translate(-15%, -15%) rotate(45deg);
+   	transform: translate(-15%, -15%) rotate(45deg);
 }
 
-/*------//CONTACT MODAL//------*/
-
-.submit-btn {
-	width: 100%;
-}
-
-/*------//JOURNAL PAGE//------*/
-
-.sidebar {
-	float:right;
-	width: rem-calc(240);
-}
-.sticky-sidebar .panel {
-	width: rem-calc(240);
-}
-
-/*------//BUTTONS//------*/
+/*------//LOAD BUTTONS//------*/
 
 .load-button[data-loading] {
 	cursor: default;
@@ -605,9 +562,6 @@ $tab-bar-width: 5rem;
 	}
 	.name-field {
 		margin-right: 5%;
-	}
-	.submit-btn {
-		width: 100%;
 	}
 	.top-reveal-field {
 		width: 47.5%;
