@@ -54,6 +54,10 @@ window.classie = {
   toggle: toggleClass
 };
 
+// remove thumbnail hover on touch devices
+$('.item').on("touchstart", function (e) {
+  $('.item').removeClass('item-hover');
+});
 
 ///////////////////////////////////////////
 //// KONAMI
@@ -273,7 +277,7 @@ $( document ).ready(function() {
 });*/
 
 $(window).load(function() {
-
+  $('.loader').hide();
    $(".wrapper .custom-flex-video-class").show();
   // Prevent caption FOUC
   setTimeout(

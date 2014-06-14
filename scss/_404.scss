@@ -32,39 +32,6 @@
   }
 }
 
-// Keyframe animation mixins
-@mixin animation($animate...) {
-    $max: length($animate);
-    $animations: '';
-
-    @for $i from 1 through $max {
-        $animations: #{$animations + nth($animate, $i)};
-
-        @if $i < $max {
-            $animations: #{$animations + ", "};
-        }
-    }
-    -webkit-animation: $animations;
-    -moz-animation:    $animations;
-    -o-animation:      $animations;
-    animation:         $animations;
-}
-
-@mixin keyframes($animationName) {
-    @-webkit-keyframes #{$animationName} {
-        @content;
-    }
-    @-moz-keyframes #{$animationName} {
-        @content;
-    }
-    @-o-keyframes #{$animationName} {
-        @content;
-    }
-    @keyframes #{$animationName} {
-        @content;
-    }
-}
-
 @include keyframes(noise-anim) {
   0% {
     clip: rect(200px, 9999px, 25px, 0);

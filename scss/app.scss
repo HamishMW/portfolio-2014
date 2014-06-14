@@ -1,3 +1,6 @@
+//Compass
+@import "compass/css3/transition";
+//Foundation
 @import "settings";
 @import "button-groups";
 @import "buttons";
@@ -9,11 +12,14 @@
 @import "orbit";
 @import "reveal";
 @import "type";
+@import "pagination";
 @import "visibility";
-
+//hamishw
+@import "functions";
 @import "icons";
-@import "portfolio-post";
+@import "single";
 @import "details";
+@import "journal";
 @import "404";
 
 /*------//GLOBAL//------*/
@@ -34,6 +40,7 @@ $nav-bg: rgb(30, 30, 30);
 .wrapper img {
 	display: none;
 }
+
 .hide {
 	display: none !important;
 }
@@ -41,21 +48,6 @@ $nav-bg: rgb(30, 30, 30);
 	border-bottom: 4px solid $primary-color-dark; 
 }
 
-html {
-	overflow-y: scroll;
-   	overflow-x: hidden;
-}
-@mixin transition($type, $dur) {
-  	-webkit-transition: $type $dur ease;
-    -moz-transition: $type $dur ease;
-    transition: $type $dur ease;
-}
-@mixin transform($size) {
-	-webkit-transform: translateY($size);
-	-moz-transform: translateY($size);
-	-ms-transform: translateY($size);
-	transform: translateY($size);
-}
 body {
 	cursor: auto;
 }
@@ -89,7 +81,7 @@ body {
 		font-size: rem-calc(30);
 		color: rgb(153, 153, 153);
 		span {
-			@include transition(all, 0.3s);
+			@include transition(all 0.3s ease);
 		    border: none;
 		    text-indent: 0;
 		    margin-top: -32px;
@@ -149,7 +141,7 @@ $tab-bar-width: 5rem;
 	display: block;
 	font-size: rem-calc(35);
 	color: rgb(100, 100, 100);
-	transition: color 150ms ease 0s;
+	@include transition(color 150ms ease 0s);
 }
 #menu-icon:hover {
 	color: rgb(80, 80, 80);
@@ -190,7 +182,7 @@ $tab-bar-width: 5rem;
 	// top: 30%; 
 	margin-top: rem-calc(30);
 	a {
-		@include transition(opacity, 0.3s);
+		@include transition(opacity 0.3s ease);
 		background: $nav-bg;
 		padding: 1rem;
 		padding-left: rem-calc(43);
@@ -228,7 +220,7 @@ $tab-bar-width: 5rem;
 	width: rem-calc(160);
 	margin-top: rem-calc(28);
 	margin-left: $spmenu-logo-gap / 2;
-	 @include transition(all, 0.3s);
+	 @include transition(all 0.3s ease);
 }
 
 .copyright {
@@ -252,7 +244,6 @@ $tab-bar-width: 5rem;
 	background: -moz-linear-gradient(top,  rgba(30,30,30,0) 0%, rgba(30,30,30,1) 50%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(30,30,30,0)), color-stop(50%,rgba(30,30,30,1))); /* Chrome,Safari4+ */
 	background: -webkit-linear-gradient(top,  rgba(30,30,30,0) 0%,rgba(30,30,30,1) 50%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  rgba(30,30,30,0) 0%,rgba(30,30,30,1) 50%); /* Opera 11.10+ */
 	background: -ms-linear-gradient(top,  rgba(30,30,30,0) 0%,rgba(30,30,30,1) 50%); /* IE10+ */
 	background: linear-gradient(to bottom,  rgba(30,30,30,0) 0%,rgba(30,30,30,1) 50%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e1e1e', endColorstr='#1e1e1e',GradientType=0 ); /* IE6-9 */
@@ -262,7 +253,7 @@ $tab-bar-width: 5rem;
 		display: inline-block;
 	}
 	a {
-		@include transition(all, 0.3s);
+		@include transition(all 0.3s ease);
 		font-size: rem-calc(25);
 		color: rgb(90, 90, 90);
 		padding: rem-calc(8) rem-calc(10) rem-calc(8) 0;
@@ -310,12 +301,13 @@ $tab-bar-width: 5rem;
 .spmenu,
 .spmenu-push, 
 .tab-bar-active {
-    @include transition(left, 0.3s);
+    @include transition(left 0.2s ease);
 }
 
 /*------//BLOCK GRID MASONRY//------*/
 
 #masonry {
+	background-color: #ECECEC;
     display: none;
     img {
 	    width: 100%;
@@ -355,7 +347,7 @@ $tab-bar-width: 5rem;
 		top: auto;
 		bottom: 0;
 		/* opacity: 0; */
-		/* @include transition(all, 0.3s); */
+		/* @include transition(all, 0.3s, ease); */
 	}
 
 	.fcaption:before {
@@ -369,10 +361,8 @@ $tab-bar-width: 5rem;
 		width: 90%;
 		display: inline-block;
   		vertical-align: middle;
-  		@include transform(rem-calc(30)); 
-  		-webkit-transition: all 0.3s ease 0.4s;
-   		-moz-transition: all 0.3s ease 0.4s;
-    	transition: all 0.3s ease 0.4s;
+  		@include transform(translateY(rem-calc(30))); 
+  		@include transition(all 0.3s ease 0.4s);
     	opacity: 0;
 	}
 
@@ -394,14 +384,8 @@ $tab-bar-width: 5rem;
 	   	height: 150%;
 	   	opacity: 0;
 
-	   	-webkit-transform: translate(100%, 100%) rotate(45deg);
-		-moz-transform: translate(100%, 100%) rotate(45deg);
-		-ms-transform: translate(100%, 100%) rotate(45deg);
-	   	transform: translate(100%, 100%) rotate(45deg);
-
-	   	-webkit-transition: all 0.7s ease-in-out;
-   		-moz-transition: all 0.7s ease-in-out;
-	   	transition: all 0.7s ease-in-out;
+	   	@include transform(translate(100%, 100%) rotate(45deg));
+	   	@include transition(all 0.7s ease-in-out);
 	}
 	.proj-button {
 		display: block;
@@ -430,18 +414,14 @@ $tab-bar-width: 5rem;
 	-moz-transition-property: -moz-transform, opacity;
 	transition-property: transform, opacity;
 }
-
-#masonry .item:hover .figure-text {
-	@include transform(0);
+#masonry .item-hover:hover .figure-text {
+	@include transform(translateY(0));
 	opacity: 1;
 }
-#masonry .item:hover .mask {
+#masonry .item-hover:hover .mask {
    	opacity:1;
 
-   	-webkit-transform: translate(-15%, -15%) rotate(45deg);
-	-moz-transform: translate(-15%, -15%) rotate(45deg);
-	-ms-transform: translate(-15%, -15%) rotate(45deg);
-   	transform: translate(-15%, -15%) rotate(45deg);
+   	@include transform(translate(-15%, -15%) rotate(45deg));
 }
 
 /*------//LOAD BUTTONS//------*/
@@ -467,10 +447,7 @@ $tab-bar-width: 5rem;
 .load-button,
 .load-button .spinner,
 .load-button .load-span {
-	-webkit-transition: 0.3s cubic-bezier(0.175, 0.885, 0.320, 1.275) all;
-	   -moz-transition: 0.3s cubic-bezier(0.175, 0.885, 0.320, 1.275) all;
-	    -ms-transition: 0.3s cubic-bezier(0.175, 0.885, 0.320, 1.275) all;
-	        transition: 0.3s cubic-bezier(0.175, 0.885, 0.320, 1.275) all;
+	@include transition(0.3s, cubic-bezier(0.175, 0.885, 0.320, 1.275), all);
 }
 
  //SLIDE LEFT
@@ -500,7 +477,7 @@ $tab-bar-width: 5rem;
     visibility: hidden;
     display: none;
     position: absolute;
-    z-index: 99;
+    z-index: 99999;
     background-color: rgb(255, 255, 255);
     box-shadow: none;
     top: 6.25rem;
@@ -512,14 +489,201 @@ $tab-bar-width: 5rem;
     padding: 0;
 }
 
+
+//////////////////////////////
+// Variables
+//////////////////////////////
+
+$red-01: #167C69;
+$red-02: #1B8E77;
+$red-03: #1FA387;
+$red-04: #23B193;
+
+$poly-size: 40px; // Original size of the Polygon loader, but can be resized to basically anything
+$unit: unit($poly-size);
+
+$totalWidth: $poly-size;
+$totalHeight: ($poly-size * 1.5);
+
+$topOffset: ($poly-size / 2);
+$leftOffset: ($poly-size / 2);
+
+$borderWidth: ($poly-size / 2);
+
+// Just change the transform origin?!?!
+$specialBorderWidth: ceil((sqrt( (strip-units($borderWidth) * strip-units($borderWidth)) + (strip-units($borderWidth) * strip-units($borderWidth)) ) / 2)) + $unit;
+
+
+//////////////////////////////
+// Keyframe Animations
+//////////////////////////////
+
+@include keyframes(type-01) {
+  0% {
+    border-top-width: 0;
+    border-right-width: $borderWidth;
+    border-bottom-width: $borderWidth;
+    border-left-width: 0;
+  }
+
+  40% {
+    border-top-width: 0;
+    border-right-width: $borderWidth;
+    border-bottom-width: $borderWidth;
+    border-left-width: 0;
+  }
+
+  45% {
+    border-top-width: $borderWidth;
+    border-right-width: $borderWidth;
+    border-bottom-width: $borderWidth;
+    border-left-width: 0;
+  }
+
+  100% {
+    border-top-width: $borderWidth;
+    border-right-width: $borderWidth;
+    border-bottom-width: $borderWidth;
+    border-left-width: 0;
+  }
+}
+
+@include keyframes(type-02) {
+  0% {
+    border-top-width: 0;
+    border-right-width: #{$specialBorderWidth};
+    border-bottom-width: #{$specialBorderWidth};
+    border-left-width: #{$specialBorderWidth};
+  }
+
+  40% {
+    border-top-width: 0;
+    border-right-width: #{$specialBorderWidth};
+    border-bottom-width: #{$specialBorderWidth};
+    border-left-width: #{$specialBorderWidth};
+  }
+
+  45% {
+    border-top-width: #{$specialBorderWidth};
+    border-right-width: #{$specialBorderWidth};
+    border-bottom-width: #{$specialBorderWidth};
+    border-left-width: #{$specialBorderWidth};
+  }
+
+  100% {
+    border-top-width: #{$specialBorderWidth};
+    border-right-width: #{$specialBorderWidth};
+    border-bottom-width: #{$specialBorderWidth};
+    border-left-width: #{$specialBorderWidth};
+  }
+}
+
+@include keyframes(type-03) {
+  0% {
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: $borderWidth;
+    border-left-width: $borderWidth;
+  }
+
+  40% {
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: $borderWidth;
+    border-left-width: $borderWidth;
+  }
+
+  45% {
+    border-top-width: $borderWidth;
+    border-right-width: 0;
+    border-bottom-width: $borderWidth;
+    border-left-width: $borderWidth;
+  }
+
+  100% {
+    border-top-width: $borderWidth;
+    border-right-width: 0;
+    border-bottom-width: $borderWidth;
+    border-left-width: $borderWidth;
+  }
+}
+
+
+//////////////////////////////
+// The Meat
+//////////////////////////////
+
+.loader { 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: (-$totalHeight / 2) 0 0 (-$totalWidth / 2);
+  height: $totalHeight;
+  width: $totalWidth;
+  
+  div {
+    position: absolute;
+    top: $topOffset;
+    left: $leftOffset;
+    border: 0 solid transparent;
+    
+    -webkit-transform-origin: left top;
+  	-ms-transform-origin: left top;
+  	transform-origin: left top;
+  	@include animation(.52s infinite alternate steps(4))
+
+  }
+
+  div:nth-of-type(1) {
+    border-top-color: $red-01;
+    @include transform(rotate(-180deg));
+    
+    -webkit-animation-name: type-01;
+    animation-name: type-01;
+  }
+
+  div:nth-of-type(2) {
+    border-top-color: $red-02;
+    @include transform(rotate(-90deg));
+  
+    -webkit-animation-name: type-01;
+    -webkit-animation-delay: .08s;
+    animation-name: type-01;
+    animation-delay: .08s;
+  }
+
+  div:nth-of-type(3) {
+    border-top-color: $red-03;
+    @include transform(rotate(0));
+    
+    -webkit-animation-name: type-01;
+    -webkit-animation-delay: .12s;
+    animation-name: type-01;
+    animation-delay: .12s;
+  }
+
+  div:nth-of-type(4) {
+    border-top-color: $red-04;
+    @include transform(rotate(90deg));
+    
+    -webkit-animation-name: type-01;
+    -webkit-animation-delay: .16s;
+    animation-name: type-01;
+    animation-delay: .16s;
+  }
+}
+
+
 /*------//MEDIA QUERIES//------*/
 
 // Small only
 @media only screen and (max-width: 40em) { 
+
 	#contactModal {
 		margin-left: -47.5%;
 		width: 95%;
 	}
+
 }
 
 // Small screens up
@@ -574,6 +738,11 @@ $tab-bar-width: 5rem;
 }
 // Large screens up
 @media only screen and (min-width: 64.063em) { 
+	#contactModal {
+		margin: 0 auto;
+		width: rem-calc(810);
+		margin-left: rem-calc(-405);
+	}
 	.wrapper {
 		margin-top: rem-calc(0);
 		margin-left: rem-calc(80);
@@ -587,9 +756,7 @@ $tab-bar-width: 5rem;
 		bottom: 0;
 		height: 100%;
 	}
-	.submit-btn {
-		width: rem-calc(220);
-	}
+
 
 }
 // Short screens (left nav)

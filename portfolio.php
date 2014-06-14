@@ -18,7 +18,7 @@ Template Name: Portfolio
     ?>
 
     <a href="<?php the_permalink(); ?>">
-      <div class="item">
+      <div class="item item-hover">
         <?php the_post_thumbnail('full'); ?>
         <div class="fcaption">
           <span class="mask"></span>
@@ -47,6 +47,13 @@ Template Name: Portfolio
     ?>
 
   </section>
+</div>
+
+<div class="loader">
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
 </div>
 
 <?php get_footer(); ?>

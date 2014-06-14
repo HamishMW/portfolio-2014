@@ -5,42 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hamish Williams — Graphic Designer</title>
     <meta name="author" content="Hamish Williams | hamishw.com">
-    <link rel="stylesheet" href="style.css" />
 
+    <link rel="icon" href="img/icons/favicon.png" type="image/x-icon">
+    <!-- For third-generation iPad with high-resolution Retina display: -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/icons/apple-touch-icon-144x144-precomposed.png">
+    <!-- For iPhone with high-resolution Retina display: -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/icons/apple-touch-icon-114x114-precomposed.png">
+    <!-- For first- and second-generation iPad: -->
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/icons/apple-touch-icon-72x72-precomposed.png">
+    <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+    <link rel="apple-touch-icon-precomposed" href="img/icons/apple-touch-icon-precomposed.png">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/app.css" />
     <script src="bower_components/modernizr/modernizr.js"></script>
+    
 
   </head>
   <body class="spmenu-push">
 
     <header class="tab-bar tab-bar-left tab-bar-active" id="showLeftPush">
-      <i id="menu-icon" class="fi-list"></i>
+      <i id="menu-icon" class="icon-list"></i>
       <a class="logo-small"><img src="img/logo_40px.png" alt="small logo"/></a>
     </header>
 
     <nav class="spmenu spmenu-left" id="spmenu-s1">
-      <div class="nav-logo"><img src="img/logo_150px.png" alt="large logo"/></div>
+      <div class="nav-logo"><img src="img/logo_150px.svg" alt="large logo"/></div>
       <div class="nav-list">
         <ul class="no-bullet">
-          <li class="nav-current"><a href="#">Portfolio</a></li>
+          <li class="current_page_item"><a href="index.html">Portfolio <span class="icon-"></span></a></li>
           <li><a href="#">Journal</a></li>
           <li><a href="#">Details</a></li>
           <li><a href="#" id="hideLeftPush" data-reveal-id="contactModal">Contact</a></li>
         </ul>
       </div>
-      
+
+      <div class="socialism">
+        <ul class="hide-text">
+          <li><a href="http://lnkd.in/bbXaTCd" class="icon-linkedin"></a></li>
+          <li><a href="http://www.youtube.com/user/Yamanotaka" class="icon-youtube-play"></a></li>
+          <li><a href="https://twitter.com/hamishMW" class="icon-twitter"></a></li>
+          <li><a href="https://plus.google.com/u/0/+HamishWilliams/" class="icon-gplus"></a></li>
+        </ul>
+      </div>
+
       <div class="copyright">
-        <small>© Hamish Williams 2014.<!-- <br>Powered by velociraptors. --></small>
+        <small>© Hamish Williams 2014.</small>
       </div>
     </nav>
     
     <div id="contactModal" class="reveal-modal" data-reveal> 
-      <h2>Awesome. I have it.</h2> 
+      <h2>Let's do this.</h2> 
       <hr>
       <form data-abide> 
         <div class="name-field top-reveal-field"> 
           <label>Your name*</label> 
           <input type="text" required pattern="[a-zA-Z]+"> 
-          <small class="error">Name is required and must be a string.</small> 
+          <small class="error">Your name is required.</small> 
         </div> 
         <div class="email-field top-reveal-field"> 
           <label>Email*</label> 
@@ -50,104 +70,79 @@
         <div class="textarea-field">
           <label>Message*</label>
           <textarea required pattern="alpha_numeric" placeholder="Throw me a message" ></textarea>
-          <small class="error">You need to actually write a message.</small> 
+          <small class="error">You need to write a message.</small> 
         </div>
-        <button class="submit-btn" type="submit">Send Message</button>
-        
+        <button id="sendButton" class="load-button slide-left submit-btn btn-border" type="submit"><span class="load-span">Send Message</span> <span class="spinner"></span></button>
+        <!-- <button id="close-btn" class="close-reveal-modal">Close</button> -->
       </form>
       <a class="close-reveal-modal">&#215;</a> 
     </div>
 
-    <!-- Main Page Content and Sidebar -->
-  <div class="wrapper">
-  <div class="row">
-    <div class="large-12 columns">
-      <h1>Blog <small>This is my blog. It's awesome.</small></h1>
-      <hr />
-    </div>
-  </div>
+    <div class="wrapper">
 
-  <div class="row">
-    
-    <!-- Main Blog Content -->
-    <div class="large-9 columns" role="content">
- 
-      <article>
- 
-        <h3><a href="#">Blog Post Title</a></h3>
-        <h6>Written by <a href="#">John Smith</a> on August 12, 2012.</h6>
- 
-        <div class="row">
-          <div class="large-6 columns">
-            <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa.</p>
-            <p>Boudin aliqua adipisicing rump corned beef. Nulla corned beef sunt ball tip, qui bresaola enim jowl. Capicola short ribs minim salami nulla nostrud pastrami.</p>
-          </div>
-          <div class="large-6 columns">
-            <img src="http://placehold.it/400x240&text=[img]" />
-          </div>
+      <section class="row">
+        <div class="large-6 medium-9 columns large-centered medium-centered">
+          <h2 class="search-text">Search my journal</h2>
+          <hr>
         </div>
- 
-        <p>Pork drumstick turkey fugiat. Tri-tip elit turducken pork chop in. Swine short ribs meatball irure bacon nulla pork belly cupidatat meatloaf cow. Nulla corned beef sunt ball tip, qui bresaola enim jowl. Capicola short ribs minim salami nulla nostrud pastrami. Nulla corned beef sunt ball tip, qui bresaola enim jowl. Capicola short ribs minim salami nulla nostrud pastrami.</p>
- 
-        <p>Pork drumstick turkey fugiat. Tri-tip elit turducken pork chop in. Swine short ribs meatball irure bacon nulla pork belly cupidatat meatloaf cow. Nulla corned beef sunt ball tip, qui bresaola enim jowl. Capicola short ribs minim salami nulla nostrud pastrami.</p>
- 
-      </article>
- 
-      <hr />
- 
-      <article>
- 
-        <h3><a href="#">Blog Post Title</a></h3>
-        <h6>Written by <a href="#">John Smith</a> on August 12, 2012.</h6>
- 
-        <div class="row">
-          <div class="large-6 columns">
-            <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa.</p>
-            <p>Boudin aliqua adipisicing rump corned beef. Nulla corned beef sunt ball tip, qui bresaola enim jowl. Capicola short ribs minim salami nulla nostrud pastrami.</p>
-          </div>
-          <div class="large-6 columns">
-            <img src="http://placehold.it/400x240&text=[img]" />
-          </div>
-        </div>
- 
-        <p>Pork drumstick turkey fugiat. Tri-tip elit turducken pork chop in. Swine short ribs meatball irure bacon nulla pork belly cupidatat meatloaf cow. Nulla corned beef sunt ball tip, qui bresaola enim jowl. Capicola short ribs minim salami nulla nostrud pastrami. Nulla corned beef sunt ball tip, qui bresaola enim jowl. Capicola short ribs minim salami nulla nostrud pastrami.</p>
- 
-        <p>Pork drumstick turkey fugiat. Tri-tip elit turducken pork chop in. Swine short ribs meatball irure bacon nulla pork belly cupidatat meatloaf cow. Nulla corned beef sunt ball tip, qui bresaola enim jowl. Capicola short ribs minim salami nulla nostrud pastrami.</p>
- 
-      </article>
- 
-    </div>
- 
-    <!-- End Main Content -->
- <!-- Sidebar -->
- 
-    <aside class="large-3 columns sidebar">
-    <div class="sticky-sidebar sticky-active">
-      <h5>Categories</h5>
-      <ul class="side-nav">
-        <li><a href="#">News</a></li>
-        <li><a href="#">Code</a></li>
-        <li><a href="#">Design</a></li>
-        <li><a href="#">Fun</a></li>
-        <li><a href="#">Weasels</a></li>
-      </ul>
- 
-      <div class="panel">
-        <h5>Featured</h5>
-        <p>Pork drumstick turkey fugiat. Tri-tip elit turducken pork chop in. Swine short ribs meatball irure bacon nulla pork belly cupidatat meatloaf cow.</p>
-        <a href="#">Read More →</a>
-      </div>
-      </div>
-    </aside>
- 
-    <!-- End Sidebar -->
- 
-    
-  </div>
- </div>
-  <!-- End Main Content and Sidebar -->
+      </section>
 
-    <script src="bower_components/jquery/jquery.js"></script>
+      <section class="row">     
+        <div class="post-stub large-6 medium-9 columns large-centered medium-centered">
+          <h2>Amazing blog post title.</h2>
+          <p>A short little snippet or summary of the blog post will be displayed in this spot. It could potentially get longer than this is so keep that in mind man.</p>
+          <ul class="blog-tags inline-list">
+            <li><a href="">UX</a></li>
+          </ul>
+          <hr>
+        </div>
+      </section>
+
+      <section class="row">
+        <div class="post-stub large-6 medium-9 columns large-centered medium-centered">
+          <h2>Amazing blog post title.</h2>
+          <p>A short little snippet or summary of the blog post will be displayed in this spot. It could potentially get longer than this is so keep that in mind man.</p>
+          <ul class="blog-tags inline-list">
+            <li><a href="">Design</a></li>
+            <li><a href="">Tutorials</a></li>
+          </ul>
+          <hr>
+        </div>
+      </section>
+
+         <section class="row">
+        <div class="post-stub large-6 medium-9 columns large-centered medium-centered">
+          <h2>Amazing blog post title.</h2>
+          <p>A short little snippet or summary of the blog post will be displayed in this spot. It could potentially get longer than this is so keep that in mind man.</p>
+          <ul class="blog-tags inline-list">
+            <li><a href="">Gaming</a></li>
+            <li><a href="">Reviews</a></li>
+          </ul>
+          <hr>
+        </div>
+      </section>
+
+      <section class="row">
+        <div class="post-stub large-6 medium-9 columns large-centered medium-centered">
+          <ul class="pagination"> 
+            <li class="current"><a href="">1</a></li> 
+            <li><a href="">2</a></li> 
+            <li><a href="">3</a></li> 
+            <li><a href="">4</a></li>  
+          </ul>
+          <!-- <a href="" class="button btn-border">Older</a>
+          <a class="button btn-border">Newer</a> -->
+        </div>
+    </div>
+    <div class="loader">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>
     <script src="js/app.js"></script>
 
