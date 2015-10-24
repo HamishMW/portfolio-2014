@@ -12,7 +12,7 @@
 .img-centerer{
   text-align: center;
 }
- 
+
 /* The ghost, nudged to maintain perfect centering */
 .img-centerer:before {
   content: '';
@@ -23,7 +23,7 @@
 }
 
 /* The element to be centered, can
-   also be of any width and height */ 
+   also be of any width and height */
 .img-centerer img {
   display: inline-block;
   vertical-align: middle;
@@ -55,10 +55,10 @@
 .no-svg .hero {
   background-image: url(../img/polygon.png) repeat-x;
 }
-.hero, .content{
-  position:relative;
-  width: 100%;
-}
+// .hero, .content{
+//   position:relative;
+//   width: 100%;
+// }
 .details-buttons {
 	padding-top: 17px;
 }
@@ -91,11 +91,11 @@
 		width: 100%;
 		background: rgb(220, 220, 220);
 	}
-	
+
 }
 
 //small only
-@media only screen and (max-width: 40em) { 
+@media only screen and (max-width: 40em) {
 	.cv-btn {
 		width: 100%;
 	}
@@ -107,22 +107,22 @@
 		font-size: 1.375rem;
 	}
 }
-// medium up 
-@media only screen and (min-width: 40.063em) { 
+// medium up
+@media only screen and (min-width: 40.063em) {
 	.content-page {
 		padding-left: 4%;
 		padding-right: 4%;
 	}
 }
 // Large
-@media only screen and (min-width: 64.063em) { 
+@media only screen and (min-width: 64.063em) {
 	.content-page {
 		padding-left: 7%;
 		padding-right: 7%;
 	}
 }
 // Xlarge
-@media only screen and (min-width: 90.063em) { 
+@media only screen and (min-width: 90.063em) {
 	.head-description h1 {
 		font-size: 400%;
 	}
@@ -132,7 +132,7 @@
 	}
 }
 // XX large
-@media only screen and (min-width: 118.6em) { 
+@media only screen and (min-width: 118.6em) {
 	.head-description h1 {
 		font-size: 400%;
 	}

@@ -1,26 +1,28 @@
 //Compass
-@import "compass/css3/transition";
-//Foundation
-@import "settings";
-@import "button-groups";
-@import "buttons";
-@import "flex-video";
-@import "forms";
-@import "global";
-@import "grid";
-@import "inline-lists";
-@import "orbit";
-@import "reveal";
-@import "type";
-@import "pagination";
-@import "visibility";
-//hamishw
-@import "functions";
-@import "icons";
-@import "single";
-@import "details";
-@import "journal";
-@import "404";
+@import
+	"compass/css3/transition",
+	"settings",
+	"button-groups",
+	"buttons",
+	"flex-video",
+	"forms",
+	"global",
+	"grid",
+	"inline-lists",
+	"orbit",
+	"reveal",
+	"type",
+	"pagination",
+	"visibility",
+	"functions",
+	"icons",
+	"single",
+	"details",
+	"journal",
+	"contact",
+	"404"
+;
+
 
 /*------//GLOBAL//------*/
 $primary-color-dark: #1aa382;
@@ -44,8 +46,9 @@ $nav-bg: rgb(30, 30, 30);
 .hide {
 	display: none !important;
 }
+
 .btn-border {
-	border-bottom: 4px solid $primary-color-dark; 
+	border-bottom: 4px solid $primary-color-dark;
 }
 
 body {
@@ -65,7 +68,7 @@ body {
  		border: none;
  	}
  	iframe body, .ytp-error {
- 		
+
  		background-color: rgb(230, 230, 230);
  	}
 }
@@ -171,7 +174,7 @@ $tab-bar-width: 5rem;
 	    font-weight: 300;
 	    background: #0d77b6;
 	}
-	
+
 }
 .nav-list {
 
@@ -179,7 +182,7 @@ $tab-bar-width: 5rem;
  	width: 100%;
 	height: rem-calc(100);
 	left: 0px;
-	// top: 30%; 
+	// top: 30%;
 	margin-top: rem-calc(30);
 	a {
 		@include transition(opacity 0.3s ease);
@@ -204,7 +207,7 @@ $tab-bar-width: 5rem;
 }
 .current_page_item {
 
-	
+
 	border-left: solid rem-calc(8) /* rgb(50, 50, 50) */ $primary-color;
 	a {
 		padding-left: rem-calc(33);
@@ -264,7 +267,7 @@ $tab-bar-width: 5rem;
 	a:hover {
 		color: $primary-color;
 	}
-}	
+}
 
 /* Animation classes */
 
@@ -275,7 +278,7 @@ $tab-bar-width: 5rem;
 	    opacity: 0;
 	}
 }
- 
+
 .spmenu-left.spmenu-open,
 .tab-bar-left {
     left: 0;
@@ -286,7 +289,7 @@ $tab-bar-width: 5rem;
 
 // Push body and tab bar
 .spmenu-push {
-	
+
     overflow-x: hidden;
     position: relative;
     left: 0;
@@ -299,7 +302,7 @@ $tab-bar-width: 5rem;
 
 // CSS transition config
 .spmenu,
-.spmenu-push, 
+.spmenu-push,
 .tab-bar-active {
     @include transition(left 0.2s ease);
 }
@@ -324,7 +327,7 @@ $tab-bar-width: 5rem;
 		float: left;
 		width: 20%;
 	    height: 400px;
-	   
+
 	}
 	.item-w2 {
 		width: 40%;
@@ -361,7 +364,7 @@ $tab-bar-width: 5rem;
 		width: 90%;
 		display: inline-block;
   		vertical-align: middle;
-  		@include transform(translateY(rem-calc(30))); 
+  		@include transform(translateY(rem-calc(30)));
   		@include transition(all 0.3s ease 0.4s);
     	opacity: 0;
 	}
@@ -389,7 +392,7 @@ $tab-bar-width: 5rem;
 	}
 	.proj-button {
 		display: block;
-		
+
 		border: 3px solid #fff;
 		color: #fff;
 		background: none;
@@ -613,20 +616,20 @@ $specialBorderWidth: ceil((sqrt( (strip-units($borderWidth) * strip-units($borde
 // The Meat
 //////////////////////////////
 
-.loader { 
+.loader {
   position: absolute;
   top: 50%;
   left: 50%;
   margin: (-$totalHeight / 2) 0 0 (-$totalWidth / 2);
   height: $totalHeight;
   width: $totalWidth;
-  
+
   div {
     position: absolute;
     top: $topOffset;
     left: $leftOffset;
     border: 0 solid transparent;
-    
+
     -webkit-transform-origin: left top;
   	-ms-transform-origin: left top;
   	transform-origin: left top;
@@ -637,7 +640,7 @@ $specialBorderWidth: ceil((sqrt( (strip-units($borderWidth) * strip-units($borde
   div:nth-of-type(1) {
     border-top-color: $red-01;
     @include transform(rotate(-180deg));
-    
+
     -webkit-animation-name: type-01;
     animation-name: type-01;
   }
@@ -645,7 +648,7 @@ $specialBorderWidth: ceil((sqrt( (strip-units($borderWidth) * strip-units($borde
   div:nth-of-type(2) {
     border-top-color: $red-02;
     @include transform(rotate(-90deg));
-  
+
     -webkit-animation-name: type-01;
     -webkit-animation-delay: .08s;
     animation-name: type-01;
@@ -655,7 +658,7 @@ $specialBorderWidth: ceil((sqrt( (strip-units($borderWidth) * strip-units($borde
   div:nth-of-type(3) {
     border-top-color: $red-03;
     @include transform(rotate(0));
-    
+
     -webkit-animation-name: type-01;
     -webkit-animation-delay: .12s;
     animation-name: type-01;
@@ -665,7 +668,7 @@ $specialBorderWidth: ceil((sqrt( (strip-units($borderWidth) * strip-units($borde
   div:nth-of-type(4) {
     border-top-color: $red-04;
     @include transform(rotate(90deg));
-    
+
     -webkit-animation-name: type-01;
     -webkit-animation-delay: .16s;
     animation-name: type-01;
@@ -673,11 +676,10 @@ $specialBorderWidth: ceil((sqrt( (strip-units($borderWidth) * strip-units($borde
   }
 }
 
-
 /*------//MEDIA QUERIES//------*/
 
 // Small only
-@media only screen and (max-width: 40em) { 
+@media only screen and (max-width: 40em) {
 
 	#contactModal {
 		margin-left: -47.5%;
@@ -687,7 +689,7 @@ $specialBorderWidth: ceil((sqrt( (strip-units($borderWidth) * strip-units($borde
 }
 
 // Small screens up
-@media only screen { 
+@media only screen {
 
 	.wrapper {
 		margin-left: rem-calc(0);
@@ -716,7 +718,7 @@ $specialBorderWidth: ceil((sqrt( (strip-units($borderWidth) * strip-units($borde
 }
 
 // Medium screens up
-@media only screen and (min-width: 40.063em) { 
+@media only screen and (min-width: 40.063em) {
 	.wrapper {
 		margin-left: rem-calc(0);
 		margin-top: 3.125rem;
@@ -737,7 +739,7 @@ $specialBorderWidth: ceil((sqrt( (strip-units($borderWidth) * strip-units($borde
 
 }
 // Large screens up
-@media only screen and (min-width: 64.063em) { 
+@media only screen and (min-width: 64.063em) {
 	#contactModal {
 		margin: 0 auto;
 		width: rem-calc(810);
@@ -761,13 +763,13 @@ $specialBorderWidth: ceil((sqrt( (strip-units($borderWidth) * strip-units($borde
 }
 // Short screens (left nav)
 @media screen and (max-height: 35em){
- 
+
  	.nav-list {
 	 	position: absolute;
 	 	width: 100%;
 		height: 100px;
 		left: 0px;
-		// top: 30%; 
+		// top: 30%;
 		margin-top: rem-calc(20);
 	}
 	.nav-logo {
@@ -804,7 +806,7 @@ $specialBorderWidth: ceil((sqrt( (strip-units($borderWidth) * strip-units($borde
 	.tab-bar-left.tab-bar-open {
 	    left: rem-calc(190);
 	}
-	// Push body 
+	// Push body
 	.spmenu-push-toright {
         left: rem-calc(190);
     }

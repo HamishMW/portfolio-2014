@@ -49,10 +49,10 @@ $font-smoothing: antialiased;
 // $default-float: left;
 
 // We use these as default colors throughout
-$primary-color: /* #EA3A3A */ #1cbb9b;
+$primary-color: #1cbb9b;
 // $secondary-color: #e7e7e7;
 $alert-color: #EA3A3A;
-$success-color: /* #43AC6A */#0cadb7;
+$success-color: #0cadb7;
 // $warning-color: #f08a24;
 // $info-color: #a0d3e8;
 
@@ -334,14 +334,14 @@ $block-grid-default-spacing: rem-calc(0);
 // $input-font-family: inherit;
 // $input-font-color: rgba(0,0,0,0.75);
 // $input-font-size: rem-calc(14);
-// $input-bg-color: #fff;
-// $input-focus-bg-color: darken(#fff, 2%);
-// $input-border-color: darken(#fff, 20%);
-$input-focus-border-color: /* darken(#fff, 40%) */$primary-color;
+$input-bg-color: rgba(241, 246, 245, 0.71);
+$input-focus-bg-color: darken(rgba(241, 246, 245, 0.71), 2%);
+$input-border-color: rgba(212, 221, 218, 1);
+$input-focus-border-color: $primary-color;
 // $input-border-style: solid;
 // $input-border-width: 1px;
 // $input-disabled-bg: #ddd;
-// $input-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+$input-box-shadow: none;
 $input-include-glowing-effect: false;
 
 // We use these to style the fieldset border and spacing.

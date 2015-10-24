@@ -115,7 +115,7 @@ body = document.body;
 
 $( "#showLeftPush, #hideLeftPush" ).click(function() {
     // Pushes any content stuck to the right if it exists
-    if (!!$('.right-description').offset() && $('#right-text').isOnScreen()) {
+    if (!!$('.right-description').offset() && $('#right-text').isOnScreen() || !!$('.journal-container').offset()) {
       classie.toggle( rightPush, 'right-open' );
     }
     // Push the page & menu
@@ -317,4 +317,3 @@ $(document).foundation({
       timer: false, // Does the slider have a timer visible?
   }
 });
-

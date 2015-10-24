@@ -1,0 +1,94 @@
+.contact-view {
+	.contact-info {
+		margin-bottom: 4rem;
+	}
+	button {
+		width: 100%;
+		font-size: rem-calc(16);
+	}
+	textarea {
+		display: inline-block;
+		padding: 15px;
+		height: rem-calc(200);
+	}
+	input[type=text], input[type=email] {
+		padding: 0 15px;
+		height: 60px;
+	}
+	textarea, input {
+		font-size: rem-calc(16);
+	}
+	[class*="field"] {
+		
+	}
+	[data-abide] .error small.error, [data-abide] span.error, [data-abide] small.error {
+		background: none;
+		color: $alert-color;
+		padding-left: 0;
+	}
+	.error textarea, .error input {
+		border: 1px solid $alert-color;
+	}
+	#contactForm {
+		.columns {
+			margin-bottom: 1rem;
+		}
+	}
+	.human-check {
+		margin-top: 17px;
+
+		.radio-inline .wpcf7-list-item label,
+		.radio .wpcf7-list-item label {
+		  position: relative;
+		  border: none;
+		  cursor: pointer;
+		  display: inline;
+		  vertical-align: center;
+		  font-size: rem-calc(16);
+		}
+		.radio-inline .wpcf7-list-item label span:before,
+		.radio .wpcf7-list-item label span:before {
+		  -webkit-box-shadow: inset 0 0 0 4px #fff;
+		  box-shadow: inset 0 0 0 4px #fff;
+		  border-radius: 51%;
+		  border: 1px solid #999;
+		  background: #fff;
+		  position: absolute;
+		  display: block;
+		  cursor: pointer;
+		  content: "";
+		  width: 22px;
+		  height: 22px;
+		  top: 0px;
+		  left: -4px;
+		}
+		.wpcf7-list-item {
+			margin-right: rem-calc(22);
+		}
+		.wpcf7-list-item span {
+			padding-left: 7px;
+		}
+		.radio-heading {
+			display: inline;
+			font-size: rem-calc(16);
+			margin-right: 25px;
+		}
+		.radio-inline .wpcf7-list-item label input:checked+span:before,
+		.radio .wpcf7-list-item label input:checked+span:before {
+		  background: #999;
+		}
+
+		.radio-inline .wpcf7-list-item label input:focus,
+		.radio .wpcf7-list-item label input:focus {
+		  outline: none;
+		}
+
+		.lt-ie9 .radio-inline .wpcf7-list-item label span:before,
+		.lt-ie9 .radio .wpcf7-list-item label span:before {
+		  border: none;
+		}
+	}
+	.contact-items {
+		list-style-type: none;
+	}
+}

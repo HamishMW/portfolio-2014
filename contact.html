@@ -56,68 +56,89 @@
         <small>© Hamish Williams 2014.</small>
       </div>
     </nav>
+    
 
-    <div id="contactModal" class="reveal-modal" data-reveal>
-      <h2>Awesome. I have it.</h2>
-      <hr>
-      <form id="contactForm" data-abide>
-        <div class="name-field top-reveal-field">
-          <label>Your name*</label>
-          <input id="name" name="name" type="text" required pattern="[a-zA-Z]+">
-          <small class="error">Your name is required.</small>
-        </div>
-        <div class="email-field top-reveal-field">
-          <label>Email*</label>
-          <input id="email" name="email" type="email" required>
-          <small class="error">A valid email address is required.</small>
-        </div>
-        <div class="textarea-field">
-          <label>Message*</label>
-          <textarea id="message" required pattern="alpha_numeric" placeholder="Throw me a message" ></textarea>
-          <small class="error">Message text is required.</small>
-        </div>
-        <button name="submit" class="submit-btn btn-border" type="submit">Send Message</button>
-        <!-- <button id="close-btn" class="close-reveal-modal">Close</button> -->
-      </form>
-      <a class="close-reveal-modal">&#215;</a>
-
-    </div>
-
-    <div class="wrapper">
+    <div class="wrapper contact-view">
       <!-- First Band (Slider) -->
-
+ 
  <section id="hero1" class="hero parallax-trigger">
   <div class="inner">
     <div class="row content-page parallax-top">
     <div id="hero-text" class="large-12 columns head-description">
-    <h3>Details</h3>
-    <h1><strong>Through research, ideation, and design, I create kick-ass visual media.</strong></h1>
-    <h4>I synthesise illustration, animation, typography, and code to create a diverse range of solutions.</h4>
+    <h3>Contact</h3>
+    <h1><strong>Hey, let's get in touch.</strong></h1>
+    <h4>Drop me a message or stalk me across various social media platforms.</h4>
     </div>
   </div>
   </div>
 </section>
-
+  
 <!-- Three-up Content Blocks -->
 
-
-  <section class="row profile content-page">
-    <div class="large-4 columns img-centerer">
-      <img src="img/profile.png" />
-    </div>
+  <section class="row content-page contact-info">
 
     <div class="large-8 columns">
+      <form id="contactForm" data-abide> 
+        <div class="row">
+          <div class="medium-6 large-6 columns">
+            <label class="hidden-for-small-only hidden-for-medium-up">Your name*</label> 
+            <input id="name" name="name" type="text" required pattern="[a-zA-Z]+" placeholder="Name:"> 
+            <small class="error">Your name is required.</small> 
+          </div> 
+          <div class="medium-6 large-6 columns"> 
+            <label class="hidden-for-small-only hidden-for-medium-up">Email*</label> 
+            <input id="email" name="email" type="email" required placeholder="Email:"> 
+            <small class="error">A valid email address is required.</small> 
+          </div> 
+        </div>
+        <div class="row">
+          <div class="large-12 columns">
+            <label class="hidden-for-small-only hidden-for-medium-up">Message*</label>
+            <textarea id="message" required pattern="alpha_numeric" placeholder="Throw me a message..." ></textarea>
+            <small class="error">Message text is required.</small> 
+          </div>
+        </div>
+        <div class="row">
+          <div class="medium-7 large-7 columns human-check">
+            <label class="radio-heading">Are you human?</label>
+            <span class="wpcf7-form-control-wrap">
+                <span class="wpcf7-form-control wpcf7-radio radio-inline" id="human_check">
+                    <span class="wpcf7-list-item" for="human-yes"><label><input id="human-yes" name="human" value="Yes" type="radio" required>&nbsp;<span class="wpcf7-list-item-label">Yes</span></label></span>
+                    <span class="wpcf7-list-item" for="human-no"><label><input id="human-no" name="human" value="" type="radio" required>&nbsp;<span class="wpcf7-list-item-label">No</span></label></span>
+                </span>
+            </span>
+          </div>
+          <div class="medium-5 large-5 columns">
+            <button name="submit" class="right" type="submit">Send Message</button>
+          </div>
+        </div>
+        <!-- <button id="close-btn" class="close-reveal-modal">Close</button> -->
+      </form>
+    </div>
 
-      <h4>Profile</h4>
-      <p>Hi, I'm Hamish Williams. I am an alumnus of The University of Waikato's <a href="#">Bachelor of Computer Graphic Design</a> – a comprehensive degree that combines both technical and creative skills. I worked as a graphic deigner in New Zealand for a year before moving to Sydney, where I now work as a digital designer at Smart Sparrow. Drop me a message and we can grab sushi sometime.</p>
-      <div class="details-buttons"><a class="button btn-border cv-btn"><i class="icon-download"></i> Download CV</a>
-      <a class="button btn-border cv-btn" data-reveal-id="contactModal"><i class="icon-mail"></i> Contact me</a></div>
+    <div class="large-4 columns">
+      <ul class="contact-items">
+        <li>
+          <h4>Phone</h4>
+          <p>021 0113 4559</p>
+        </li>
+        <hr>
+        <li>
+          <h4>Email</h4>
+          <p>hello@hamishw.com</p>
+        </li>
+        <hr>
+        <li>
+        <h4>Social</h4>
+          <p>021 0113 4559</p>
+        </li>
+      </ul>
     </div>
 
   </section>
-
-  <section class="row approach content-page">
-
+    
+<!--   <section class="row approach content-page">
+      
       <div class="large-4 columns">
         <h4>Approach</h4>
         <p>Nano-computer spook shoes uplink into. math- receding RAF long-chain hydrocarbons assault j-pop convenience store camera decay digital sign warehouse drone. smart- corporation into wristwatch ablative plastic carbon urban systemic sub-orbital shoes grenade industrial grade lights. disposable garage vinyl rebar chrome jeans market tank-traps kanji tiger-team urban motion faded. </p>
@@ -132,17 +153,17 @@
           <li>Illustration</li>
         </ul>
         <ul class="skill-list">
-          <li>Maya, 3DS Max, Blender</li>
+          <li>Maya, 3DS Max, Blender</li> 
           <li>CSS, SASS & Compass</li>
           <li>Javascript/jQuery</li>
           <li>Flash/Actionscript 3</li>
         </ul>
 
-
+      
       </div>
-
+      
   </section>
-
+ -->
   </div>
 
     <script src="bower_components/jquery/dist/jquery.js"></script>
